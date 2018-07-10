@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block content %}
-
+<script type="text/javascript">
+mixpanel.track("End page");
+</script>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
@@ -15,7 +17,6 @@
       </h1>{{releaseVersion | log }}
       <p>
         This kit lets you rapidly create HTML prototypes of GOV.UK services for land reg.
-        <a href="testend">test</a>
       </p>
 
       <p>
