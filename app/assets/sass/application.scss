@@ -13,30 +13,49 @@ $govuk-global-styles: true;
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+.row-data-item {
+  padding:1em;
 
-
-/* Style the buttons that are used to open and close the accordion panel */
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+  .govuk-table__cell,
+  .govuk-table__header {
+    border:none;
+  }
+  .add-to-download {
+    width: 4em;
+    height: 4em;
+    background: #00823B;
+    color: #fff;
+    text-align: center;
+    padding: 0.7em;
+    padding-top: 0.1em;
+    float: right;
+    font-family: 'nta';
+    .plus-icon {
+      margin-bottom: -50px;
+      font-size: 62px;
+      position: relative;
+      top: -12px;
+    }
+  }
 }
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-    background-color: #ccc;
+.row-data-item:nth-child(odd) {
+  background: #F9F9F9;
 }
-
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
+.listingspage {
+  .govuk-grid-column-one-third {
+    button {
+      margin-top:1em;
+    }
+  }
+  .govuk-fieldset__legend {
+    h3 {
+      font-size: 27px;
+      margin: 0px;
+    }
+    .spacer {
+      width:100%;
+      clear: both;
+      margin-bottom:2px;
+    }
+  }
 }
