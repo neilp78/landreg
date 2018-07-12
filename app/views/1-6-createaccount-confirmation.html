@@ -6,13 +6,23 @@
 {% endblock %}
 
 {% block content %}
-<a href="#" class="govuk-back-link">Back</a>
+<a href="1-5-createaccount-check-answers" class="govuk-back-link">Back</a>
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Create an account
-        <span class="govuk-caption-xl">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h2 class="govuk-panel__title">
+          Application complete
+        </h2>
+        <div class="govuk-panel__body">
+          Your reference number<br><strong>HDJ2123F</strong>
+        </div>
+      </div>
+      <p>What happens next</p>
+      <ul>
+        <li><p>You will be contacted within 1 working day (subject to the volume of applications)</p></li>
+        <li><p>you will recieve your account details and instructions on how to download the data</p></li>
+      </ul>
+      <p><a href="#">What did you think of this service?</a> (takes 30 seconds)</p>
 </div>
 
 {% endblock %}

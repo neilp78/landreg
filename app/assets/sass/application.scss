@@ -39,6 +39,10 @@ $govuk-global-styles: true;
     }
   }
 }
+span.licence-type {
+    background: #EDEDED;
+    padding: 2px 13px;
+}
 .row-data-item:nth-child(odd) {
   background: #F9F9F9;
 }
@@ -83,3 +87,32 @@ $govuk-global-styles: true;
       font-weight: bold;
     }
 }
+
+
+
+//formatting tabs to show example snippets of Datasets
+pre {
+   background-color: #f8f8f8;
+   border: 1px solid silver;
+   padding: 10px 20px;
+   margin: 20px;
+   font-family: monospace;
+   position: relative;
+    margin: 0;
+    padding: 15px;
+    overflow: auto;
+    border: 1px solid #bfc1c3;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    max-width: 38em;
+    margin-bottom: 15px;
+   }
+.json-key {
+   color: brown;
+   }
+.json-value {
+   color: navy;
+   }
+.json-string {
+   color: olive;
+   }
