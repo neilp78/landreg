@@ -6,6 +6,15 @@
 {% endblock %}
 
 {% block content %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  alpha
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
 
   <div class="govuk-grid-row listingspage">
       <h1 class="govuk-heading-xl">
@@ -145,7 +154,7 @@
                 <div class="plus-icon">+</div>
                 Add to download
               </div>
-                <h2><a href="#">Dataset Title</a></h2>
+                <h2><a href="#">Overseas</a></h2>
                 <table class="govuk-table">
                   <tbody class="govuk-table__body">
                     <tr class="govuk-table__row">
@@ -181,10 +190,18 @@
                   <p>The dataset comprises a list of all titles owned by companies incorporated in the UK and English and Welsh corporate bodies.</p>
             </div>
 
-            <div class="fixed-view-downloads">Fixed</div>
+
         </div>
       </div>
-
+<div class="fixed-view-downloads">
+  <div class="govuk-inset-text">
+    <span></span> has been added to your download.
+    <a href="#" role="button" class="govuk-button">
+    View your download
+    </a>
+    <a class="closethis" href="#">Close</a>
+  </div>
+</div>
 </div>
 
 {% endblock %}

@@ -29,7 +29,8 @@ $govuk-global-styles: true;
     padding: 0.7em;
     padding-top: 0.1em;
     float: right;
-    font-family: 'nta';
+    font-family: "nta", Arial, sans-serif;
+    border-bottom: 2px solid #003618;
     .plus-icon {
       margin-bottom: -50px;
       font-size: 62px;
@@ -58,4 +59,27 @@ $govuk-global-styles: true;
       margin-bottom:2px;
     }
   }
+}
+
+.fixed-view-downloads {
+    position: fixed;
+    width: 80%;
+    height: 6em;
+    bottom: 23px;
+    left: 10%;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    border-radius: 1px;
+    padding: 2em;
+
+    a {
+      float:right;
+    }
+    .closethis {
+      clear: both;
+      margin-top: -24px;
+    }
+    span {
+      font-weight: bold;
+    }
 }
