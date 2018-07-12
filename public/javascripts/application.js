@@ -21,9 +21,9 @@ $(document).ready(function () {
 
   $('.filter-user-type').each(function() {
     //$( this ).addClass( "foo" );
-    var gotoPersonal = 'createaccount-yourdetails';
-    var gotoUK = 'createaccount-uk';
-    var gotoOversea = 'createaccount-overseas';
+    var gotoPersonal = '1-1-createaccount-yourdetails';
+    var gotoUK = '2-1-createaccount-uk';
+    var gotoOversea = '3-1-createaccount-overseas';
 
     var thisradio = $(this).find('.govuk-radios__item input');
     $('#user-select input').on('change', function() {
@@ -34,11 +34,11 @@ $(document).ready(function () {
                 $('.govuk-form-group a').attr('href', gotoPersonal);
                 break;
             case 'uk-organisation':
-                alert(target);
+                //alert(target);
                 $('.govuk-form-group a').attr('href', gotoUK);
                 break;
             case 'overseas-organisation':
-                alert(target);
+                //alert(target);
                 $('.govuk-form-group a').attr('href', gotoOversea);
                 break;
         }
