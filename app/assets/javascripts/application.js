@@ -74,4 +74,17 @@ $(document).ready(function () {
     var planets = [{ name: 'Earth', order: 3, stats: { life: true, mass: 5.9736 * Math.pow(10, 24) } }, { name: 'Saturn', order: 6, stats: { life: null, mass: 568.46 * Math.pow(10, 24) } }];
     $('#account').html(library.json.prettyPrint(account));
     $('#planets').html(library.json.prettyPrint(planets));
+
+
+
+    //download page
+    $(".download-page").each(function() {
+      var checkDataTypeSelection = $(this).find('.govuk-checkboxes input');
+      var enableDownload = $(this).find(".govuk-button");
+
+      if $(checkDataTypeSelection).on('change', function() {
+        $(enableDownload).removeAttr('disabled');
+        alert('removed');
+      });
+    });
 })
