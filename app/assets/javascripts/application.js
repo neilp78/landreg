@@ -79,12 +79,18 @@ $(document).ready(function () {
 
     //download page
     $(".download-page").each(function() {
-      var checkDataTypeSelection = $(this).find('.govuk-checkboxes input');
+      var checkDataTypeSelection = $(this).find('.govuk-checkboxes checkbox');
       var enableDownload = $(this).find(".govuk-button");
+//console.log('fojnd htis');
+      $(this).find(":checkbox").bind('change', function(){
+      //  val = this.checked; //<---
+          $(enableDownload).removeAttr('disabled');
+          $(enableDownload).attr('aria-disabled', 'false').removeClass('govuk-button--disabled');
+      });
 
-      if $(checkDataTypeSelection).on('change', function() {
+    /*  if $(checkDataTypeSelection).on('change', function() {
         $(enableDownload).removeAttr('disabled');
         alert('removed');
-      });
+      }); */
     });
 })
