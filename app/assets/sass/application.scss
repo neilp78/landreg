@@ -122,3 +122,16 @@ pre {
 .json-string {
    color: olive;
    }
+
+
+//downloads page
+.download-page {
+  .govuk-tag-red {
+    background: #DF3034;
+    margin-left: 1em;
+  }
+  .govuk-details__summary-text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

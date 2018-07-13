@@ -86,11 +86,11 @@ $(document).ready(function () {
       //  val = this.checked; //<---
           $(enableDownload).removeAttr('disabled');
           $(enableDownload).attr('aria-disabled', 'false').removeClass('govuk-button--disabled');
+
+          $(this).parent().parent().parent().parent().parent().find('.govuk-tag').hide();
+        //  alert($(this).parent().parent().parent().parent().parent().find('.govuk-tag'));
       });
 
-    /*  if $(checkDataTypeSelection).on('change', function() {
-        $(enableDownload).removeAttr('disabled');
-        alert('removed');
-      }); */
+
     });
 })
