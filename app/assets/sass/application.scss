@@ -72,15 +72,35 @@ span.licence-type {
 }
 
 .fixed-view-downloads {
-    position: fixed;
-    width: 80%;
-    height: 6em;
-    bottom: 23px;
-    left: 10%;
-    background: #FFFFFF;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
-    border-radius: 1px;
-    padding: 2em;
+  position: fixed;
+      width: 80%;
+      height: 6em;
+      bottom: 23px;
+      left: 10%;
+      background: #FFFFFF;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      border-radius: 1px;
+      padding: 1em;
+      border: #DEE0E2 14px solid;
+
+    .govuk-form-group {
+      width: 50%;
+      float: left;
+
+      .govuk-checkboxes__item {
+        font-size: 19px;
+        line-height: 25px;
+        display: inline;
+        float: left;
+        clear: none;
+      }
+    }
+
+    .inset-text {
+      width: 40%;
+      float: right;
+      clear: none;
+    }
 
     a {
       float:right;
