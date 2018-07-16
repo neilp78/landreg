@@ -90,7 +90,9 @@ $(document).ready(function () {
           $(this).parent().parent().parent().parent().parent().find('.govuk-tag').hide();
         //  alert($(this).parent().parent().parent().parent().parent().find('.govuk-tag'));
       });
+    });
 
-
+    $(".remove-dataset").click(function() {
+      $(this).parent().parent().hide();
     });
 })
