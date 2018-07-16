@@ -1,0 +1,26 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Your account
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+
+
+      <h2 class="govuk-heading-l">Prototypes</h2>
+      <ul>
+        <li><a href="listingspage">Listings page</a></li>
+        <li><a href="createaccount">Create account</a></li>
+      </ul>
+    </div>
+</div>
+
+{% endblock %}
