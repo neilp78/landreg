@@ -7,17 +7,45 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-row dashboard">
+
       <h1 class="govuk-heading-xl">
         Your account
       </h1>
+<a href="#" class="float_right">Log out</a>
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter">
+          <h2>Your profile</h2>
+            <p>govuk-grid-column-one-quarter</p>
+            <ul>
+              <li><a href="#">Change password</a></li>
+              <li><a href="#">Change email address</a></li>
+            </ul>
+        </div>
 
-      <ul>
-        <li><a href="#">Manage your account</a></li>
-        <li><a href="listingspage">Search datasets</a></li>
-      </ul>
-    </div>
+
+        <div class="govuk-grid-column-one-quarter">
+          <h2>Downloads</h2>
+          <p>govuk-grid-column-one-quarter</p>
+          <ul>
+            <li><a href="#">Download history</a></li>
+        </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-quarter">
+          <h2>Licences</h2>
+          <p>govuk-grid-column-one-quarter</p>
+          <ul>
+            <li><a href="#">View licences</a></li>
+          </ul>
+        </div>
+
+        <div class="govuk-grid-column-one-quarter">
+          <h2>Search datasets</h2>
+          <p>govuk-grid-column-one-quarter</p>
+          <ul><li><a href="listingspage">Search datasets</a></li></ul>
+        </div>
+      </div>
 </div>
 
 {% endblock %}

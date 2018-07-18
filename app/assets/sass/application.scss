@@ -157,5 +157,16 @@ pre {
 }
 .govuk-grid-row {
     margin-right: 0px;
-    margin-left: 0px; 
+    margin-left: 0px;
+}
+.dashboard .govuk-grid-column-one-quarter:nth-child(odd) {
+   background: #F9F9F9;
+}
+
+.float_right {
+  float:right;
+  margin-bottom: 2em;
+  clear: both;
+  width: 100%;
+  text-align: right;
 }
