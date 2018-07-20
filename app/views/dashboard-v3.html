@@ -7,17 +7,18 @@
 
 {% block content %}
 
+<nav class="app-navigation-1 govuk-clearfix">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
+    </li>
+    <li>
+      <a class="govuk-link" href="" data-topnav="Community">Logout</a>
+    </li>
+  </ul>
+</nav>
   <div class="govuk-grid-row dashboard dashboard-3">
-    <nav class="app-navigation-1 govuk-clearfix">
-      <ul class="app-navigation__list">
-        <li>
-          <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
-        </li>
-        <li>
-          <a class="govuk-link" href="" data-topnav="Community">Logout</a>
-        </li>
-      </ul>
-    </nav>
+<a href="#" class="govuk-back-link">Back</a>
     <h1 class="govuk-heading-xl">
       <span class="govuk-caption-xl">Your account</span> John Smith
     </h1>
@@ -30,10 +31,12 @@
           Your downloads
       </h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis turpis eu mollis aliquam. Cras ipsum nisl, accumsan scelerisque tincidunt ac, ullamcorper nec erat.</p>
+      <a href="listingspage2" class="govuk-button card-button">
+        Find datasets
+      </a>
+
     </div>
-    <a href="listingspage2" class="govuk-button">
-      Find datasets
-    </a>
+
   </div>
 
   <table class="govuk-table dash-3">
@@ -89,7 +92,10 @@
           Your licences
       </h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis turpis eu mollis aliquam. Cras ipsum nisl, accumsan scelerisque tincidunt ac, ullamcorper nec erat.</p>
-    </div>
+      <a href="listingspage2" class="govuk-button card-button">
+        Find licenses
+      </a>
+   </div>
   </div>
 
   <table class="govuk-table dash-3">
@@ -125,12 +131,6 @@
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 </div>
-
- <div class="govuk-grid-row">
-
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-</div>
-
 
 </div>
 

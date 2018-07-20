@@ -172,6 +172,10 @@ pre {
 }
 .app-navigation-1 {
   background-color: #f8f8f8;
+  background-color: #f8f8f8;
+  margin-top: -45px;
+  margin-bottom: 10px;
+
   li {
     list-style: none;
     text-align: right;
@@ -183,6 +187,9 @@ pre {
 
 //cards
 .dashboard-3 {
+  .govuk-back-link {
+    margin-bottom: 35px;
+  }
   .govuk-section-break--visible {
       border-bottom: 1px solid #bfc1c3;
       width: 100%;
@@ -217,5 +224,8 @@ pre {
       padding-top: 9px;
       padding-bottom: 6px;
       margin-left: 3em;
+  }
+  .card-button {
+      margin-left:0;
   }
 }
