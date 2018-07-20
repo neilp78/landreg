@@ -1,0 +1,162 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<nav class="app-navigation-1 govuk-clearfix">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
+    </li>
+    <li>
+      <a class="govuk-link" href="" data-topnav="Community">Logout</a>
+    </li>
+  </ul>
+</nav>
+  <div class="govuk-grid-row dashboard dashboard-3">
+<a href="#" class="govuk-back-link">Back</a>
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Your account</span> John Smith
+    </h1>
+
+
+<div class="govuk-grid-row">
+  <h2 class="govuk-heading-m card-heading">
+            Your company
+        </h2>
+    <div class="tile">
+      <h2 class="govuk-heading-l">22</h2>
+      <br />
+      <p>users in this company</p>
+    </div>
+    <div class="tile">
+      <h2 class="govuk-heading-l">989</h2>
+      <br />
+      <p>datasets have been download by your company</p>
+    </div>
+    <div class="tile">
+      <h2 class="govuk-heading-l">155</h2>
+      <br />
+      <p>licences have been agreed</p></div>
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+</div>
+
+<div class="govuk-grid-row">
+  <h2 class="govuk-heading-m card-heading">
+            Your personal details
+        </h2>
+  <div class="card">
+    <div class="card-body active">
+      <h3 class="govuk-heading-m card-heading">
+          Your downloads
+      </h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis turpis eu mollis aliquam. Cras ipsum nisl, accumsan scelerisque tincidunt ac, ullamcorper nec erat.</p>
+      <a href="listingspage2" class="govuk-button card-button">
+        Find datasets
+      </a>
+
+    </div>
+
+  </div>
+
+  <table class="govuk-table dash-3">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+      <th class="govuk-table__cell govuk-table__header" scope="col">Dataset</th>
+        <td class="govuk-table__cell govuk-table__header">Date downloaded</td>
+        <td class="govuk-table__cell govuk-table__header">Version</td>
+        <td class="govuk-table__cell govuk-table__header">Licence</td>
+      </tr>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+      <th class="govuk-table__cell govuk-table__header" scope="col"><a href="#">Overseas</a></th>
+        <td class="govuk-table__cell">24 October 2018</td>
+        <td class="govuk-table__cell">0.0.2</td>
+        <td class="govuk-table__cell"><a href="#">Free and commercial</a></td>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__cell" scope="col"><a href="#">Overseas</a></th>
+        <td class="govuk-table__cell">24 October 2018</td>
+        <td class="govuk-table__cell">0.0.2</td>
+        <td class="govuk-table__cell"><a href="#">Free and commercial</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__cell" scope="col"><a href="#">Overseas</a></th>
+          <td class="govuk-table__cell">24 October 2018</td>
+          <td class="govuk-table__cell">0.0.2</td>
+          <td class="govuk-table__cell"><a href="#">Free and commercial</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__cell" scope="col"><a href="#">Overseas</a></th>
+          <td class="govuk-table__cell">24 October 2018</td>
+          <td class="govuk-table__cell">0.0.2</td>
+          <td class="govuk-table__cell"><a href="#">Free and commercial</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="submit" class="govuk-button">
+    View your download history
+  </button>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+</div>
+
+
+<div class="govuk-grid-row">
+
+  <div class="card">
+    <div class="card-body active">
+      <h3 class="govuk-heading-m card-heading">
+          Your licences
+      </h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis turpis eu mollis aliquam. Cras ipsum nisl, accumsan scelerisque tincidunt ac, ullamcorper nec erat.</p>
+      <a href="listingspage2" class="govuk-button card-button">
+        Find licenses
+      </a>
+   </div>
+  </div>
+
+  <table class="govuk-table dash-3">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Licences</th>
+        <th class="govuk-table__header" scope="col">Date agreed</th>
+        <th class="govuk-table__header" scope="col">View licence agreement</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Licence type</td>
+        <td class="govuk-table__cell ">12 September 2018</td>
+        <td class="govuk-table__cell "><a  href="#">View licence</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Licence type</td>
+        <td class="govuk-table__cell ">11 September 2018</td>
+        <td class="govuk-table__cell "><a  href="#">View licence</a></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">Licence type</td>
+        <td class="govuk-table__cell ">3 September 2018</td>
+        <td class="govuk-table__cell "><a  href="#">View licence</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button type="submit" class="govuk-button">
+    View your licences
+  </button>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+</div>
+
+</div>
+
+{% endblock %}

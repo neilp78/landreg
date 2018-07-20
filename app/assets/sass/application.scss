@@ -228,4 +228,28 @@ pre {
   .card-button {
       margin-left:0;
   }
+
+  .tile {
+    background-color: #f8f8f8;
+    border-left: 10px solid #dee0e2;
+    padding:2em;
+    float:left;
+    display: inline-flex;
+    width: 22%;
+    margin-right:2em;
+    margin-bottom: 3em;
+    min-height: 144px;
+
+    p, h2 {
+      float: left;
+      width: 100%;
+    }
+  }
+  .tile:hover {
+    background: #EEEFF0;
+    cursor: pointer;
+    h2 {
+      text-decoration: underline;
+    }
+  }
 }
