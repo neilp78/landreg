@@ -1,0 +1,66 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Registered Leases Data</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">
+          <span class="govuk-caption-xl">Licencing terms</span> Free Commercial
+        </h1>
+
+        <p>[IMPORTANT INFORMATION ABOUT LICENCE - licence blurb]</p>
+
+        <p>By continuing</p>
+        <ul>
+          <li>you confirm that you agree to the licencing terms for Free Commercial datasets</li>
+          <li>you will have access to all datasets covered by this licence</li>
+        </ul>
+
+        <br>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+                I agree
+              </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <a href="download-file-options" role="button" class="govuk-button">
+          Agree and continue
+        </a>
+
+        </div>
+      </div>
+
+  </main>
+</div>
+
+
+{% endblock %}

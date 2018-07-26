@@ -30,28 +30,34 @@
         </h1>
 
         <table class="govuk-table">
-
-          <tbody class="govuk-table__body">
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header" scope="row">Dataset name</th>
-              <td class="govuk-table__cell ">[name]</td>
-            </tr>
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header" scope="row">Download options selected</th>
-              <td class="govuk-table__cell ">
-                <p>CSV</p>
-                <p>JSON</p>
-                <p>Open Government licence</p>
-              </td>
-              <td class="govuk-table__cell ">JSON</td>
-              <td class="govuk-table__cell ">Open Government licence</td>
-            </tr>
-          </tbody>
+          <thead class="govuk-table__head">
+          </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">Dataset</th>
+                <td class="govuk-table__cell ">[Name]</td>
+                <td class="govuk-table__cell change-answer"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="row">Download options</th>
+                <td class="govuk-table__cell ">CSV file
+                </br>
+                JSON file
+                </br>
+                Open Governmen Licence
+                </td>
+                <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+              </tr>
+            </tbody>
         </table>
 
-    <a href="" role="button" class="govuk-button">
-      Download
-    </a>
+        <a href="download-confirmation" role="button" class="govuk-button">
+          Download
+        </a>
 
       </div>
 
