@@ -46,33 +46,20 @@
           </tbody>
         </table>
 
-        <table class="check-your-answers">
 
-          <thead>
-            <tr>
-              <th colspan="2">
-                <h2 class="heading-medium">
-                  Contacting you
-                </h2>
-              </th>
-              <th>
-              </th>
-              <th>
-              </th>
-            </tr>
-          </thead>
+        <table class="govuk-table">
 
-          <tbody>
-            {% for reminder in data['reminder-how'] %}
-            <tr>
-              <td>
-                {{ reminder }}
+          <tbody class="govuk-table__body">
+            <!-- {% for reminder in data['reminder-how'] %}... -->
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell ">
+                {{ reminder }}...
               </td>
-              <td>
-                {{data['text-number']}}
+              <td class="govuk-table__cell ">
+                {{data['text-number']}}...
               </td>
-              <td>
-                {{data['email-address']}}
+              <td class="govuk-table__cell ">
+                {{data['email-address']}}...
               </td>
               <td class="change-answer">
                 <a href="#">
@@ -80,7 +67,7 @@
                 </a>
               </td>
             </tr>
-            {% endfor %}
+            <!-- {% endfor %} -->
 
           </tbody>
         </table>
