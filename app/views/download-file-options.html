@@ -24,7 +24,44 @@
 
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Your download options</h1>
+
+        <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Your download options
+      </h1>
+    </legend>
+    <!-- <span id="nationality-hint" class="govuk-hint">
+    If you have dual nationality, select all options that are relevant to you.
+  </span> -->
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+        CSV
+      </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+        JSON
+      </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+        XML
+      </label>
+      </div>
+    </div>
+
+    <a href="" role="button" class="govuk-button">
+      Continue
+    </a>
+    
+  </fieldset>
+</div>
 
       </div>
 
