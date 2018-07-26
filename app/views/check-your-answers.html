@@ -30,18 +30,58 @@
         </h1>
 
         <table class="govuk-table">
-          
+
           <tbody class="govuk-table__body">
             <tr class="govuk-table__row">
               <th class="govuk-table__header" scope="row">Dataset name</th>
               <td class="govuk-table__cell ">[name]</td>
+              <td></td>
             </tr>
             <tr class="govuk-table__row">
               <th class="govuk-table__header" scope="row">Download options selected</th>
               <td class="govuk-table__cell ">CSV</td>
-              <br>
               <td class="govuk-table__cell ">JSON</td>
+              <td class="govuk-table__cell ">Open Government licence</td>
             </tr>
+          </tbody>
+        </table>
+
+        <table class="check-your-answers">
+
+          <thead>
+            <tr>
+              <th colspan="2">
+                <h2 class="heading-medium">
+                  Contacting you
+                </h2>
+              </th>
+              <th>
+              </th>
+              <th>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {% for reminder in data['reminder-how'] %}
+            <tr>
+              <td>
+                {{ reminder }}
+              </td>
+              <td>
+                {{data['text-number']}}
+              </td>
+              <td>
+                {{data['email-address']}}
+              </td>
+              <td class="change-answer">
+                <a href="#">
+                  Change
+                </a>
+              </td>
+            </tr>
+            {% endfor %}
+
           </tbody>
         </table>
 
