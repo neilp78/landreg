@@ -36,20 +36,38 @@
               <tr class="govuk-table__row">
                 <th class="govuk-table__cell" scope="row">Dataset</th>
                 <td class="govuk-table__cell ">[Name]</td>
-                <td class="govuk-table__cell change-answer"></td>
+                <td class="govuk-table__cell "></td>
               </tr>
               <tr class="govuk-table__row">
                 <th class="govuk-table__header" scope="row">Download options</th>
-                <td class="govuk-table__cell ">CSV file
-                </br>
-                JSON file
-                </br>
-                Open Governmen Licence
+
+                <td class="govuk-table__cell">
+                  <ul class="check-your-answers">
+                    {% for option in data['download-option'] %}
+                    <li>
+                      {{ option }}
+                    </li>
+                    {% endfor %}
+                  </ul>
                 </td>
+
                 <td class="govuk-table__cell change-answer"><a href="">Change</a></td>
               </tr>
+
             </tbody>
         </table>
+
+        <!-- <td>
+        {{ data['csv-file'] }}
+        </td>
+        <td>
+        {{ data['json-file'] }}
+        </td>
+        <td>
+        {{ data['xml-file'] }}
+        </td>
+        {{ data['licence-type'] }}
+        </td> -->
 
         <a href="download-confirmation" role="button" class="govuk-button">
           Download
@@ -57,8 +75,7 @@
 
       </div>
 
-  </main>
 </div>
-
+  </main>
 
 {% endblock %}
