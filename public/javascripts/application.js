@@ -94,4 +94,16 @@ $(document).ready(function () {
     $(".remove-dataset").click(function() {
       $(this).parent().parent().hide();
     });
+
+    //download page
+    $(".download-file-page").each(function() {
+      var checkDataTypeSelection = $(this).find('.govuk-checkboxes checkbox');
+
+//console.log('fojnd htis');
+      $(this).find(":checkbox").bind('change', function(){
+          alert($(this).attr("value"));
+      });
+    });
+
+    //format
 })
