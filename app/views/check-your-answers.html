@@ -8,6 +8,7 @@
 {% block content %}
 
 <div class="govuk-width-container">
+
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
@@ -21,7 +22,6 @@
   </div>
 
   <main class="govuk-main-wrapper">
-
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
@@ -30,8 +30,6 @@
         </h1>
 
         <table class="govuk-table">
-          <thead class="govuk-table__head">
-          </thead>
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
                 <th class="govuk-table__cell" scope="row">Dataset</th>
@@ -40,7 +38,6 @@
               </tr>
               <tr class="govuk-table__row">
                 <th class="govuk-table__header" scope="row">Download options</th>
-
                 <td class="govuk-table__cell">
                   <ul class="check-your-answers">
                     {% for option in data['download-option'] %}
@@ -50,24 +47,10 @@
                     {% endfor %}
                   </ul>
                 </td>
-
-                <td class="govuk-table__cell change-answer"><a href="">Change</a></td>
+                <td class="govuk-table__cell change-answer"><a href="download-file-options">Change</a></td>
               </tr>
-
             </tbody>
         </table>
-
-        <!-- <td>
-        {{ data['csv-file'] }}
-        </td>
-        <td>
-        {{ data['json-file'] }}
-        </td>
-        <td>
-        {{ data['xml-file'] }}
-        </td>
-        {{ data['licence-type'] }}
-        </td> -->
 
         <a href="download-confirmation" role="button" class="govuk-button">
           Download
@@ -75,7 +58,8 @@
 
       </div>
 
-</div>
+    </div>
   </main>
+</div>
 
 {% endblock %}

@@ -8,6 +8,7 @@
 {% block content %}
 
 <div class="govuk-width-container">
+
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
@@ -21,23 +22,17 @@
   </div>
 
   <main class="govuk-main-wrapper">
-
     <div class="govuk-grid-row">
-
       <div class="govuk-grid-column-two-thirds">
 
             <form action="check-your-answers" method="post" class="form">
-
               <div class="govuk-form-group">
-        <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
-          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-            <h1 class="govuk-fieldset__heading">
-              Your download options
-            </h1>
-          </legend>
+                <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <h1 class="govuk-fieldset__heading">Your download options</h1>
+                  </legend>
 
                   <div class="govuk-checkboxes">
-
                     <div class="govuk-checkboxes__item" data-target="cvs-file">
                       <input class="govuk-checkboxes__input" name="download-option" type="checkbox" value="CVS file" {{ checked("download-option", "CVS file") }}>
                       <label class="govuk-label govuk-checkboxes__label" >CVS file</label>
@@ -53,19 +48,20 @@
                       <label class="govuk-label govuk-checkboxes__label" >XML file</label>
                     </div>
 
+                    <div class="govuk-checkboxes__item" data-target="Licence agreement">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="Licence agreement" {{ checked("download-option", "Licence agreement") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >Licence agreement</label>
+                    </div>
                   </div>
+
                 </fieldset>
               </div>
-
               <button class="govuk-button">Continue</button>
-
             </form>
 
           </div>
-
-
-  </main>
-</div>
-
+        </div>
+      </main>
+    </div>
 
 {% endblock %}
