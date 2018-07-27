@@ -8,6 +8,7 @@
 {% block content %}
 
 <div class="govuk-width-container">
+
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
@@ -21,9 +22,9 @@
   </div>
 
   <main class="govuk-main-wrapper">
-
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
+<<<<<<< HEAD
 <form>
         <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
@@ -61,19 +62,54 @@
       </label>
       </div>
     </div>
+=======
 
-  </fieldset>
+            <form action="check-your-answers" method="post" class="form">
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                    <h1 class="govuk-fieldset__heading">Your download options</h1>
+                  </legend>
+>>>>>>> 06c218407fa1ef71f2b9cee4b99c2780cf2ae696
 
-</div>
+                  <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item" data-target="cvs-file">
+                      <input class="govuk-checkboxes__input" name="download-option" type="checkbox" value="CVS file" {{ checked("download-option", "CVS file") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >CVS file</label>
+                    </div>
 
+                    <div class="govuk-checkboxes__item" data-target="json-file">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="JSON file" {{ checked("download-option", "JSON file") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >JSON file</label>
+                    </div>
+
+<<<<<<< HEAD
     <a href="check-your-answers" role="button" class="govuk-button" id="sendformat">
       Continue
     </a>
 </form>
       </div>
+=======
+                    <div class="govuk-checkboxes__item" data-target="xml-file">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="XML file" {{ checked("download-option", "XML file") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >XML file</label>
+                    </div>
 
-  </main>
-</div>
+                    <div class="govuk-checkboxes__item" data-target="Licence agreement">
+                      <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="Licence agreement" {{ checked("download-option", "Licence agreement") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >Licence agreement</label>
+                    </div>
+                  </div>
+>>>>>>> 06c218407fa1ef71f2b9cee4b99c2780cf2ae696
 
+                </fieldset>
+              </div>
+              <button class="govuk-button">Continue</button>
+            </form>
+
+          </div>
+        </div>
+      </main>
+    </div>
 
 {% endblock %}

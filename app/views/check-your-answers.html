@@ -8,6 +8,7 @@
 {% block content %}
 
 <div class="govuk-width-container">
+
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
@@ -21,7 +22,6 @@
   </div>
 
   <main class="govuk-main-wrapper">
-
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
@@ -29,27 +29,57 @@
           Check your answers before downloading your dataset
         </h1>
 
+        <h2 class="govuk-heading-m">
+        Download details
+        </h2>
+
         <table class="govuk-table">
-          <thead class="govuk-table__head">
-          </thead>
             <tbody class="govuk-table__body">
               <tr class="govuk-table__row">
                 <th class="govuk-table__cell" scope="row">Dataset</th>
                 <td class="govuk-table__cell ">[Name]</td>
-                <td class="govuk-table__cell change-answer"></td>
+                <td class="govuk-table__cell "></td>
               </tr>
               <tr class="govuk-table__row">
                 <th class="govuk-table__header" scope="row">Download options</th>
-                <td class="govuk-table__cell ">CSV file
-                </br>
-                JSON file
-                </br>
-                Open Governmen Licence
+                <td class="govuk-table__cell">
+                  <ul class="check-your-answers">
+                    {% for option in data['download-option'] %}
+                    <li>
+                      {{ option }}
+                    </li>
+                    {% endfor %}
+                  </ul>
                 </td>
-                <td class="govuk-table__cell change-answer"><a href="">Change</a></td>
+                <td class="govuk-table__cell change-answer"><a href="download-file-options">Change</a></td>
               </tr>
             </tbody>
         </table>
+
+        <h2 class="govuk-heading-m">
+        Licence details
+        </h2>
+
+        <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__cell" scope="row">Licence type</th>
+                <td class="govuk-table__cell ">Licence name</td>
+                <td class="govuk-table__cell change-answer"><a href="">Review</a></td>
+                <td class="govuk-table__cell "></td>
+              </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <h2 class="govuk-heading-m">
+        Now download your dataset
+        </h2>
+
+        <p>
+          fsdfd
+        </p>
 
         <a href="download-confirmation" role="button" class="govuk-button">
           Download
@@ -57,8 +87,8 @@
 
       </div>
 
+    </div>
   </main>
 </div>
-
 
 {% endblock %}
