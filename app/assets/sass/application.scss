@@ -280,17 +280,20 @@ pre {
 .data-vis{
   padding-left: unset;
 .data-vis-element {
-  background-color:  $govuk-link-colour;
+  background-color: #dee0e2;
   h2{
     margin-bottom: unset;
-    color: white;
+
     padding-left: 20px;
     padding-top: 20px
   }
     p {
-      color: white;
+
       padding-left: 20px;
       padding-bottom: 10px;
     }
+  }
+  button {
+    margin-left: 20px;
   }
 }
