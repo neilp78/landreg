@@ -276,3 +276,21 @@ pre {
   vertical-align: unset;
   padding-left: 10px;
 }
+
+.data-vis{
+  padding-left: unset;
+.data-vis-element {
+  background-color:  $govuk-link-colour;
+  h2{
+    margin-bottom: unset;
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px
+  }
+    p {
+      color: white;
+      padding-left: 20px;
+      padding-bottom: 10px;
+    }
+  }
+}
