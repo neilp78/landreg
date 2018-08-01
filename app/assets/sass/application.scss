@@ -297,3 +297,8 @@ pre {
     margin-left: 20px;
   }
 }
+
+.full-width .govuk-width-container {
+  width:97% !important;
+  max-width: 97% !important;
+}
