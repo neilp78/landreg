@@ -8,13 +8,14 @@
 {% block content %}
 
 <div class="govuk-width-container">
+
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="index2">Home</a>
+        <a class="govuk-breadcrumbs__link" href="start">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="listingspage">Search</a>
+        <a class="govuk-breadcrumbs__link" href="listingspage-v2">Search</a>
       </li>
       <li class="govuk-breadcrumbs__list-item" aria-current="page">Registered Leases Data</li>
     </ol>
@@ -22,37 +23,69 @@
 
   <main class="govuk-main-wrapper">
 
-    <div class="govuk-grid-row">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h1 class="govuk-heading-xl">Registered Leases Data</h1>
+          <p>The Registered Leases dataset comprises a number of data elements relating to leasehold entries on HM Land Registry’s register. </p>
+        </div>
+      </div>
+
+      <div class="govuk-grid-row">
+
+      <div class="govuk-grid-column-one-third">
+        <div class="page-contents js-page-contents js-stick-at-top-when-scrolling js-sticky-resize" style="width: 300px;">
+          <h2 class="page-contents__title">Page contents:</h2>
+          <ul class="page-contents__list">
+              <li><a href="#how-point-1-improves-your-service" class="active">Important information</a></li>
+              <li><a href="#how-youll-be-assessed" class="">About this dataset</a></li>
+              <li><a href="#related-guides">How to download</a></li>
+              <li><a href="#related-guides">What does the data look like</a></li>
+          </ul>
+        </div>
+      </div>
+
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Registered Leases Data</h1>
-        <p>The registered leases dataset comprises a number of data elements relating to leasehold entries on HM Land Registry’s register. </p>
 
 
-          <div class="govuk-inset-text">
-            <p><span class="govuk-body govuk-!-font-weight-bold">Please note:</span> you must log in to download this dataset.</p>
-          <a href="login" role="button" class="govuk-button">
-            Login
-          </a>  </div>
+        <!-- <div class="govuk-inset-text">
+          <p><span class="govuk-body govuk-!-font-weight-bold">Please note:</span> you must log in to download this dataset.</p>
+            <a href="login" role="button" class="govuk-button">
+              Login
+            </a>
+        </div> -->
 
-          <p class="govuk-body govuk-!-font-weight-bold">If you do not have an account, <a href="createaccount">you can create one here</a>.</p>
-          <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+          <br>
+          <h2 class="govuk-heading-l">Important information</h2>
+          <p>[INFORMATION: About licence and the main points that the user should be made aware of]</p>
           <h2 class="govuk-heading-l">About this dataset</h2>
           <dl class="app-check-your-answers app-check-your-answers--short">
+
             <div class="app-check-your-answers__contents">
               <dt class="app-check-your-answers__question">
                 Licence
               </dt>
               <dd class="app-check-your-answers__answer">
-                Free Commercial. <a href="#">View licence agreement.</a>
+                	Free Commercial.
+                <br>
+                 <a href="#">View licence agreement.</a>
               </dd>
-
             </div>
 
             <div class="app-check-your-answers__contents">
               <dt class="app-check-your-answers__question">
-Price of dataset            </dt>
+                Technical specification
+              </dt>
               <dd class="app-check-your-answers__answer">
-                £
+                <a href="#">View technical specification</a>
+              </dd>
+            </div>
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Last update
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                11 October 2016
               </dd>
             </div>
 
@@ -73,6 +106,7 @@ Price of dataset            </dt>
                 1.2.1
               </dd>
             </div>
+
             <div class="app-check-your-answers__contents">
               <dt class="app-check-your-answers__question">
                 File size
@@ -81,18 +115,24 @@ Price of dataset            </dt>
                 5.5 Gb
               </dd>
             </div>
+
             <div class="app-check-your-answers__contents">
               <dt class="app-check-your-answers__question">
                 Rows in dataset
               </dt>
               <dd class="app-check-your-answers__answer">
-Approximately 5 and a half million
+                Approximately 5 and a half million
               </dd>
             </div>
+
           </dl>
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-<h2 class="govuk-heading-l">Sample data</h2>
-        <div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">
+
+          <br>
+          <br>
+
+          <h2 class="govuk-heading-l">Sample data</h2>
+
+          <div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">
           <h2 class="govuk-tabs__title">
             Contents
           </h2>
@@ -126,30 +166,12 @@ Approximately 5 and a half million
           </section>
           <section class="govuk-tabs__panel" id="CSV">
             <h2 class="govuk-heading-l">CSV</h2>
-
           </section>
         </div>
+
       </div>
 
-      <div class="govuk-grid-column-one-third">
-        <div class="gem-c-related-navigation">
-    <h2 id="related-nav-related_items-461da4e9" class="gem-c-related-navigation__main-heading" data-track-count="sidebarRelatedItemSection">
-      Related datasets
-    </h2>
-
-  <ul class="gem-c-related-navigation_link-list" data-module="track-click">
-
-        <li><a href="#">Daylist</a></li>
-        <li><a href="#">Overseas</a></li>
-        <li><a href="#">Extent/spatial information</a></li>
-
-  </ul>
-</nav>
-
-  </div>
-      </div>
     </div>
-
   </main>
 </div>
 
