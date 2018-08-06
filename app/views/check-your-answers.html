@@ -12,16 +12,16 @@
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="start">Home</a>
+        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="listingspage-v2">Search</a>
+        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-OGL">Inspire</a>
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-OGL-v2">Inspire</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="download-file-options">Download options</a>
+        <a class="govuk-breadcrumbs__link" href="download-file-options-v2">Download options</a>
       </li>
       <li class="govuk-breadcrumbs__list-item" aria-current="page">Check your answers</li>
     </ol>
@@ -50,7 +50,7 @@
                 <th class="govuk-table__header" scope="row">Download options</th>
                 <td class="govuk-table__cell">
                   <ul class="check-your-answers">
-                    {% for option in data['download-option'] %}  
+                    {% for option in data['download-option'] %}
                     <li>
                       {{ option }}
                     </li>
