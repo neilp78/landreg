@@ -38,6 +38,7 @@
                   <br>
 
                   <div class="govuk-checkboxes">
+                    <h3 class="govuk-heading-m">File types</h3>
                     <div class="govuk-checkboxes__item" data-target="csv-file">
                       <input class="govuk-checkboxes__input" name="download-option" type="checkbox" value="CSV file" {{ checked("download-option", "CSV file") }}>
                       <label class="govuk-label govuk-checkboxes__label" >CSV file</label>
@@ -53,7 +54,8 @@
                       <label class="govuk-label govuk-checkboxes__label" >XML file</label>
                     </div>
 
-                    <div class="grey-box">
+                    <br>
+                    <h3 class="govuk-heading-m">Related information</h3>
                     <div class="govuk-checkboxes__item" data-target="Licence agreement">
                       <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="Licence agreement" {{ checked("download-option", "Licence agreement") }}>
                       <label class="govuk-label govuk-checkboxes__label" >Licence agreement</label>
@@ -63,7 +65,6 @@
                       <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="Technical Specification" {{ checked("download-option", "Technical Specification") }}>
                       <label class="govuk-label govuk-checkboxes__label" >Technical Specification</label>
                     </div>
-                  </div>
 
                   </div>
 
