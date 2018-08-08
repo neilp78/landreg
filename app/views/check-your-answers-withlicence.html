@@ -8,6 +8,16 @@
 {% block content %}
 
 <div class="govuk-width-container">
+  <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="" data-topnav="Community">Logout</a>
+      </li>
+    </ul>
+  </nav>
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
@@ -59,7 +69,7 @@
                     {% endfor %}
                   </ul>
                 </td>
-                <td class="govuk-table__cell change-answer"><a href="download-file-options">Change</a></td>
+                <td class="govuk-table__cell change-answer"><a href="download-file-options-withlicence">Change</a></td>
               </tr>
             </tbody>
         </table>
@@ -89,7 +99,7 @@
           [Any last minute text here? ie reference to licence again, referece to file size and download size?]
         </p>
 
-        <a href="download-confirmation" role="button" class="govuk-button">
+        <a href="download-confirmation-withlicence" role="button" class="govuk-button">
           Download
         </a>
 
