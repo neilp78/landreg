@@ -9,27 +9,16 @@
 
 <div class="govuk-width-container">
 
-  <nav class="app-navigation-1 govuk-clearfix full-screen">
-    <ul class="app-navigation__list">
-      <li>
-        <a class="govuk-link" href="dashboard-v6" data-topnav="Get started">Your profile</a>
-      </li>
-      <li>
-        <a class="govuk-link" href="login" data-topnav="Community">Logout</a>
-      </li>
-    </ul>
-  </nav>
-
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+        <a class="govuk-breadcrumbs__link" href="start">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
+        <a class="govuk-breadcrumbs__link" href="listingspage-v2">Search</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-OGL-v2">Inspire</a>
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-OGL">Inspire</a>
       </li>
       <li class="govuk-breadcrumbs__list-item" aria-current="page">Download options</li>
     </ol>
@@ -39,7 +28,7 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
 
-            <form action="check-your-answers" method="post" class="form">
+            <form action="check-your-answers-withlicence" method="post" class="form">
               <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
@@ -49,10 +38,9 @@
                   <br>
 
                   <div class="govuk-checkboxes">
-                    <h3 class="govuk-heading-m">File types</h3>
-                    <div class="govuk-checkboxes__item" data-target="csv-file">
-                      <input class="govuk-checkboxes__input" name="download-option" type="checkbox" value="CSV file" {{ checked("download-option", "CSV file") }}>
-                      <label class="govuk-label govuk-checkboxes__label" >CSV file</label>
+                    <div class="govuk-checkboxes__item" data-target="cvs-file">
+                      <input class="govuk-checkboxes__input" name="download-option" type="checkbox" value="CVS file" {{ checked("download-option", "CVS file") }}>
+                      <label class="govuk-label govuk-checkboxes__label" >CVS file</label>
                     </div>
 
                     <div class="govuk-checkboxes__item" data-target="json-file">
@@ -65,8 +53,6 @@
                       <label class="govuk-label govuk-checkboxes__label" >XML file</label>
                     </div>
 
-                    <br>
-                    <h3 class="govuk-heading-m">Related information</h3>
                     <div class="govuk-checkboxes__item" data-target="Licence agreement">
                       <input class="govuk-checkboxes__input"  name="download-option" type="checkbox" value="Licence agreement" {{ checked("download-option", "Licence agreement") }}>
                       <label class="govuk-label govuk-checkboxes__label" >Licence agreement</label>
