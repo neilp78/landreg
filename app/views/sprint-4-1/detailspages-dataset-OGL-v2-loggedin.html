@@ -9,6 +9,17 @@
 
 <div class="govuk-width-container">
 
+    <nav class="app-navigation-1 govuk-clearfix full-screen">
+      <ul class="app-navigation__list">
+        <li>
+          <a class="govuk-link" href="dashboard-v6" data-topnav="Get started">Your profile</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="login" data-topnav="Community">Logout</a>
+        </li>
+      </ul>
+    </nav>
+
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
@@ -17,7 +28,7 @@
       <li class="govuk-breadcrumbs__list-item">
         <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
       </li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">Registered Leases Data</li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Inspire</li>
     </ol>
   </div>
 
@@ -28,8 +39,7 @@
           <a href="listingspage-v3" class="govuk-back-link">Back</a>
           <br>
           <br>
-          <h1 class="govuk-heading-xl">Registered Leases Data</h1>
-          <p class="govuk-body-l"> </p>
+          <h1 class="govuk-heading-xl">Inspire</h1>
         </div>
       </div>
 
@@ -40,7 +50,7 @@
           <h2 class="page-contents__title">Page contents:</h2>
           <ul class="govuk-list govuk-list--bullet">
               <li><a href="#important-information" class="active">Important information about the licence</a></li>
-              <li><a href="#about-this-dataset" class="">About this dataset</a></li>
+              <li><a href="#about-this-dataset">About this dataset</a></li>
               <li><a href="#sample-data">What does the data look like</a></li>
               <li><a href="#how-to-download">How to download</a></li>
           </ul>
@@ -50,9 +60,12 @@
       <div class="govuk-grid-column-two-thirds">
 
           <br>
-          <p>The Registered Leases dataset comprises a number of data elements relating to leasehold entries on HM Land Registry’s register</p>
-          <p>Data captured includes: lease date, the duration or term of the lease and parties to the lease, and also noted is a registered lease against the landlord’s title, providing this is registered</p>
+
+          <p>INSPIRE Index Polygons is an open source dataset, developed to comply with the INSPIRE Directive. It contains the locations of freehold registered property in England and Wales, a sub-set of our Index Polygons for all freehold land and property </p>
+          <p>Polygons are shapes that show the position and indicative extent of a registered property. Each INSPIRE Index Polygon has a unique identification number called the Land Registry-INSPIRE ID that relates to a registered title</p>
+          <p>Use a Land Registry-INSPIRE ID with our Find a Property service to get the title registration and plan for each polygon.</p>
           <h2 id="important-information" class="govuk-heading-l">Important information about the licence</h2>
+          <p>Under the Open Government Licence, HM Land Registry permits you to use the Data for commercial or non-commercial purposes. However, this licence does not cover the use of third party rights, which we are not authorised to license</p>
           <p>Royal Mail and Ordnance Survey, permits your use of Address Data for personal and/or non-commercial. If you want to use the Address Data in any other way, you must contact Royal Mail</p>
           <h2 id="about-this-dataset" class="govuk-heading-l">About this dataset</h2>
           <dl class="app-check-your-answers app-check-your-answers--short">
@@ -62,9 +75,12 @@
                 Licence
               </dt>
               <dd class="app-check-your-answers__answer">
-                	Free and licensed
+                Open Government Licence
+                <svg role="presentation" focusable="false" class="govuk-footer__licence-logo ogl-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+                  <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145"></path>
+                </svg>
                 <br>
-                 <a href="free-commercial-licence">licence agreement</a>
+                 <a href="OGL-licence">licence agreement</a>
               </dd>
             </div>
 
@@ -109,7 +125,7 @@
                 File size
               </dt>
               <dd class="app-check-your-answers__answer">
-                500MB
+                300MB
               </dd>
             </div>
 
@@ -118,7 +134,7 @@
                 Rows in dataset
               </dt>
               <dd class="app-check-your-answers__answer">
-                Approximately 7 million
+                Approximately 18 million
               </dd>
             </div>
 
@@ -169,26 +185,11 @@
         <h2 id="how-to-download" class="govuk-heading-l">How to download</h2>
 
         <div class="govuk-inset-text">
-          <p><span class="govuk-body govuk-!-font-weight-bold">Please note:</span> Due to the licence for this dataset you will need to login to your account before downloading</p>
-
-            <a href="login" role="button" class="govuk-button">
-              Login
-            </a>
-
-            <p>Or</p>
-
-            <p><a href="">Create an account</a></p>
+          <p><span class="govuk-body govuk-!-font-weight-bold">Please note:</span> This licence is covered by an Open Government Licence. However, this licence does not cover the use of third party rights, which we are not authorised to license</p>
+          <p> You will automatically agree to the licence once you have downloaded the dataset. Please ensure that you read the <a href="OGL-licence">Licencing agreement</a> before proceeding</p>
         </div>
 
-
-
-        <p>When downloading you will need to</p>
-        <ul class="govuk-list govuk-list--bullet">
-          <li>read and accept the <a href="free-commercial-licence">licence agreement.</a> </li>
-          <li>choose your download options</li>
-        </ul>
-
-        <p>Your download options include</p>
+        <p>You will need to choose your download options which include</p>
         <ul class="govuk-list govuk-list--bullet">
           <li>JSON</li>
           <li>XML</li>
@@ -200,6 +201,10 @@
           <li>Technical specification</li>
           <li>Licence agreement </li>
         </ul>
+
+        <a href="download-file-options-v2-loggedin" role="button" class="govuk-button">
+          Continue to download options
+        </a>
 
 
       </div>
