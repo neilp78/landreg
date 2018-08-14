@@ -105,5 +105,8 @@ $(document).ready(function () {
       });
     });
 
+    $(".full-screen").each(function(){
+      $(this).parent().parent().parent().addClass('full-width');
+    })
     //format
 })
