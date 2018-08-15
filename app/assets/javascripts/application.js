@@ -109,4 +109,17 @@ $(document).ready(function () {
       $(this).parent().parent().parent().addClass('full-width');
     })
     //format
+
+    //sticky inpage nav on details pageTitle
+    var stickyTop = $('.js-stick-at-top-when-scrolling').offset().top;
+
+    $(window).on( 'scroll', function(){
+        if ($(window).scrollTop() >= stickyTop) {
+            $('.js-stick-at-top-when-scrolling').css({position: "fixed", top: "0px"});
+            $('.govuk-grid-column-two-thirds').css('margin-left','33%');
+        } else {
+            $('.js-stick-at-top-when-scrolling').css({position: "relative", top: "0px"});
+            $('.govuk-grid-column-two-thirds').css('margin-left','0');
+        }
+    });
 })
