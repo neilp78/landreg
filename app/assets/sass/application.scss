@@ -303,6 +303,22 @@ pre {
   margin:auto;
 }
 
+.index-table {
+  width: 100%;
+  border-collapse: collapse;
+  th{
+    border: 1px solid black;
+    text-align: left;
+    padding: 10px;
+    vertical-align: text-top;
+  }
+  td {
+    border: 1px solid black;
+    padding: 10px;
+    vertical-align: text-top;
+  }
+}
+
 // .full-width .govuk-width-container {
 //   width:97% !important;
 //   max-width: 97% !important;
