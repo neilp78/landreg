@@ -1,0 +1,51 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Get land and property data</h1>
+
+        <p class="govuk-body">Use this service to access and download datasets from Her Majesty's Land Registry (HMLR).</p>
+
+        <div class="govuk-inset-text">
+            <p class="govuk-body">
+              The datasets can be large and are designed to be suitable for databases and machine reading.
+            </p>
+        </div>
+
+        <a href="listingspage-v3" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Start now
+        </a>
+
+        <h2 class="govuk-heading-m">Before you start</h2>
+
+        <p class="govuk-body">You will need to <a href="createaccount-start">create an account</a> before you can download some datasets. If you already have an account then <a href="login-fromstart">sign in</a> now.</p>
+
+        <h2 class="govuk-heading-m">Other services</h2>
+
+        <p>This service doesn't let you find individual property details. You may need one of the following services instead:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="">find a property</a> to search for individual land and property details</li>
+          <li><a href="">property alert</a> to register and monitor your registered land against fraud</li>
+          <li><a href="">price paid search</a> to search for property transactions by location, postcode or town</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </main>
+</div>
+
+
+
+
+{% endblock %}
