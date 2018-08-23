@@ -302,7 +302,9 @@ pre {
   max-width:960px;
   margin:auto;
 }
-
+.govuk-breadcrumbs {
+  display: none !important;
+}
 // .full-width .govuk-width-container {
 //   width:97% !important;
 //   max-width: 97% !important;
