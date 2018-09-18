@@ -1,3 +1,7 @@
+.gem-c-related-navigation {
+  padding-top: 35px;
+}
+
 @charset "UTF-8";
 .govuk-link, a {
   font-family: "nta", Arial, sans-serif;
