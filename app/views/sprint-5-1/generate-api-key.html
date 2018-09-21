@@ -1,0 +1,61 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <nav class="app-navigation-1 govuk-clearfix full-screen">
+    <ul class="app-navigation__list">
+      <li>
+        <a class="govuk-link" href="dashboard-v6" data-topnav="Get started">Your profile</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="login" data-topnav="Community">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="detailspages-dataset-v4-logged-in">Registered Leases Data</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">Licence agreement</li>
+    </ol>
+  </div>
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <a href="api-licence" class="govuk-back-link">Back</a>
+        <br>
+        <br>
+        <h1 class="govuk-heading-xl">Generate API key</h1>
+
+        <h3 class="govuk-heading-m">API Key</h3>
+        <div class="highlight">
+          <pre class="highlight plaintext"><code>KEY 1d6909c5-5e5e-4edc-889c-575a59569ea2-575a59569ea2-5e5e-4edc</code></pre>
+        </div>
+
+        <br>
+
+        <p><a class="govuk-link" href="">My Key didn’t work</a></p>
+
+        </div>
+      </div>
+
+  </main>
+</div>
+
+
+{% endblock %}
