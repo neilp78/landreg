@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+ {% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+ {% block content %}
+ <div class="govuk-width-container">
+   <main class="govuk-main-wrapper">
+       <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <a href="listingspage-v3" class="govuk-back-link">Back</a>
+          <br>
+          <br>
+          <h1 class="govuk-heading-xl">Accessing data with our API</h1>
+        </div>
+      </div>
+       <div class="govuk-grid-row">
+       <div class="govuk-grid-column-one-third">
+        <div class="page-contents js-page-contents js-stick-at-top-when-scrolling js-sticky-resize" style="width: 300px;">
+          <h2 class="page-contents__title">Page contents:</h2>
+          <ul class="govuk-list govuk-list--bullet">
+              <li><a href="#p1" class="active">About the API</a></li>
+              <li><a href="#p2">What you can access</a></li>
+              <li><a href="#p3">How to get access</a></li>
+              <li><a href="#p4">How licences work with API access</a></li>
+              <li><a href="#p5">Generating an API key</a></li>
+              <li><a href="#p6">Full documentation</a></li>
+          </ul>
+        </div>
+      </div>
+       <div class="govuk-grid-column-two-thirds">
+       <h2 id="#p1" class="govuk-heading-l">About the API</h2>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa risus, elementum non vehicula id, faucibus sed magna. Integer et semper diam. Aliquam sodales at ante quis faucibus. Donec gravida porttitor massa. Ut ultricies vitae nibh at pharetra. Maecenas semper lorem massa, nec finibus arcu mattis id. Pellentesque finibus eleifend massa, id posuere augue varius a.
+ Duis vestibulum luctus mi. Proin sem nulla, sollicitudin venenatis dapibus tincidunt, vehicula et mi. Cras faucibus euismod ligula, quis lobortis eros euismod vel. Phasellus sit amet blandit nisl. Nulla ac metus vitae justo consectetur convallis luctus fermentum mauris. Fusce facilisis, dolor ac commodo congue, dolor leo vulputate augue, at sodales orci massa et sapien. Nulla non pharetra ligula. Pellentesque a nisl aliquam, lobortis tellus vitae, vulputate lectus. Maecenas quis nunc neque. Duis hendrerit tempus faucibus. Sed sagittis nunc eu semper molestie. Quisque vel nunc diam. Integer pharetra, diam nec pharetra mattis, eros leo hendrerit nisi, eget fermentum velit nisl eu lectus. Cras laoreet odio sodales massa tempus, ut ultrices augue lobortis.
+ Sed sagittis ultrices mi. Vivamus aliquet elementum orci, sed interdum sem. Nulla dapibus sem dui, eu convallis quam pharetra at. Sed nec semper quam. Aliquam in iaculis justo. Donec condimentum, massa quis laoreet consectetur, eros enim ullamcorper tellus, posuere auctor arcu libero quis ante. In egestas sem efficitur neque mollis, vel fringilla libero euismod. Proin rhoncus tempus erat eget accumsan.
+ Pellentesque malesuada enim vel lorem vehicula congue. Maecenas malesuada odio eget ullamcorper dignissim. Nulla et aliquam orci, porttitor volutpat justo. Praesent libero ligula, tincidunt ut tincidunt et, aliquam fringilla augue. Integer dignissim nisi nec mi imperdiet faucibus. Maecenas auctor commodo urna, vitae fringilla orci condimentum ut. Maecenas ullamcorper suscipit rutrum. Nullam in ipsum in erat feugiat vulputate sed vel mauris. Pellentesque rhoncus tincidunt scelerisque. Suspendisse sed eros id sem facilisis pretium sed in enim.
+      <h2 id="#p2" class="govuk-heading-l">What you can access</h2>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa risus, elementum non vehicula id, faucibus sed magna. Integer et semper diam. Aliquam sodales at ante quis faucibus. Donec gravida porttitor massa. Ut ultricies vitae nibh at pharetra. Maecenas semper lorem massa, nec finibus arcu mattis id. Pellentesque finibus eleifend massa, id posuere augue varius a.
+ Duis vestibulum luctus mi. Proin sem nulla, sollicitudin venenatis dapibus tincidunt, vehicula et mi. Cras faucibus euismod ligula, quis lobortis eros euismod vel. Phasellus sit amet blandit nisl. Nulla ac metus vitae justo consectetur convallis luctus fermentum mauris. Fusce facilisis, dolor ac commodo congue, dolor leo vulputate augue, at sodales orci massa et sapien. Nulla non pharetra ligula. Pellentesque a nisl aliquam, lobortis tellus vitae, vulputate lectus. Maecenas quis nunc neque. Duis hendrerit tempus faucibus. Sed sagittis nunc eu semper molestie. Quisque vel nunc diam. Integer pharetra, diam nec pharetra mattis, eros leo hendrerit nisi, eget fermentum velit nisl eu lectus. Cras laoreet odio sodales massa tempus, ut ultrices augue lobortis.
+ Sed sagittis ultrices mi. Vivamus aliquet elementum orci, sed interdum sem. Nulla dapibus sem dui, eu convallis quam pharetra at. Sed nec semper quam. Aliquam in iaculis justo. Donec condimentum, massa quis laoreet consectetur, eros enim ullamcorper tellus, posuere auctor arcu libero quis ante. In egestas sem efficitur neque mollis, vel fringilla libero euismod. Proin rhoncus tempus erat eget accumsan.
+ Pellentesque malesuada enim vel lorem vehicula congue. Maecenas malesuada odio eget ullamcorper dignissim. Nulla et aliquam orci, porttitor volutpat justo. Praesent libero ligula, tincidunt ut tincidunt et, aliquam fringilla augue. Integer dignissim nisi nec mi imperdiet faucibus. Maecenas auctor commodo urna, vitae fringilla orci condimentum ut. Maecenas ullamcorper suscipit rutrum. Nullam in ipsum in erat feugiat vulputate sed vel mauris. Pellentesque rhoncus tincidunt scelerisque. Suspendisse sed eros id sem facilisis pretium sed in enim.
+      <h2 id="#p3" class="govuk-heading-l">How to get access</h2>
+      <h2 id="#p4" class="govuk-heading-l">How licences work with API access</h2>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa risus, elementum non vehicula id, faucibus sed magna. Integer et semper diam. Aliquam sodales at ante quis faucibus. Donec gravida porttitor massa. Ut ultricies vitae nibh at pharetra. Maecenas semper lorem massa, nec finibus arcu mattis id. Pellentesque finibus eleifend massa, id posuere augue varius a.
+ Duis vestibulum luctus mi. Proin sem nulla, sollicitudin venenatis dapibus tincidunt, vehicula et mi. Cras faucibus euismod ligula, quis lobortis eros euismod vel. Phasellus sit amet blandit nisl. Nulla ac metus vitae justo consectetur convallis luctus fermentum mauris. Fusce facilisis, dolor ac commodo congue, dolor leo vulputate augue, at sodales orci massa et sapien. Nulla non pharetra ligula. Pellentesque a nisl aliquam, lobortis tellus vitae, vulputate lectus. Maecenas quis nunc neque. Duis hendrerit tempus faucibus. Sed sagittis nunc eu semper molestie. Quisque vel nunc diam. Integer pharetra, diam nec pharetra mattis, eros leo hendrerit nisi, eget fermentum velit nisl eu lectus. Cras laoreet odio sodales massa tempus, ut ultrices augue lobortis.
+ Sed sagittis ultrices mi. Vivamus aliquet elementum orci, sed interdum sem. Nulla dapibus sem dui, eu convallis quam pharetra at. Sed nec semper quam. Aliquam in iaculis justo. Donec condimentum, massa quis laoreet consectetur, eros enim ullamcorper tellus, posuere auctor arcu libero quis ante. In egestas sem efficitur neque mollis, vel fringilla libero euismod. Proin rhoncus tempus erat eget accumsan.
+ Pellentesque malesuada enim vel lorem vehicula congue. Maecenas malesuada odio eget ullamcorper dignissim. Nulla et aliquam orci, porttitor volutpat justo. Praesent libero ligula, tincidunt ut tincidunt et, aliquam fringilla augue. Integer dignissim nisi nec mi imperdiet faucibus. Maecenas auctor commodo urna, vitae fringilla orci condimentum ut. Maecenas ullamcorper suscipit rutrum. Nullam in ipsum in erat feugiat vulputate sed vel mauris. Pellentesque rhoncus tincidunt scelerisque. Suspendisse sed eros id sem facilisis pretium sed in enim.
+      <h2 id="#p5" name="#p5" class="govuk-heading-l">Generating an API key</h2>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur massa risus, elementum non vehicula id, faucibus sed magna. Integer et semper diam. Aliquam sodales at ante quis faucibus. Donec gravida porttitor massa. Ut ultricies vitae nibh at pharetra. Maecenas semper lorem massa, nec finibus arcu mattis id. Pellentesque finibus eleifend massa, id posuere augue varius a.
+ Duis vestibulum luctus mi. Proin sem nulla, sollicitudin venenatis dapibus tincidunt, vehicula et mi. Cras faucibus euismod ligula, quis lobortis eros euismod vel. Phasellus sit amet blandit nisl. Nulla ac metus vitae justo consectetur convallis luctus fermentum mauris. Fusce facilisis, dolor ac commodo congue, dolor leo vulputate augue, at sodales orci massa et sapien. Nulla non pharetra ligula. Pellentesque a nisl aliquam, lobortis tellus vitae, vulputate lectus. Maecenas quis nunc neque. Duis hendrerit tempus faucibus. Sed sagittis nunc eu semper molestie. Quisque vel nunc diam. Integer pharetra, diam nec pharetra mattis, eros leo hendrerit nisi, eget fermentum velit nisl eu lectus. Cras laoreet odio sodales massa tempus, ut ultrices augue lobortis.
+ Sed sagittis ultrices mi. Vivamus aliquet elementum orci, sed interdum sem. Nulla dapibus sem dui, eu convallis quam pharetra at. Sed nec semper quam. Aliquam in iaculis justo. Donec condimentum, massa quis laoreet consectetur, eros enim ullamcorper tellus, posuere auctor arcu libero quis ante. In egestas sem efficitur neque mollis, vel fringilla libero euismod. Proin rhoncus tempus erat eget accumsan.
+ Pellentesque malesuada enim vel lorem vehicula congue. Maecenas malesuada odio eget ullamcorper dignissim. Nulla et aliquam orci, porttitor volutpat justo. Praesent libero ligula, tincidunt ut tincidunt et, aliquam fringilla augue. Integer dignissim nisi nec mi imperdiet faucibus. Maecenas auctor commodo urna, vitae fringilla orci condimentum ut. Maecenas ullamcorper suscipit rutrum. Nullam in ipsum in erat feugiat vulputate sed vel mauris. Pellentesque rhoncus tincidunt scelerisque. Suspendisse sed eros id sem facilisis pretium sed in enim.
+      <h2 id="#p6" class="govuk-heading-l">Full documentation</h2>
+       </div>
+     </div>
+  </main>
+</div>
+ {% endblock %}
