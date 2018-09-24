@@ -13,7 +13,7 @@ $govuk-global-styles: true;
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
-li, h2, h3, h4 {
+li, h2, h3, /;h4 {
   font-family: "nta";
 }
 .gem-c-related-navigation {
@@ -322,6 +322,11 @@ pre {
     padding: 10px;
     vertical-align: text-top;
   }
+}
+
+.api-flag {
+  background: #EDEDED;
+  padding: 15px;
 }
 
 // .full-width .govuk-width-container {
