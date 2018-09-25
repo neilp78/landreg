@@ -126,4 +126,16 @@ $(document).ready(function () {
 
     //
 
+    //back buttons
+
+
+  $("a.govuk-back-link").click(function() {
+      return false;
+  });
+
+  $("a.govuk-back-link").click(function(){
+		parent.history.back();
+		return false;
+	});
+
 })
