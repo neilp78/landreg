@@ -128,14 +128,14 @@ $(document).ready(function () {
 
     //back buttons
 
+    //Eilis, will this mess anything uop for you?
+    $("a.govuk-back-link").click(function() {
+        return false;
+    });
 
-  $("a.govuk-back-link").click(function() {
-      return false;
-  });
-
-  $("a.govuk-back-link").click(function(){
-		parent.history.back();
-		return false;
-	});
+    $("a.govuk-back-link").click(function(){
+  		parent.history.back();
+  		return false;
+  	});
 
 })
