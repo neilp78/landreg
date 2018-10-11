@@ -138,4 +138,6 @@ $(document).ready(function () {
   		return false;
   	});
 
+    $('.sprint-wrap').find('tr:even').css({'background-color':'red'}).end().find('tr:odd').css({'background-color':'blue'});
+
 })
