@@ -109,7 +109,7 @@ $(document).ready(function () {
       $(this).parent().parent().parent().addClass('full-width');
     })
     //GDS Alpha banner
-    $('<div class="govuk-phase-banner"><p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">alpha</strong>  <span class="govuk-phase-banner__text">This is a new service – your <a class="govuk-link" href="mailto:n.phillips@kainos.com">feedback</a> will help us to improve it.</span>  </p></div>').insertAfter('.govuk-header');
+    $('<div class="govuk-phase-banner"><p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">beta</strong>  <span class="govuk-phase-banner__text">This is a new service – your <a class="govuk-link" href="mailto:n.phillips@kainos.com">feedback</a> will help us to improve it.</span>  </p></div>').insertAfter('.govuk-header');
 
     //sticky inpage nav on details pageTitle
     var stickyTop = $('.js-stick-at-top-when-scrolling').offset().top;
