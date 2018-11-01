@@ -327,12 +327,13 @@ pre {
   padding: 14px;
 }
 
-// .full-width .govuk-width-container {
-//   width:97% !important;
-//   max-width: 97% !important;
-// .grey-box{
-//   background-color: #f8f8f8;
-//   padding-top: 10px;
-//   padding-left: 10px;
-//   padding-bottom: 10px;
-// }
+.listings-list-style {
+  ol {
+    padding-left: 0px;
+  }
+  li {
+    display: block;
+    list-style: none;
+    border-bottom: 1px solid #bfc1c3;
+  }
+}
