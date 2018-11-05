@@ -1,4 +1,3 @@
-
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -7,27 +6,137 @@
 
 {% block content %}
 
-<div class="govuk-width-container">
-
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">Registered Leases Data</li>
-    </ol>
-  </div>
-
-  <main class="govuk-main-wrapper">
-  <div class="govuk-grid-column-two-thirds">
-
-  <h1 class="govuk-heading-xl">Title test</h1>
-  </div>
-  </main>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
 </div>
 
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a href="listingspage-v30" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+
+      <h1 class="govuk-heading-xl">
+        Registered leases data
+      </h1>
+
+      <p>Land and property in England and Wales with a leasehold tenure. A leasehold tenure is where the user owns the property for a fixed period of time.<p>
+
+      <h2 id="about-this-dataset" class="govuk-heading-l">Registered leases dataset details</h2>
+
+        <dl class="app-check-your-answers app-check-your-answers--short">
+
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__question">
+              Licence
+            </dt>
+            <dd class="app-check-your-answers__answer">
+               <a href="free-commercial-licence">Free and licensed</a>
+            </dd>
+          </div>
+
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__question">
+              Technical specification
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              <a href="#">View technical specification</a>
+            </dd>
+          </div>
+
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__question">
+              Last update
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              1 August 2018
+            </dd>
+          </div>
+
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__question">
+              Next update
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              1 September 2018
+            </dd>
+          </div>
+
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__question">
+            Version
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              1.2.1
+            </dd>
+          </div>
+
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__question">
+              File size
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              500MB
+            </dd>
+          </div>
+
+          <div class="app-check-your-answers__contents">
+            <dt class="app-check-your-answers__question">
+              Rows in dataset
+            </dt>
+            <dd class="app-check-your-answers__answer">
+              Approximately 7 million
+            </dd>
+          </div>
+
+        </dl>
+
+        <br>
+
+        <h2 class="govuk-heading-l">
+          Example of Registered leases data
+        </h1>
+
+        <p>The data shown in this example is not real data. This example is to show what you will see if you download the file.<p>
+
+          <div style="width: 100%;
+                      height: 400px;
+                      background-color: lightgrey;
+                      margin-bottom: 50px;">
+                    </div>
+
+        <h2 id="how-to-download" class="govuk-heading-l">How to download the dataset</h2>
+
+        <div class="govuk-inset-text">
+          <p>Due to the licence for this dataset you will need to sign in to your account before downloading</p>
+            <a href="login" role="button" class="govuk-button">
+              Sign in
+            </a>
+            <p>Or</p>
+            <p><a href="createaccount">Create an account</a></p>
+        </div>
+
+        <p>When downloading you will need to read and accept the <a href="free-commercial-licence">licence agreement</a>.</p>
+
+        <p>You will need to choose your file type, which comprise:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>full file</li>
+          <li>change only file</li>
+          <li>historical file</li>
+        </ul>
+
+        <p>You can also download the:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Technical specification</li>
+          <li>Licence agreement </li>
+        </ul>
+
+      </div>
+  </div>
 
 {% endblock %}
