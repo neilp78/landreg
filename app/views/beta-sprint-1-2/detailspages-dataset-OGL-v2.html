@@ -17,44 +17,50 @@
       <li class="govuk-breadcrumbs__list-item">
         <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
       </li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">Registered Leases Data</li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">INSPIRE Polygon Data</li>
     </ol>
   </div>
 
   <main class="govuk-main-wrapper">
 
       <div class="govuk-grid-row">
-
+        <div class="govuk-grid-column-two-thirds">
           <a href="listingspage-v3" class="govuk-back-link">Back</a>
           <br>
           <br>
-          <h1 class="govuk-heading-xl">Registered Leases Data: about this dataset</h1>
-          <p class="govuk-body-l"> </p>
-
+          <h1 class="govuk-heading-xl">INSPIRE Polygon Data: about this dataset</h1>
+        </div>
       </div>
 
       <div class="govuk-grid-row">
 
-
+      <div class="govuk-grid-column-one-third">
         <div class="page-contents js-page-contents js-stick-at-top-when-scrolling js-sticky-resize" style="width: 300px;">
           <h2 class="page-contents__title">Page contents:</h2>
           <ul class="govuk-list govuk-list--bullet">
-            <li><a href="#important-information" class="active">About this licence</a></li>
-            <li><a href="#about-this-dataset" class="">Registered leases dataset details</a></li>
-            <li><a href="#sample-data">What the dataset looks like</a></li>
-            <li><a href="#how-to-download">How to download the dataset</a></li>
+              <li><a href="#important-information" class="active">About this licence</a></li>
+              <li><a href="#about-this-dataset">INSPIRE Polygon Data dataset details</a></li>
+              <li><a href="#sample-data">What the dataset looks like</a></li>
+              <li><a href="#how-to-download">How to download the dataset</a></li>
           </ul>
         </div>
       </div>
 
+      <div class="govuk-grid-column-two-thirds">
+
           <br>
-          <p>The Registered Leases dataset comprises a number of data elements relating to leasehold entries on HM Land Registry’s register.</p>
-          <p>Data captured includes: lease date, the duration or term of the lease and parties to the lease, and also noted is a registered lease against the landlord’s title, providing this is registered.</p>
+
+          <p>Polygons are shapes that show the position and indicative extent of a registered property. Each INSPIRE Index Polygon has a unique identification number called the Land Registry-INSPIRE ID that relates to a registered title.</p>
+
+          <p>INSPIRE Index Polygons is an open source dataset, developed to comply with the INSPIRE Directive. It contains the locations of freehold registered property in England and Wales, a sub-set of our Index Polygons for all freehold land and property.</p>
+
+          <p>Use a Land Registry-INSPIRE ID with our Find a Property service to get the title registration and plan for each polygon.</p>
 
           <h2 id="important-information" class="govuk-heading-l">About this licence</h2>
+          <p>Under the Open Government Licence, HM Land Registry permits you to use the Data for commercial or non-commercial purposes. However, this licence does not cover the use of third party rights, which we are not authorised to license.</p>
           <p>Royal Mail and Ordnance Survey, permits your use of Address Data for personal and/or non-commercial. If you want to use the Address Data in any other way, you must contact Royal Mail.</p>
 
-          <h2 id="about-this-dataset" class="govuk-heading-l">Registered leases dataset details</h2>
+          <h2 id="about-this-dataset" class="govuk-heading-l">INSPIRE Polygon Data dataset details</h2>
           <dl class="app-check-your-answers app-check-your-answers--short">
 
             <div class="app-check-your-answers__contents">
@@ -62,7 +68,7 @@
                 Licence
               </dt>
               <dd class="app-check-your-answers__answer">
-                 <a href="free-commercial-licence">Free and licensed</a>
+                 <a href="OGL-licence">Open Government Licence</a>
               </dd>
             </div>
 
@@ -107,7 +113,7 @@
                 File size
               </dt>
               <dd class="app-check-your-answers__answer">
-                500MB
+                300MB
               </dd>
             </div>
 
@@ -116,7 +122,7 @@
                 Rows in dataset
               </dt>
               <dd class="app-check-your-answers__answer">
-                Approximately 7 million
+                Approximately 18 million
               </dd>
             </div>
 
@@ -163,23 +169,8 @@
             <h2 class="govuk-heading-l">CSV</h2>
           </section>
         </div>
-            <h2 id="how-to-download" class="govuk-heading-l">How to download the dataset</h2>
 
-        <div class="govuk-inset-text">
-          <p>Due to the licence for this dataset you will need to sign in to your account before downloading</p>
-
-            <a href="login" role="button" class="govuk-button">
-              Sign in
-            </a>
-
-            <p>Or</p>
-
-            <p><a href="createaccount">Create an account</a></p>
-        </div>
-
-
-
-        <p>When downloading you will need to read and accept the <a href="free-commercial-licence">licence agreement</a>.</p>
+        <h2 id="how-to-download" class="govuk-heading-l">How to download the dataset</h2>
 
         <p>You will need to choose your download options, which comprise:</p>
         <ul class="govuk-list govuk-list--bullet">
@@ -190,12 +181,15 @@
 
         <p>You can also download the:</p>
         <ul class="govuk-list govuk-list--bullet">
-          <li>Technical specification</li>
-          <li>Licence agreement </li>
+          <li>technical specification</li>
+          <li>licence agreement </li>
         </ul>
 
+        <a href="download-file-options-v2" role="button" class="govuk-button">
+          Continue
+        </a>
 
-
+      </div>
 
     </div>
   </main>
