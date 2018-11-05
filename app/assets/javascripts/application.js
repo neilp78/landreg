@@ -8,6 +8,12 @@ if (window.console && window.console.info) {
 $(document).ready(function () {
   window.GOVUKFrontend.initAll();
 
+  $('.table-hack').each(function() {
+    $(this).find('td').addClass('govuk-table__cell');
+    $(this).find('tr td:first-child').addClass('add_bold');
+    $(this).find('thead td').addClass('add_bold');
+  });
+
   $(".fixed-view-downloads").hide();
   $(".add-to-download").click(function() {
     var thisText = $(this).parent().find('h2').text();
