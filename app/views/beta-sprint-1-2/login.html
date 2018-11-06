@@ -7,7 +7,6 @@
 
 {% block content %}
 
-
   <div class="govuk-breadcrumbs">
     <ol class="govuk-breadcrumbs__list">
       <li class="govuk-breadcrumbs__list-item">
@@ -37,7 +36,7 @@
               </label>
               <input class="govuk-input govuk-input--width-10" id="post-code" name="post-code" type="password">
             </div>
-            <a href="detailspages-dataset-v4-logged-in" type="submit" class="govuk-button">
+            <a href="detailspages-dataset-v4-logged-in" class="govuk-button targetloginpage">
               Sign in
             </a>
             <br>
@@ -53,6 +52,14 @@
 
   </main>
 </div>
+<script>
+var referrer =  document.referrer;
+var referrer = referrer.replace("http://localhost:3000/beta-sprint-1-2/", "");
+alert(referrer);
 
+if (referrer == 'detailspages-dataset-overseas') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-dataset-overseas-logged-in';
+}
+</script>
 
 {% endblock %}
