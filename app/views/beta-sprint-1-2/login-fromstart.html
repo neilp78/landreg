@@ -52,8 +52,10 @@
 
 <script>
 var referrer =  document.referrer;
-var referrer = referrer.replace("http://localhost:3000/beta-sprint-1-2/", "");
-//alert(referrer);
+//var referrer = referrer.replace("http://localhost:3000/beta-sprint-1-2/", "");
+var referrer = referrer.href.substr(referrer.href.lastIndexOf('/') + 1)
+alert(referrer);
+
 
 //copy and paste below and change tagert to logged in version
 if (referrer == 'detailspages-dataset-overseas') {
