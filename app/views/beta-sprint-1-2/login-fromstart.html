@@ -53,11 +53,17 @@
 <script>
 var referrer =  document.referrer;
 var referrer = referrer.replace("http://localhost:3000/beta-sprint-1-2/", "");
-alert(referrer);
+//alert(referrer);
 
 //copy and paste below and change tagert to logged in version
 if (referrer == 'detailspages-dataset-overseas') {
   document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-dataset-overseas-logged-in';
 }
+
+if (referrer == 'detailspages-dataset-v4') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-dataset-v4-logged-in';
+}
+
+
 </script>
 {% endblock %}
