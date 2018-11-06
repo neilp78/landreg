@@ -1,4 +1,3 @@
-
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -7,56 +6,29 @@
 
 {% block content %}
 
-<div class="govuk-width-container">
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+  </ol>
+</div>
 
-  <nav class="app-navigation-1 govuk-clearfix full-screen">
-    <ul class="app-navigation__list">
-      <li>
-        <a class="govuk-link" href="login" data-topnav="Community">Sign out</a>
-      </li>
-      <li>
-        <a class="govuk-link" href="" data-topnav="Get started">Your profile</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="listingspage-v3">Search</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">Registered Leases Data</li>
-    </ol>
-  </div>
-
-  <main class="govuk-main-wrapper">
-
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <a href="listingspage-v3-loggedin" class="govuk-back-link">Back</a>
-        <br>
-        <br>
-        <h1 class="govuk-heading-xl">Registered Leases Data: about this dataset</h1>
-        <p class="govuk-body-l"> </p>
-      </div>
-    </div>
-
-    <div class="govuk-grid-row">
-
-
+  <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      <a href="listingspage-v3-loggedin" class="govuk-back-link">Back</a>
+      <br>
+      <br>
 
-        <br>
-        <p>The Registered Leases dataset comprises a number of data elements relating to leasehold entries on HM Land Registry’s register.</p>
-        <p>Data captured includes: lease date, the duration or term of the lease and parties to the lease, and also noted is a registered lease against the landlord’s title, providing this is registered.</p>
+      <h1 class="govuk-heading-xl">
+        Registered leases data
+      </h1>
 
-        <h2 id="important-information" class="govuk-heading-l">About this licence</h2>
-        <p>Royal Mail and Ordnance Survey, permits your use of Address Data for personal and/or non-commercial. If you want to use the Address Data in any other way, you must contact Royal Mail.</p>
+      <p>Land and property in England and Wales with a leasehold tenure. A leasehold tenure is where the user owns the property for a fixed period of time.<p>
 
-        <h2 id="about-this-dataset" class="govuk-heading-l">Registered leases dataset details</h2>
+      <h2 id="about-this-dataset" class="govuk-heading-l">Registered leases dataset details</h2>
+
         <dl class="app-check-your-answers app-check-your-answers--short">
 
           <div class="app-check-your-answers__contents">
@@ -125,75 +97,261 @@
         </dl>
 
         <br>
-        <br>
 
-        <h2 id="sample-data" class="govuk-heading-l">What the dataset looks like</h2>
+        <h2 class="govuk-heading-l">
+          Example of Registered leases data
+        </h1>
 
-        <div class="govuk-tabs govuk-!-margin-bottom-6" data-module="tabs">
-        <h2 class="govuk-tabs__title">
-          Contents
-        </h2>
+        <p>The data shown in this example is not real data. This example is to show what you will see if you download the file.<p>
 
-        <ul class="govuk-tabs__list">
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#JSON">
-              JSON
-              </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#XML">
-                XML
-              </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#CSV">
-                CSV
-              </a>
-          </li>
-        </ul>
+          <table class="govuk-table table-hack">
+          <tbody>
+            <thead class="govuk-table__head">
+            <td width="133">
+            <p>Data</p>
+            </td>
+            <td width="123">
+            <p>What this means</p>
+            </td>
+            <td width="121">
+            <p>Example Data 1</p>
+            </td>
+            <td width="123">
+            <p>Example Data 2</p>
+            </td>
+            <td width="119">
+            <p>Example Data 3</p>
+            </td>
+          </thead>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Proprietor name</p>
+          </td>
+          <td width="123">
+          <p>Name of overseas company</p>
+          </td>
+          <td width="121">
+          <p>OWNER_28</p>
+          </td>
+          <td width="123">
+          <p>OWNER_1</p>
+          </td>
+          <td width="119">
+          <p>OWNER_29</p>
+          </td>
+          </tr>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Proprietorship Category</p>
+          </td>
+          <td width="123">
+          <p>Type of company</p>
+          </td>
+          <td width="121">
+          <p>Corporate Body</p>
+          </td>
+          <td width="123">
+          <p>Industrial and Provident Society (Corporate Body)</p>
+          </td>
+          <td width="119">
+          <p>Industrial and Provident Society (Company)</p>
+          </td>
+          </tr>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Company registration number</p>
+          </td>
+          <td width="123">
+          <p>Reference number used by Companies house to identify the company</p>
+          </td>
+          <td width="121">
+          <p>FHV347443</p>
+          </td>
+          <td width="123">
+          <p>rrN607820</p>
+          </td>
+          <td width="119">
+          <p>jbP356247</p>
+          </td>
+          </tr>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Property Address</p>
+          </td>
+          <td width="123">
+          <p>Land or property bought by the company</p>
+          </td>
+          <td width="121">
+          <p>Test Address for title 0000002 (AA00 0AA)</p>
+          </td>
+          <td width="123">
+          <p>Test Address for title abc0000006 (A1 0AA)</p>
+          </td>
+          <td width="119">
+          <p>Test Address for title TTN0000009 (PP88 0AA)</p>
+          </td>
+          </tr>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Proprietor&nbsp; address</p>
+          </td>
+          <td width="123">
+          <p>Address of company</p>
+          </td>
+          <td width="121">
+          <p>Test Address for title 0000002 (AA00 0AA)</p>
+          </td>
+          <td width="123">
+          <p>Test Address for title abc0000006 (A1 0AA)</p>
+          </td>
+          <td width="119">
+          <p>Test Address for title TTN0000009 (PP88 0AA)</p>
+          </td>
+          </tr>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Price paid</p>
+          </td>
+          <td width="123">
+          <p>Price paid for the land</p>
+          </td>
+          <td width="121">
+          <p>1000000</p>
+          </td>
+          <td width="123">
+          <p>1000000</p>
+          </td>
+          <td width="119">
+          <p>1000000</p>
+          </td>
+          </tr>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Tenure</p>
+          </td>
+          <td width="123">
+          <p>How the land is owned (freehold or leasehold)</p>
+          </td>
+          <td width="121">
+          <p>Leasehold</p>
+          </td>
+          <td width="123">
+          <p>Leasehold</p>
+          </td>
+          <td width="119">
+          <p>Freehold</p>
+          </td>
+          </tr>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Title number</p>
+          </td>
+          <td width="123">
+          <p>Number used by HM Land Registry to identify the landowner and land</p>
+          </td>
+          <td width="121">
+          <p>2</p>
+          </td>
+          <td width="123">
+          <p>abc0000006</p>
+          </td>
+          <td width="119">
+          <p>TTN0000009</p>
+          </td>
+          </tr>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Country Incorporated</p>
+          </td>
+          <td width="123">
+          <p>Country (where company is registered)</p>
+          </td>
+          <td width="121">
+          <p>Country</p>
+          </td>
+          <td width="123">
+          <p>Country</p>
+          </td>
+          <td width="119">
+          <p>Country</p>
+          </td>
+          </tr>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Date Proprietor added</p>
+          </td>
+          <td width="123">
+          <p>Date (company became legal owner of the land)</p>
+          </td>
+          <td width="121">
+          <p>Date</p>
+          </td>
+          <td width="123">
+          <p>Date</p>
+          </td>
+          <td width="119">
+          <p>Date</p>
+          </td>
+          </tr>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Additional Proprietor Indicator</p>
+          </td>
+          <td width="123">
+          <p>Any other owners (who share this property)</p>
+          </td>
+          <td width="121">
+          <p>&nbsp;</p>
+          </td>
+          <td width="123">
+          <p>&nbsp;</p>
+          </td>
+          <td width="119">
+          <p>&nbsp;</p>
+          </td>
+          </tr>
+          <tr class="govuk-table__row">
+          <td width="133">
+          <p>Multiple address Indicator</p>
+          </td>
+          <td width="123">
+          <p>Company owns more than 1 property</p>
+          </td>
+          <td width="121">
+          <p>N</p>
+          </td>
+          <td width="123">
+          <p>N</p>
+          </td>
+          <td width="119">
+          <p>Y</p>
+          </td>
+          </tr>
+          </tbody>
+          </table>
 
-        <section class="govuk-tabs__panel" id="JSON">
-          <h2 class="govuk-heading-l">JSON</h2>
-          <pre><code id=account></code></pre>
-        </section>
+          <h2 id="how-to-download" class="govuk-heading-l">How to download the dataset</h2>
 
-        <section class="govuk-tabs__panel" id="XML">
-          <h2 class="govuk-heading-l">XML</h2>
+          <p>When downloading you will need to read and accept the <a href="free-commercial-licence">licence agreement</a>.</p>
 
-        </section>
-        <section class="govuk-tabs__panel" id="CSV">
-          <h2 class="govuk-heading-l">CSV</h2>
-        </section>
+          <p>You will need to choose your download options, which comprise:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>JSON</li>
+            <li>XML</li>
+            <li>CSV</li>
+          </ul>
+
+          <p>You can also download the:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Technical specification</li>
+            <li>Licence agreement </li>
+          </ul>
+
+          <a href="licence-v2" role="button" class="govuk-button">
+            Continue
+          </a>
+
       </div>
-
-      <p class="govuk-!-padding-bottom-4"></p>
-      <h2 id="how-to-download" class="govuk-heading-l">How to download the dataset</h2>
-
-        <p>When downloading you will need to read and accept the <a href="free-commercial-licence">licence agreement</a>.</p>
-
-        <p>You will need to choose your download options, which comprise:</p>
-        <ul class="govuk-list govuk-list--bullet">
-          <li>JSON</li>
-          <li>XML</li>
-          <li>CSV</li>
-        </ul>
-
-        <p>You can also download the:</p>
-        <ul class="govuk-list govuk-list--bullet">
-          <li>Technical specification</li>
-          <li>Licence agreement </li>
-        </ul>
-
-        <a href="licence-v2" role="button" class="govuk-button">
-          Continue
-        </a>
-
-
-      </div>
-
-    </div>
-  </main>
-</div>
-
+  </div>
 
 {% endblock %}
