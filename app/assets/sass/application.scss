@@ -10,12 +10,6 @@ $govuk-global-styles: true;
 @import "patterns/related-items";
 
 
-.historical_files {
-  label {
-    font-size: 0px;
-  }
-}
-
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 
@@ -365,12 +359,4 @@ pre {
     td {
       border-bottom: none;
     }
-  }
-}
-
-
-.listings-page-table {
-  table {
-    background-color: #DEE0E2;
-  }
 }
