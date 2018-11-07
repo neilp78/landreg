@@ -9,6 +9,13 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+
+.historical_files {
+  label {
+    font-size: 0px;
+  }
+}
+
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 
@@ -37,6 +44,7 @@ li, h2, h3, h4 {
     float: right;
     font-family: "nta", Arial, sans-serif;
     border-bottom: 2px solid #003618;
+
     .plus-icon {
       margin-bottom: -50px;
       font-size: 62px;
