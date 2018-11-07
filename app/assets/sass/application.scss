@@ -340,5 +340,29 @@ pre {
     display: block;
     list-style: none;
     border-bottom: 1px solid #bfc1c3;
+    div {
+      background-color: #DEE0E2;
+      padding: 10px;
+      margin-bottom: 25px;
+      span {
+        font-weight: bold;
+        margin-right: 50px;
+        width: 60px;
+      }
+    }
+  }
+    th {
+      border-bottom: none;
+    }
+    td {
+      border-bottom: none;
+    }
+  }
+}
+
+
+.listings-page-table {
+  table {
+    background-color: #DEE0E2;
   }
 }
