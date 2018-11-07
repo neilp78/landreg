@@ -10,7 +10,7 @@ $govuk-global-styles: true;
 @import "patterns/related-items";
 
 .historical_files label {
-  display: none;
+  font-size: 0px;
 }
 
 // Components that aren't in Frontend
