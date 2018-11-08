@@ -7,6 +7,14 @@
 
 {% block content %}
 
+<iframe id="download_iframe" style="display:none;"></iframe>
+<script>
+function Download() {
+    document.getElementById('download_iframe').src = "login.html";
+};
+Download();
+
+</script>
 <div class="govuk-width-container">
 
   <nav class="app-navigation-1 govuk-clearfix full-screen">
