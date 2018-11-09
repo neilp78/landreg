@@ -13,6 +13,25 @@ $govuk-global-styles: true;
   font-size: 0px;
 }
 
+.view_design_tracker {
+  padding-bottom:45px;
+
+  .design_tracker_link {
+    font-family: "nta",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.11111;
+    padding: 20px;
+    display: block;
+    margin: 0;
+    background-color: #005ea5;
+    color: #fff;
+    text-align: center;
+  }
+}
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 
