@@ -15,7 +15,7 @@ $(document).ready(function () {
     $('.download-otopn-selected').hide();
     $(this).hide();
     var h1text = $('.download-started h2.hide').text();
-    $('h1').text(h1text);
+    $('h1').replaceWith('<div class="govuk-panel govuk-panel--confirmation"><h2 class="govuk-panel__title">Your dataset is downloading</h2></div>');
   });
 
 
