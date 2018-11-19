@@ -8,6 +8,17 @@ if (window.console && window.console.info) {
 $(document).ready(function () {
   window.GOVUKFrontend.initAll();
 
+  $('.download-started').hide();
+  $('.hide').hide();
+  $('.download-now').click(function() {
+    $('.download-started').fadeIn();
+    $('.download-otopn-selected').hide();
+    $(this).hide();
+    var h1text = $('.download-started h2.hide').text();
+    $('h1').text(h1text);
+  });
+
+
   $('.table-hack').each(function() {
     $(this).find('td').addClass('govuk-table__cell');
     $(this).find('tr td:first-child').addClass('add_bold');
