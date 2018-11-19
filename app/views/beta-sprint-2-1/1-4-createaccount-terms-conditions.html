@@ -7,32 +7,49 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds terms">
-      <a href="1-5-createaccount-check-answers" class="govuk-back-link">Back</a>
-      <br>
-      <br>
-      <h1 class="govuk-heading-xl">
-        Terms and conditions
-      </h1>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds terms">
+    <a href="1-5-createaccount-check-answers" class="govuk-back-link">Back</a>
+    <br>
+    <br>
+    <h1 class="govuk-heading-xl">
+      <span class="govuk-caption-xl">Create an account</span>
+      Terms of use
+    </h1>
 
-      <p>[IMPORTANT INFORMATION ABOUT TERMS AND CONDITIONS - main points the user should be aware of]</p>
 
-      <p>By continuing you confirm that you agree to the <a href="#">terms and conditions</a> for this service.</p>
+    <h3 class="govuk-heading-m">Agree to licence and terms of use</h3>
 
-      <input class="govuk-checkboxes__input" id="citizenship-conditional-1" name="citizen" type="checkbox" value="email" data-aria-controls="conditional-citizenship-conditional-1">
-      <label class="govuk-label govuk-checkboxes__label" for="citizenship-conditional-1">
-        <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
-          <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
-          I agree
-        </label>
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+              I have read and agree to use this data under the terms of HM Land Registry, Royal Mail and Ordnance Survey’s licences
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+              I agree to the terns of use for this service
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+              I want to be contacted by HM Land Registry when new data is added to the service
+            </label>
+          </div>
         </div>
-        <div class="govuk-!-padding-bottom-5"></div>
-      <a href="1-6-createaccount-confirmation" role="button" class="govuk-button" >
-        Agree and send application
-      </a>
+      </fieldset>
     </div>
+
+    <a href="1-6-createaccount-confirmation" role="button" class="govuk-button" >
+      Agree and send application
+    </a>
+
+  </div>
 </div>
 
 {% endblock %}
