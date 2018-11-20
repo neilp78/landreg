@@ -11,8 +11,8 @@ $(document).ready(function () {
   $('.download-started').hide();
   $('.hide').hide();
   $('.download-now').click(function() {
-    $('.download-started').fadeIn();
-    $('.download-otopn-selected').hide();
+    $('.download-started').fadeIn().delay( 800 );
+    $('.download-otopn-selected').hide().delay( 800 );
     $(this).hide();
     var h1text = $('.download-started h2.hide').text();
     $('h1').replaceWith('<div class="govuk-panel govuk-panel--confirmation"><h2 class="govuk-panel__title">Your dataset is downloading</h2></div>');
