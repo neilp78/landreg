@@ -13,6 +13,17 @@ $govuk-global-styles: true;
   font-size: 0px;
 }
 
+.listingspage .listings-page-table .govuk-table {
+  .center {
+    text-align: center;
+  }
+  .listings-button {
+    width:45%;
+  }
+  th, td {
+    width:50%;
+  }
+}
 .view_design_tracker {
   padding-bottom:25px;
   padding-top: 25px;
