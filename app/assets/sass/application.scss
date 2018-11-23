@@ -375,8 +375,11 @@ pre {
     display: block;
     list-style: none;
     border-bottom: 1px solid #bfc1c3;
+    .left-alligned{
+      text-align: left;
+    }
     div {
-      background-color: #DEE0E2;
+      background-color:	#f8f8f8;
       padding: 10px;
       margin-bottom: 25px;
       span {
