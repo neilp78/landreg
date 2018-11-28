@@ -24,6 +24,39 @@ $govuk-global-styles: true;
     width:50%;
   }
 }
+.transact-listings {
+  .data-set {
+    width:100%;
+    background-color: #f8f8f8;
+  }
+
+  .box-title {
+    float: left;
+    clear: left;
+    width: 25%;
+    margin-bottom: 10px;
+    padding-right: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: right;
+  }
+  .box-content {
+    //float: left;
+    width: 75%;
+  }
+  .button-row {
+    width:100;
+    clear:both;
+  }
+  dl {
+    font-size: 19px !important;
+    line-height: 20px;
+  }
+  .odd.data-set {
+
+  }
+}
+
 .view_design_tracker {
   padding-bottom:25px;
   padding-top: 25px;
