@@ -397,6 +397,56 @@ pre {
     }
 }
 
+.new {
+  margin-left: 5px;
+  background-color: #85994b;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.listings-page-item {
+  border-bottom: 1px solid #bfc1c3;
+  ul{
+    padding-left: 0px;
+    li{
+      display: inline;
+      list-style: none;
+      padding-right: 15px;
+      .new {
+        margin-left: 5px;
+        background-color: #85994b;
+        color: white;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border-radius: 5px;
+      }
+    }
+  }
+  .download-details {
+    // dt{
+    //   border-bottom: none;
+    // }
+    // dd {
+    //   border-bottom: none;
+    // }
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 25px;
+    .left-alligned{
+      text-align: left;
+
+    }
+
+  }
+}
+
 .index-info {
   background-color: #f8f8f8;
   padding: 10px;
