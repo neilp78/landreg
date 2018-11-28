@@ -23,11 +23,14 @@ $govuk-global-styles: true;
   th, td {
     width:50%;
   }
+  .historical-files {
+    float: left;
+  }
 }
 .transact-listings {
   .data-set {
     width:100%;
-    background-color: #f8f8f8;
+    padding: 2% 4%;
   }
 
   .box-title {
@@ -44,6 +47,7 @@ $govuk-global-styles: true;
     //float: left;
     width: 75%;
   }
+
   .button-row {
     width:100;
     clear:both;
@@ -53,7 +57,7 @@ $govuk-global-styles: true;
     line-height: 20px;
   }
   .odd.data-set {
-
+    background-color: #f8f8f8;
   }
 }
 
