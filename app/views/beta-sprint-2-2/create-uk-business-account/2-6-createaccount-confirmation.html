@@ -1,0 +1,36 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h2 class="govuk-panel__title">
+          Your account is ready to use
+        </h2>
+      </div>
+
+      <h3 class="govuk-heading-m">What happens next</h3>
+
+      <p class="govuk-body">
+          You can now use the email and password you registered with to sign in to your account.
+      </p>
+
+      <a class="govuk-button" href="../login" role="button">
+        Sign in now
+      </a>
+
+      <!-- <p><a href="#">What did you think of this service?</a> (takes 30 seconds)</p> -->
+      <p><a href="#">Exit this service</a></p>
+      <p><a href="#">Print this page</a></p>
+      <br />
+      <p>[For testing. <a href="start-v2">Link back to homepage</a>.]</p>
+</div>
+
+
+{% endblock %}
