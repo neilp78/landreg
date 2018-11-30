@@ -38,9 +38,9 @@ $(document).ready(function () {
 
   $('.filter-user-type').each(function() {
     //$( this ).addClass( "foo" );
-    var gotoPersonal = '1-1-createaccount-personal';
-    var gotoUK = '2-1-createaccount-uk';
-    var gotoOversea = '3-1-createaccount-overseas';
+    var gotoPersonal = 'create-personal-account/1-1-createaccount-personal';
+    var gotoUK = 'create-uk-business-account/2-1-createaccount-uk';
+    var gotoOversea = 'create-overseas-account/3-1-createaccount-overseas';
 
     var thisradio = $(this).find('.govuk-radios__item input');
     $('#user-select input').on('change', function() {
