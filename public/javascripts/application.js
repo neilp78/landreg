@@ -38,7 +38,7 @@ $(document).ready(function () {
 
   $('.filter-user-type').each(function() {
     //$( this ).addClass( "foo" );
-    var gotoPersonal = 'create-personal-account/1-1-createaccount-personal';
+    var gotoPersonal = 'create-personal-account/1-create-account';
     var gotoUK = 'create-uk-business-account/2-1-createaccount-uk';
     var gotoOversea = 'create-overseas-account/3-1-createaccount-overseas';
 
