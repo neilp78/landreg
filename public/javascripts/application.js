@@ -18,6 +18,9 @@ $(document).ready(function () {
     $('h1').replaceWith('<div class="govuk-panel govuk-panel--confirmation"><h2 class="govuk-panel__title">Your dataset is downloading</h2></div>');
   });
 
+$('#createaccount').submit(function () {
+  alert('fired');
+});
 
   $('.table-hack').each(function() {
     $(this).find('td').addClass('govuk-table__cell');
