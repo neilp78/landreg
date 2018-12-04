@@ -5,11 +5,6 @@ if (window.console && window.console.info) {
   //window.console.info('GOV.UK Prototype Kit - do not use for production')
   //session
   if (typeof(Storage) !== "undefined") {
-      // Store
-      //sessionStorage.setItem("dataset", "test");
-      // Retrieve
-      //document.getElementById("h1").innerHTML = sessionStorage.getItem("lastname");
-
 
   } else {
       document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
@@ -166,9 +161,9 @@ $('#createaccount').submit(function () {
     $('<div class="govuk-phase-banner"><p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">beta</strong>  <span class="govuk-phase-banner__text">This is a new service – your <a class="govuk-link" href="mailto:n.phillips@kainos.com">feedback</a> will help us to improve it.</span>  </p></div>').insertAfter('.govuk-header');
 
     //sticky inpage nav on details pageTitle
-    var stickyTop = $('.js-stick-at-top-when-scrolling').offset().top;
+    //var stickyTop = $('.js-stick-at-top-when-scrolling').offset().top;
 
-    $(window).on( 'scroll', function(){
+  /*  $(window).on( 'scroll', function(){
         if ($(window).scrollTop() >= stickyTop) {
             $('.js-stick-at-top-when-scrolling').css({position: "fixed", top: "0px"});
             $('.govuk-grid-column-two-thirds').css('margin-left','33%');
@@ -177,7 +172,7 @@ $('#createaccount').submit(function () {
             $('.govuk-grid-column-two-thirds').css('margin-left','0');
         }
     });
-
+*/
     //
     //back buttons
 

@@ -58,11 +58,6 @@ var url      = window.location.href;     // Returns full URL
 var origin   = window.location.origin;   // Returns base URL
 //alert(orgin);/ */
 var referrer =  document.referrer;
-if (referrer.includes('local')){
-  var source = 'http://localhost:3000/beta-sprint-2-2';
-} else {
-  var source = 'https://land-reg.herokuapp.com/beta-sprint-2-2';
-}
 var referrer = referrer.replace('https://land-reg.herokuapp.com/beta-sprint-2-2', "");
 //alert(source + ' and ' + referrer);
 
