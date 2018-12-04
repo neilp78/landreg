@@ -15,7 +15,7 @@ if (window.console && window.console.info) {
 
 $(document).ready(function () {
   window.GOVUKFrontend.initAll();
-
+/*
   if ($(".product-page")[0]){
     var currentDataSet = $('h1').text();
     currentDataSet = currentDataSet.replace(/\s+/g, '-').toLowerCase();
@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   }
   console.log(sessionStorage.getItem("dataset"));
-/*
+
   switch(sessionStorage.getItem("dataset")) {
       case '-registered-leases-':
         $(".registered-leases .historic").text('this is downloaded').css('font-weight','bold');;
