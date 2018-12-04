@@ -1,4 +1,3 @@
-
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -51,55 +50,40 @@
 </div>
 
 <script>
-
 //get currebnt URL
 /*var pathname = window.location.pathname; // Returns path only
 var url      = window.location.href;     // Returns full URL
 var origin   = window.location.origin;   // Returns base URL
 //alert(orgin);/ */
 var referrer =  document.referrer;
-
-var referrer = referrer.replace('https://land-reg.herokuapp.com/beta-sprint-2-2', "");
-//alert(source + ' and ' + referrer);
-
+var referrer = referrer.replace("https://land-reg.herokuapp.com/beta-sprint-2-2/", "");
 //copy and paste below and change tagert to logged in version
 if (referrer == 'detailspages-dataset-overseas') {
   document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
-
 }
 //alert(targetloginpage);
 if (referrer == 'detailspages-dataset-v4') {
   document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
 }
-
 if (referrer == 'detailspages-dataset-v4-logged-in') {
   document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
 }
-
 if (referrer == 'listingspage-v3-loggedin') {
   document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-v3-loggedin';
 }
-
 if (referrer == 'listingspage-v3') {
   document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-v3-loggedin';
 }
-
 if (referrer == 'start-v2') {
-  alert(source + ' and ' + referrer);
   document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-v3-loggedin';
 }
-
 if (referrer == 'detailspages-dataset-overseas') {
   document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
 }
-
 if (referrer == 'listingspage-flat-signed-out') {
   document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
 }
-
 if (referrer == 'create-personal-account/5-confirmation') {
-  //alert(referrer);
-  //console.log(referrer);
   document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-v3-loggedin';
 }
 //
