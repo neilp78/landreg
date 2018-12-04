@@ -59,16 +59,17 @@ var origin   = window.location.origin;   // Returns base URL
 //alert(orgin);/ */
 var referrer =  document.referrer;
 if (referrer.includes('local')){
-  var source = 'http://localhost:3000//beta-sprint-2-2/';
-  alert(source);
+  var source = 'http://localhost:3000/beta-sprint-2-2';
 } else {
-  var source = 'https://land-reg.herokuapp.com/beta-sprint-2-2/';
+  var source = 'https://land-reg.herokuapp.com/beta-sprint-2-2';
 }
-var referrer = referrer.replace(source, "");
+var referrer = referrer.replace('https://land-reg.herokuapp.com/beta-sprint-2-2', "");
+//alert(source + ' and ' + referrer);
 
 //copy and paste below and change tagert to logged in version
 if (referrer == 'detailspages-dataset-overseas') {
   document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
+
 }
 //alert(targetloginpage);
 if (referrer == 'detailspages-dataset-v4') {
@@ -88,6 +89,7 @@ if (referrer == 'listingspage-v3') {
 }
 
 if (referrer == 'start-v2') {
+  alert(source + ' and ' + referrer);
   document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-v3-loggedin';
 }
 
