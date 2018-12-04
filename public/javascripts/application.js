@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   }
   console.log(sessionStorage.getItem("dataset"));
-
+/*
   switch(sessionStorage.getItem("dataset")) {
       case '-registered-leases-':
         $(".registered-leases .historic").text('this is downloaded').css('font-weight','bold');;
@@ -36,7 +36,7 @@ $(document).ready(function () {
       //default:
           //code block
   }
-
+*/
   $('.download-started').hide();
   $('.hide').hide();
   $('.download-now').click(function() {
