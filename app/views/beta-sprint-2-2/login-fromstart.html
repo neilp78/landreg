@@ -60,6 +60,13 @@ var origin   = window.location.origin;   // Returns base URL
 
 var referrer =  document.referrer;
 var referrer = referrer.replace("https://land-reg.herokuapp.com/beta-sprint-2-2/", "");
+
+if (referrer.includes('local')){
+  console.log('this is local');
+} else {
+  console.log('this is live');
+}
+
 //copy and paste below and change tagert to logged in version
 if (referrer == 'detailspages-dataset-overseas') {
   document.getElementsByClassName("targetloginpage")[0].href = 'licence-v2';
