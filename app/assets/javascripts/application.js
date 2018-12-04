@@ -2,11 +2,45 @@
 
 // Warn about using the kit in production
 if (window.console && window.console.info) {
-  window.console.info('GOV.UK Prototype Kit - do not use for production')
+  //window.console.info('GOV.UK Prototype Kit - do not use for production')
+  //session
+  if (typeof(Storage) !== "undefined") {
+      // Store
+      //sessionStorage.setItem("dataset", "test");
+      // Retrieve
+      //document.getElementById("h1").innerHTML = sessionStorage.getItem("lastname");
+
+
+  } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+  }
 }
+
+
 
 $(document).ready(function () {
   window.GOVUKFrontend.initAll();
+
+  if ($(".product-page")[0]){
+    var currentDataSet = $('h1').text();
+    currentDataSet = currentDataSet.replace(/\s+/g, '-').toLowerCase();
+    sessionStorage.setItem("dataset", currentDataSet);
+
+  }
+  console.log(sessionStorage.getItem("dataset"));
+
+  switch(sessionStorage.getItem("dataset")) {
+      case '-registered-leases-':
+        $(".registered-leases .historic").text('this is downloaded').css('font-weight','bold');;
+            //console.log('Rl');
+          break;
+      case '-overseas-companies-that-own-property-in-england-and-wales-':
+           $(".overseas .historic").text('this is downloaded').css('font-weight','bold');
+           //console.log('oS');
+          break;
+      //default:
+          //code block
+  }
 
   $('.download-started').hide();
   $('.hide').hide();
@@ -145,7 +179,6 @@ $('#createaccount').submit(function () {
     });
 
     //
-
     //back buttons
 
     //Eilis, will this mess anything uop for you?
