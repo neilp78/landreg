@@ -20,5 +20,7 @@ Example usage:
 module.exports = {
 
   // Insert values here
+  "options-chosen": [ "" ]
 
 }
+//console.log(module.exports);
