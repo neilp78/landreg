@@ -489,3 +489,10 @@ pre {
   padding: 10px;
   margin-bottom: 25px;
 }
+
+.pvw-title span {
+  display: none;
+}
+.pvw-title:after {
+  content: 'whatever it is you want to add';
+}
