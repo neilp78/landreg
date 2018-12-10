@@ -37,7 +37,12 @@ $(document).ready(function () {
           //code block
   }
 */
-  $('.download-started').hide();
+//Contexts
+var context1 = 'context1'; //logged out
+var context2 = 'context2'; //logged-in, but not agreed to licence
+var context3 = 'context3'; //logged-in, has already agreed to licence
+
+$('.download-started').hide();
   $('.hide').hide();
   $('.download-now').click(function() {
     $('.download-started').fadeIn().delay( 800 );
@@ -47,7 +52,7 @@ $(document).ready(function () {
     $('h1').replaceWith('<div class="govuk-panel govuk-panel--confirmation"><h2 class="govuk-panel__title">Your dataset is downloading</h2></div>');
   });
 
-$('.non-js').replaceWith('<div class="state-1 toggle-states"><a class="govuk-button" href="#">View licence</a></div><div class="state-2 toggle-states"><ul><li>Point 1</li><li>Point 2</li><li>Point 3</li><li>Point 4</li><li>Point 5</li></ul><a class="govuk-button" href="#">Agree</a></div><div class="state-3 toggle-states"><h3>Latest version</h3><p>Last updated: 12 Demeber 2019</p><a class="govuk-button" href="#" download>Dowload latest</a><br><a class="govuk-button" href="#" download>Dowload Changle only</a></div>');
+$('.non-js').replaceWith('<div class="state-1 toggle-states"><a class="govuk-button" href="#">View licence</a></div><div class="state-2 toggle-states"><ul><li>Point 1</li><li>Point 2</li><li>Point 3</li><li>Point 4</li><li>Point 5</li></ul><br><br><a class="govuk-button" href="#">Agree</a></div><div class="state-3 toggle-states"><h3>Latest version</h3><p>Last updated: 12 Demeber 2019</p><a class="govuk-button" href="#" download>Dowload latest</a><br><a class="govuk-button" href="#" download>Dowload Changle only</a></div>');
 
 //          </div>
 $('.listingspage-flat').each(function(){
@@ -68,6 +73,7 @@ $('.listingspage-flat').each(function(){
     state2.hide();
     state3.show();
     event.preventDefault();
+    //licence agreed
   });
   $('.state-3 a').click(function() {
     //state2.show();
