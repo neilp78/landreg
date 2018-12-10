@@ -223,4 +223,46 @@ $('#createaccount').submit(function () {
 
     $('.sprint-wrap').find('tr:even').css({'background-color':'red'}).end().find('tr:odd').css({'background-color':'blue'});
 
+
+    $("#view-licence").click(function(event) {
+    $("#step-1").hide();
+    $("#step-2").show();
+    });
+
+    $("#accept-licence").click(function(event) {
+    $("#step-1").hide();
+    $("#step-2").hide();
+    $("#step-3").show();
+    $("#step-4").hide();
+    });
+
+    $("#accept-licence-back-step-2").click(function(event) {
+    $("#step-1").show();
+    $("#step-2").hide();
+    $("#step-3").hide();
+    $("#step-4").hide();
+    });
+
+    $("#accept-licence-back-step-3").click(function(event) {
+    $("#step-1").show();
+    $("#step-2").hide();
+    $("#step-3").hide();
+    $("#step-4").hide();
+    });
+
+    $("#download-options-back-step-3").click(function(event) {
+    $("#step-2").show();
+    $("#step-1").hide();
+    $("#step-3").hide();
+    $("#step-4").hide();
+    });
+
+    $("#latest-version").click(function(event) {
+    $("#step-4").show();
+    $("#step-1").hide();
+    $("#step-2").hide();
+    $("#step-3").hide();
+    });
+
+
 })

@@ -15,19 +15,20 @@
   </ul>
 </nav>
 
-<div class="govuk-breadcrumbs">
+<!-- <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
     </li>
     <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
   </ol>
-</div>
+</div> -->
 
 <br>
 <br>
 
-<div class="govuk-grid-row listingspage">
+<div class="govuk-grid-row listingspage listingspage-context-5">
+
     <h1 class="govuk-heading-xl">
       Choose a data file
     </h1>
@@ -37,431 +38,235 @@
       <div class="govuk-grid-column-two-thirds no-padding listings-page-table">
 
         <div class="listings-page-item">
-            <h2>
-              <a href="detailspages-dataset-v4-logged-in">Registered leases</a> <span class="new">Update available</span>
-            </h2>
 
-            <p>Download data about leasehold properties in England and Wales.</p>
+        <h2>
+        <a href="">Registered leases</a>
+        </h2>
 
-            <ul>
-              <li class="govuk-!-font-size-16"><span class="govuk-body govuk-!-font-weight-bold govuk-!-font-size-16">Licence agreed:</span> July 2018</li>
-              <li class="govuk-!-font-size-16"><span class="govuk-body govuk-!-font-weight-bold govuk-!-font-size-16">Previous download:</span> July 2018</li>
-              <li class="govuk-!-font-size-16"><span class="govuk-body govuk-!-font-weight-bold govuk-!-font-size-16">Latest version:</span> August 2018</li>
-            </ul>
+        <p>Download data about overseas companies that own land in England and Wales.</p>
 
-            <div class="download-details">
+        <!-- View licence -->
 
-              <p>You have already agreed to the licence. Download again here. </p>
+        <div class="download-details" id="step-1">
+          <dl class="app-check-your-answers app-check-your-answers--short">
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Licence
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                	Free and licensed
+              </dd>
+              <dd class="app-check-your-answers__change left-alligned">
+                <a id="view-licence">View licence</a>
+              </dd>
+              <dd class="app-check-your-answers__answer">
+              </dd>
+            </div>
+          </dl>
+        </div>
 
-              <dl class="app-check-your-answers app-check-your-answers--short">
+        <!-- Accept licence -->
 
-                  <div class="app-check-your-answers__contents">
-                    <dt class="app-check-your-answers__question">
-                      Documentation
-                    </dt>
-                    <dd class="app-check-your-answers__answer">
-                      <a href="">Licence</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                      <a href="#" download>Technical Specification</a>
-                    </dd>
-                    <dd class="app-check-your-answers__answer">
+        <div class="download-details" id="step-2" style="display:none">
+          <div class="govuk-breadcrumbs">
+            <ol class="govuk-breadcrumbs__list">
+              <li class="govuk-breadcrumbs__list-item">
+                <a class="govuk-breadcrumbs__link" id="accept-licence-back-step-2">Data set details</a>
+              </li>
+              <li class="govuk-breadcrumbs__list-item" aria-current="page">View licence</li>
+            </ol>
+          </div>
+        <h2>View licence</h2>
+        <p>The file you are about to download includes data owned by:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>HM Land Registry</li>
+          <li>Ordnance Survey’s AddressBase Premium</li>
+          <li>Royal Mail’s PAF® database (address data)</li>
+        </ul>
+        <h4 class="govuk-heading-s">If you’re a business</h4>
+        <p>You can use this data to: </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>prevent and detect crime, including for:</li>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>the apprehension or prosecution of alleged offenders</li>
+            <li>proceedings in a court or tribunal</li>
+            <li>complying with an order, a court or a tribunal</li>
+        </ul>
+          <li>keep records about land and properties</li>
+       </ul>
+       <h4 class="govuk-heading-s">If you’re a public body</h4>
+       <p>You can use this data if you have a:</p>
+       <ul class="govuk-list govuk-list--bullet">
+         <li><a href="">Public Sector Mapping Agreement Licence</a></li>
+         <li><a href="">One Scotland Mapping Agreement Member Licence</a></li>
+       </ul>
+        <p>By choosing to continue, you accept the terms of use and licence for this data. ​</p>
+        <a id="accept-licence" role="button" class="govuk-button">
+          Continue
+        </a>
+      </div>
 
-                    </dd>
-                  </div>
-                  <div class="app-check-your-answers__contents">
-                    <dt class="app-check-your-answers__question">
-                      Data set
-                    </dt>
-                    <dd class="app-check-your-answers__answer left-alligned">
-                      <a href="">Last download (5.5Gb)</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                      <a href="#" download>Latest version (5.5Gb)</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
+      <!-- Download options -->
 
-                    </dd>
-                  </div>
+      <div class="download-details" id="step-3" style="display:none">
 
-                  <div class="app-check-your-answers__contents">
-                    <dt class="app-check-your-answers__question">
-                      Data set
-                    </dt>
-                    <dd class="app-check-your-answers__answer">
-                      <a href="#" download>Latest change only (22Mb)</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                      <a href="" class="older-versions">See older versions</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                    </dd>
+        <div class="govuk-breadcrumbs">
+          <ol class="govuk-breadcrumbs__list">
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" id="accept-licence-back-step-3">Data set details</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" id="download-options-back-step-3">View licence</a>
+            </li>
+            <li class="govuk-breadcrumbs__list-item" aria-current="page">Download options</li>
+          </ol>
+        </div>
 
-                  </div>
-                </dl>
+          <dl class="app-check-your-answers app-check-your-answers--short">
 
-              </div>
-
-              <details class="govuk-details">
-                <summary class="govuk-details__summary">
-                  <span class="govuk-details__summary-text">
-                    See a sample of the data
-                  </span>
-                </summary>
-                <div class="govuk-details__text">
-                  <table class="govuk-table table-hack">
-                    <tbody>
-                      <thead>
-                      <td><strong>Data</strong></td>
-                      <td><strong>What this means</strong></td>
-                      <td><strong>Example data</strong></td>
-                      </thead>
-                      <tr>
-                      <td>Property description</td>
-                      <td>Description of the leased land, for example an address</td>
-                      <td>1 Smith Street&nbsp;</td>
-                      </tr>
-                      <tr>
-                      <td>Region and county</td>
-                      <td>Location of the leasehold property</td>
-                      <td>Region</td>
-                      </tr>
-                      <tr>
-                      <td>Unique property reference number (UPRN)</td>
-                      <td>
-                      <p>Number used by HM Land Registry to identify the property location.</p>
-                      <p>Similar to postcode, but more specific</p>
-                      </td>
-                      <td>abc00000003</td>
-                      </tr>
-                      <tr>
-                      <td>Unique identifier</td>
-                      <td>Reference&nbsp;used by HM Land Registry to identify the land without a title number</td>
-                      <td>123456</td>
-                      </tr>
-                      <tr>
-                      <td>Date of lease</td>
-                      <td>When the lease started</td>
-                      <td>Date</td>
-                      </tr>
-                      <tr>
-                      <td>Term</td>
-                      <td>How long the lease lasts for</td>
-                      <td>999 years</td>
-                      </tr>
-                      <tr>
-                      <td>Tenure</td>
-                      <td>How the land is owned (type of lease)</td>
-                      <td>Leasehold</td>
-                      </tr>
-                      <tr>
-                      <td>Alienation cause indicator</td>
-                      <td>
-                      <p>Clause in the leasehold agreement between the landlord&nbsp;and their tenant.</p>
-                      <p>This clause may stop the tenant from leaving the lease (selling) before the end of their term.</p>
-                      </td>
-                      <td>Clause details</td>
-                      </tr>
-                      <tr>
-                      <td>Reg order</td>
-                      <td>
-                      <p>Some pieces of land have more than 1 lease on them.</p>
-                      <p>The reg order shows the order of registration (which lease came first).</p>
-                      </td>
-                      <td>
-                      <p>Lease 1 (DD/MM/YY)</p>
-                      <p>Lease 2 (DD/MM/YY)</p>
-                      </td>
-                      </tr>
-                      <tr>
-                      <td>Price paid&nbsp;</td>
-                      <td>Price paid for the land</td>
-                      <td>1000000</td>
-                      </tr>
-                      </tbody>
-                  </table>
-                </div>
-              </details>
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Licence
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                Agreed
+              </dd>
+              <dd class="app-check-your-answers__change left-alligned">
+                December 2018
+              </dd>
+              <dd class="app-check-your-answers__change left-alligned">
+              </dd>
 
             </div>
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Download
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  <a href="">Licence</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                  <a href="#" download>Technical Specification</a>
+                </dd>
+                <dd class="app-check-your-answers__answer">
 
-            <div class="listings-page-item">
-            <h2>
-            <a href="detailspages-dataset-overseas-logged-in">Overseas companies that own property in England and Wales</a>
-            </h2>
-            <p>Download data about overseas companies that own land in England and Wales.</p>
+                </dd>
+              </div>
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Download
+                </dt>
+                <dd class="app-check-your-answers__change left-alligned">
+                  <a id="latest-version" download>Latest version (5.5Gb)</a>
+                </dd>
+                <dd class="app-check-your-answers__answer">
+                  <a href="#" download>Latest change only (22Mb)</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
 
-            <div class="download-details">
-
-              <p>You still need to agree to the licence. Download here.</p>
-
-              <dl class="app-check-your-answers app-check-your-answers--short">
-
-                  <div class="app-check-your-answers__contents">
-                    <dt class="app-check-your-answers__question">
-                      Documentation
-                    </dt>
-                    <dd class="app-check-your-answers__answer">
-                      <a href="">Licence</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                      <a href="#" download>Technical Specification</a>
-                    </dd>
-                    <dd class="app-check-your-answers__answer">
-
-                    </dd>
-                  </div>
-                  <div class="app-check-your-answers__contents">
-                    <dt class="app-check-your-answers__question">
-                      Data set
-                    </dt>
-                    <dd class="app-check-your-answers__change left-alligned">
-                      <a href="#" download>Latest version (5.5Gb)</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                      <a href="#" download>Latest change only (22Mb)</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-
-                    </dd>
-                  </div>
-
-                  <div class="app-check-your-answers__contents">
-                    <dt class="app-check-your-answers__question">
-
-                    </dt>
-                    <dd class="app-check-your-answers__answer">
-                      <a href="" class="older-versions">See older versions</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                    </dd>
-
-                  </div>
-                </dl>
-
+                </dd>
               </div>
 
-            <details class="govuk-details">
-              <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                  See a sample of the data
-                </span>
-              </summary>
-              <div class="govuk-details__text">
-                <table class="govuk-table table-hack">
-                  <tbody>
-                    <thead>
-                    <td><strong>Data</strong></td>
-                    <td><strong>What this means</strong></td>
-                    <td><strong>Example data</strong></td>
-                    </thead>
-                    <tr>
-                    <td>Property description</td>
-                    <td>Description of the leased land, for example an address</td>
-                    <td>1 Smith Street&nbsp;</td>
-                    </tr>
-                    <tr>
-                    <td>Region and county</td>
-                    <td>Location of the leasehold property</td>
-                    <td>Region</td>
-                    </tr>
-                    <tr>
-                    <td>Unique property reference number (UPRN)</td>
-                    <td>
-                    <p>Number used by HM Land Registry to identify the property location.</p>
-                    <p>Similar to postcode, but more specific</p>
-                    </td>
-                    <td>abc00000003</td>
-                    </tr>
-                    <tr>
-                    <td>Unique identifier</td>
-                    <td>Reference&nbsp;used by HM Land Registry to identify the land without a title number</td>
-                    <td>123456</td>
-                    </tr>
-                    <tr>
-                    <td>Date of lease</td>
-                    <td>When the lease started</td>
-                    <td>Date</td>
-                    </tr>
-                    <tr>
-                    <td>Term</td>
-                    <td>How long the lease lasts for</td>
-                    <td>999 years</td>
-                    </tr>
-                    <tr>
-                    <td>Tenure</td>
-                    <td>How the land is owned (type of lease)</td>
-                    <td>Leasehold</td>
-                    </tr>
-                    <tr>
-                    <td>Alienation cause indicator</td>
-                    <td>
-                    <p>Clause in the leasehold agreement between the landlord&nbsp;and their tenant.</p>
-                    <p>This clause may stop the tenant from leaving the lease (selling) before the end of their term.</p>
-                    </td>
-                    <td>Clause details</td>
-                    </tr>
-                    <tr>
-                    <td>Reg order</td>
-                    <td>
-                    <p>Some pieces of land have more than 1 lease on them.</p>
-                    <p>The reg order shows the order of registration (which lease came first).</p>
-                    </td>
-                    <td>
-                    <p>Lease 1 (DD/MM/YY)</p>
-                    <p>Lease 2 (DD/MM/YY)</p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>Price paid&nbsp;</td>
-                    <td>Price paid for the land</td>
-                    <td>1000000</td>
-                    </tr>
-                    </tbody>
-                </table>
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  View
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  <a href="" class="older-versions">Older versions</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                </dd>
+
               </div>
-            </details>
+            </dl>
+
+        </div>
+
+        <!-- Download complete -->
+
+        <div class="download-details" id="step-4" style="display:none">
+
+          <p>Download again here.</p>
+
+          <dl class="app-check-your-answers app-check-your-answers--short">
+
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Licence
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                Agreed
+              </dd>
+              <dd class="app-check-your-answers__change left-alligned">
+                December 2018
+              </dd>
+            </div>
+            <div class="app-check-your-answers__contents">
+              <dt class="app-check-your-answers__question">
+                Last download
+              </dt>
+              <dd class="app-check-your-answers__answer">
+                December 2018
+              </dd>
+              <dd class="app-check-your-answers__change left-alligned">
+                <a href="">Download again (5.5Gb)</a>
+              </dd>
+            </div>
+
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Download
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  <a href="">Licence</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                  <a href="#" download>Technical Specification</a>
+                </dd>
+                <dd class="app-check-your-answers__answer">
+
+                </dd>
+              </div>
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  Download
+                </dt>
+                <dd class="app-check-your-answers__answer left-alligned">
+                  <a href="">Latest version (5.5Gb)</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                  <a href="#" download>Latest change only (22Mb)</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+
+                </dd>
+              </div>
+
+              <div class="app-check-your-answers__contents">
+                <dt class="app-check-your-answers__question">
+                  View
+                </dt>
+                <dd class="app-check-your-answers__answer">
+                  <a href="#" download>Older versions</a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                  <a href="" class="older-versions"></a>
+                </dd>
+                <dd class="app-check-your-answers__change left-alligned">
+                </dd>
+
+              </div>
+            </dl>
+
           </div>
 
-          <div class="listings-page-item">
-            <h2>
-            <a href="">UK companies that own property in England and Wales</a>
-            </h2>
-            <p>Download data about UK companies that own land in England and Wales.</p>
-            <div class="download-details">
+    </div>
 
-              <p>You still need to agree to the licence. Download here.</p>
 
-              <dl class="app-check-your-answers app-check-your-answers--short">
 
-                  <div class="app-check-your-answers__contents">
-                    <dt class="app-check-your-answers__question">
-                      Documentation
-                    </dt>
-                    <dd class="app-check-your-answers__answer">
-                      <a href="">Licence</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                      <a href="#" download>Technical Specification</a>
-                    </dd>
-                    <dd class="app-check-your-answers__answer">
-
-                    </dd>
-                  </div>
-                  <div class="app-check-your-answers__contents">
-                    <dt class="app-check-your-answers__question">
-                      Data set
-                    </dt>
-                    <dd class="app-check-your-answers__change left-alligned">
-                      <a href="#" download>Latest version (5.5Gb)</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                      <a href="#" download>Latest change only (22Mb)</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-
-                    </dd>
-                  </div>
-
-                  <div class="app-check-your-answers__contents">
-                    <dt class="app-check-your-answers__question">
-
-                    </dt>
-                    <dd class="app-check-your-answers__answer">
-                      <a href="" class="older-versions">See older versions</a>
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                    </dd>
-                    <dd class="app-check-your-answers__change left-alligned">
-                    </dd>
-
-                  </div>
-                </dl>
-
-              </div>
-            <details class="govuk-details">
-              <summary class="govuk-details__summary">
-                <span class="govuk-details__summary-text">
-                  See a sample of the data
-                </span>
-              </summary>
-              <div class="govuk-details__text">
-                <table class="govuk-table table-hack">
-                  <tbody>
-                    <thead>
-                    <td><strong>Data</strong></td>
-                    <td><strong>What this means</strong></td>
-                    <td><strong>Example data</strong></td>
-                    </thead>
-                    <tr>
-                    <td>Property description</td>
-                    <td>Description of the leased land, for example an address</td>
-                    <td>1 Smith Street&nbsp;</td>
-                    </tr>
-                    <tr>
-                    <td>Region and county</td>
-                    <td>Location of the leasehold property</td>
-                    <td>Region</td>
-                    </tr>
-                    <tr>
-                    <td>Unique property reference number (UPRN)</td>
-                    <td>
-                    <p>Number used by HM Land Registry to identify the property location.</p>
-                    <p>Similar to postcode, but more specific</p>
-                    </td>
-                    <td>abc00000003</td>
-                    </tr>
-                    <tr>
-                    <td>Unique identifier</td>
-                    <td>Reference&nbsp;used by HM Land Registry to identify the land without a title number</td>
-                    <td>123456</td>
-                    </tr>
-                    <tr>
-                    <td>Date of lease</td>
-                    <td>When the lease started</td>
-                    <td>Date</td>
-                    </tr>
-                    <tr>
-                    <td>Term</td>
-                    <td>How long the lease lasts for</td>
-                    <td>999 years</td>
-                    </tr>
-                    <tr>
-                    <td>Tenure</td>
-                    <td>How the land is owned (type of lease)</td>
-                    <td>Leasehold</td>
-                    </tr>
-                    <tr>
-                    <td>Alienation cause indicator</td>
-                    <td>
-                    <p>Clause in the leasehold agreement between the landlord&nbsp;and their tenant.</p>
-                    <p>This clause may stop the tenant from leaving the lease (selling) before the end of their term.</p>
-                    </td>
-                    <td>Clause details</td>
-                    </tr>
-                    <tr>
-                    <td>Reg order</td>
-                    <td>
-                    <p>Some pieces of land have more than 1 lease on them.</p>
-                    <p>The reg order shows the order of registration (which lease came first).</p>
-                    </td>
-                    <td>
-                    <p>Lease 1 (DD/MM/YY)</p>
-                    <p>Lease 2 (DD/MM/YY)</p>
-                    </td>
-                    </tr>
-                    <tr>
-                    <td>Price paid&nbsp;</td>
-                    <td>Price paid for the land</td>
-                    <td>1000000</td>
-                    </tr>
-                    </tbody>
-                </table>
-              </div>
-            </details>
-          </div>
 
       </div>
 

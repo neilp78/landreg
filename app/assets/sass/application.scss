@@ -378,9 +378,9 @@ pre {
   margin:auto;
 }
 
-.govuk-breadcrumbs {
-  display: none !important;
-}
+// .govuk-breadcrumbs {
+//   display: none !important;
+// }
 
 
 .index-table {
@@ -448,7 +448,7 @@ pre {
 
 .listings-page-item {
   border-bottom: 1px solid #bfc1c3;
-  ul{
+  .inline{
     padding-left: 0px;
     li{
       display: inline;
@@ -467,20 +467,24 @@ pre {
     }
   }
   .download-details {
-    // dt{
-    //   border-bottom: none;
-    // }
-    // dd {
-    //   border-bottom: none;
-    // }
     background-color: #f8f8f8;
     padding: 10px;
     margin-bottom: 25px;
     .left-alligned{
       text-align: left;
-
     }
+  }
+}
 
+#step-1 {
+  span {
+    background-color: #bfc1c3;
+  }
+  dt {
+  border-bottom: none !important;
+  }
+  dd {
+    border-bottom: none !important;
   }
 }
 
@@ -488,4 +492,16 @@ pre {
   background-color: #f8f8f8;
   padding: 10px;
   margin-bottom: 25px;
+}
+
+.pvw-title span {
+  display: none;
+}
+.pvw-title:after {
+  content: 'whatever it is you want to add';
+}
+
+
+.utility-menu {
+
 }
