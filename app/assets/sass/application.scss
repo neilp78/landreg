@@ -378,10 +378,14 @@ pre {
   margin:auto;
 }
 
-// .govuk-breadcrumbs {
-//   display: none !important;
-// }
+.govuk-breadcrumbs {
+  display: none !important;
+}
 
+.govuk-breadcrumbs {
+  @extend .govuk-breadcrumbs;
+  display: normal !important;
+}
 
 .index-table {
   width: 100%;
