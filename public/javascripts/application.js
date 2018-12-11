@@ -38,9 +38,27 @@ $(document).ready(function () {
   }
 */
 //Contexts
-var context1 = 'context1'; //logged out
-var context2 = 'context2'; //logged-in, but not agreed to licence
-var context3 = 'context3'; //logged-in, has already agreed to licence
+
+
+
+//Get data attribute of prototype
+$('.context').each(function(){
+  var contextState = $(this).attr("data-id");
+  console.log(contextState);
+
+  switch(contextState) {
+    case 'id-1':
+      var context = 'context1'; //logged out
+      break;
+    case 'id-2':
+      var context = 'context2'; //logged-in, but not agreed to licence
+      break;
+    case 'id-3':
+      var context = 'context3'; //logged-in, has already agreed to licence
+      break;
+  }
+
+});
 
 $('.download-started').hide();
   $('.hide').hide();
@@ -222,47 +240,5 @@ $('#createaccount').submit(function () {
   	});
 
     $('.sprint-wrap').find('tr:even').css({'background-color':'red'}).end().find('tr:odd').css({'background-color':'blue'});
-
-
-    $("#view-licence").click(function(event) {
-    $("#step-1").hide();
-    $("#step-2").show();
-    });
-
-    $("#accept-licence").click(function(event) {
-    $("#step-1").hide();
-    $("#step-2").hide();
-    $("#step-3").show();
-    $("#step-4").hide();
-    });
-
-    $("#accept-licence-back-step-2").click(function(event) {
-    $("#step-1").show();
-    $("#step-2").hide();
-    $("#step-3").hide();
-    $("#step-4").hide();
-    });
-
-    $("#accept-licence-back-step-3").click(function(event) {
-    $("#step-1").show();
-    $("#step-2").hide();
-    $("#step-3").hide();
-    $("#step-4").hide();
-    });
-
-    $("#download-options-back-step-3").click(function(event) {
-    $("#step-2").show();
-    $("#step-1").hide();
-    $("#step-3").hide();
-    $("#step-4").hide();
-    });
-
-    $("#latest-version").click(function(event) {
-    $("#step-4").show();
-    $("#step-1").hide();
-    $("#step-2").hide();
-    $("#step-3").hide();
-    });
-
 
 })
