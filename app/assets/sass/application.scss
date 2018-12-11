@@ -385,6 +385,9 @@ pre {
 .govuk-breadcrumbs {
   @extend .govuk-breadcrumbs;
   display: normal !important;
+  #accept-licence-back-step-2 {
+    border-bottom: 1px solid black;
+  }
 }
 
 .index-table {
