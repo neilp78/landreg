@@ -441,10 +441,17 @@ pre {
   margin:auto;
 }
 
-// .govuk-breadcrumbs {
-//   display: none !important;
-// }
+.govuk-breadcrumbs {
+  display: none !important;
+}
 
+.govuk-breadcrumbs {
+  @extend .govuk-breadcrumbs;
+  display: normal !important;
+  #accept-licence-back-step-2 {
+    border-bottom: 1px solid black;
+  }
+}
 
 .index-table {
   width: 100%;
@@ -564,7 +571,9 @@ pre {
   content: 'whatever it is you want to add';
 }
 
-
-.utility-menu {
-
-}
+// #view-licence {
+//   border-bottom: 1px solid #4c2c92;
+//   #view-licence:hover {
+//     border-bottom: 1px solid red;
+//   }
+// }
