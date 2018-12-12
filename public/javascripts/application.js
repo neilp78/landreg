@@ -22,7 +22,6 @@ $(document).ready(function () {
     sessionStorage.setItem("dataset", currentDataSet);
 
   }
-  console.log(sessionStorage.getItem("dataset"));
 
   switch(sessionStorage.getItem("dataset")) {
       case '-registered-leases-':
