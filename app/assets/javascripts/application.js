@@ -38,9 +38,34 @@ $(document).ready(function () {
   }
 */
 //Contexts
+$('.state-2, .state-3').hide();
+$('a.gotostate2').click(function() {
+  $('.state-2').show();
+  $('.state-1').hide();
+  event.preventDefault();
+});
+$('.state-2 a').click(function() {
+  $('.state-2').hide();
+  $('.state-3').show();
+  event.preventDefault();
+});
+$('.state-1 .back-a-step').click(function(){
 
-
-
+});
+$('.state-2 .back-a-step').click(function(){
+  $('.state-1').show();
+  $('.state-3').hide();
+  $('.state-2').hide();
+});
+$('.state-3 .back-a-step').click(function(){
+  $('.state-1').hide();
+  $('.state-2').show();
+  $('.state-3').hide();
+});
+$(".download-wrapper :checkbox").bind('change', function(){
+  //alert('selected');
+  $('.download-wrapper .govuk-button').removeClass('disabled_btn');
+});
 //Get data attribute of prototype
 $('.context').each(function(){
   var contextState = $(this).attr("data-id");

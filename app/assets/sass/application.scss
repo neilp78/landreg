@@ -28,6 +28,27 @@ $govuk-global-styles: true;
     box-shadow: 0 2px 2px rgba(11,12,12,0.4)
   }
 }
+.modal {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+
+  .modal-inset {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
 .listings2 section {
   min-height: 345px;
   border-bottom: 1px solid #bfc1c3;
@@ -36,6 +57,10 @@ $govuk-global-styles: true;
 .attachment-details {
   width:75%;
   float:left;
+
+  .disabled_btn {
+    background: #9cc0a1;
+  }
 }
 
 .download {
