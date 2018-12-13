@@ -31,6 +31,15 @@ $govuk-global-styles: true;
 .context3-resize {
   height: 400px;
 }
+.alert-test {
+  background: #ffbf47;
+  border-left: solid #cd962f 19px;
+  padding: 3%;
+
+  .govuk-warning-text__icon {
+    margin-left: 20px;
+  }
+}
 .listings-with-history {
   section {
     min-height: 500px !important;
