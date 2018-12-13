@@ -39,22 +39,23 @@ $(document).ready(function () {
 //Contexts
 $('.state-2, .state-3').hide();
 $('a.gotostate2').click(function() {
-  $('.state-2').show();
+  $('.state-2').fadeIn( "slow" );
   $('.state-1').hide();
   event.preventDefault();
 });
 $('.state-2 a').click(function() {
   $('.state-2').hide();
-  $('.state-3').show();
+  $('.state-3').fadeIn( "slow" );
   event.preventDefault();
 });
 
 $('.cancel-this').click(function(){
-  $('.state-1').show();
+  $('.state-1').fadeIn( "slow" );
   $('.state-3').hide();
   $('.state-2').hide();
   $(".download-wrapper :checkbox").prop('checked', false); // Unchecks it
   $('.download-wrapper .govuk-button').addClass('disabled_btn');
+  event.preventDefault();
 });
 
 $('.download-wrapper .govuk-button').unbind( "click" );
@@ -65,7 +66,8 @@ $(".download-wrapper :checkbox").bind('change', function(){
 
   $('.state-2 .govuk-button').click(function(){
     $('.state-2').hide();
-    $('.state-3').show();
+    $('.state-3').fadeIn( "slow" );
+    event.preventDefault();
   });
 });
 //Get data attribute of prototype
