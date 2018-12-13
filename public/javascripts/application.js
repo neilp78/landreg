@@ -49,24 +49,40 @@ $('.state-2 a').click(function() {
   event.preventDefault();
 });
 
+<<<<<<< HEAD
 $('.cancel-this').click(function(){
   $('.state-1').show();
   $('.state-3').hide();
   $('.state-2').hide();
   $(".download-wrapper :checkbox").prop('checked', false); // Unchecks it
   $('.download-wrapper .govuk-button').addClass('disabled_btn');
+=======
+});
+$('.state-2 .back-a-step').click(function(){
+  $('.state-1').show();
+  $('.state-3').hide();
+  $('.state-2').hide();
+});
+$('.state-3 .back-a-step').click(function(){
+  $('.state-1').hide();
+  $('.state-2').show();
+  $('.state-3').hide();
+>>>>>>> 022e4683b9413524fefa23746a06568133c1ccee
 });
 
 $('.download-wrapper .govuk-button').unbind( "click" );
 $(".download-wrapper :checkbox").bind('change', function(){
   //alert('selected');
   $('.download-wrapper .govuk-button').removeClass('disabled_btn');
+<<<<<<< HEAD
   //$('.download-wrapper .govuk-button').bind( "click" );
 
   $('.state-2 .govuk-button').click(function(){
     $('.state-2').hide();
     $('.state-3').show();
   });
+=======
+>>>>>>> 022e4683b9413524fefa23746a06568133c1ccee
 });
 //Get data attribute of prototype
 $('.context').each(function(){
@@ -305,4 +321,36 @@ $('#createaccount').submit(function () {
     $("#step-3").hide();
     });
 
+<<<<<<< HEAD
+=======
+
+// Modal
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close i
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+>>>>>>> 022e4683b9413524fefa23746a06568133c1ccee
 })
