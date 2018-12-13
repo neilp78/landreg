@@ -22,7 +22,6 @@ $(document).ready(function () {
     sessionStorage.setItem("dataset", currentDataSet);
 
   }
-  console.log(sessionStorage.getItem("dataset"));
 
   switch(sessionStorage.getItem("dataset")) {
       case '-registered-leases-':
@@ -40,39 +39,34 @@ $(document).ready(function () {
 //Contexts
 $('.state-2, .state-3').hide();
 $('a.gotostate2').click(function() {
-  $('.state-2').fadeIn( "slow" );
+  $('.state-2').show();
   $('.state-1').hide();
   event.preventDefault();
 });
 $('.state-2 a').click(function() {
   $('.state-2').hide();
-  $('.state-3').fadeIn( "slow" );
+  $('.state-3').show();
   event.preventDefault();
 });
-$('.state-1 .back-a-step').click(function(){
 
 $('.cancel-this').click(function(){
-  $('.state-1').fadeIn( "slow" );
+  $('.state-1').show();
   $('.state-3').hide();
   $('.state-2').hide();
   $(".download-wrapper :checkbox").prop('checked', false); // Unchecks it
   $('.download-wrapper .govuk-button').addClass('disabled_btn');
-  event.preventDefault();
 });
-$('.state-2 .back-a-step').click(function(){
-  $('.state-1').show();
-  $('.state-3').hide();
-  $('.state-2').hide();
-});
-$('.state-3 .back-a-step').click(function(){
-  $('.state-1').hide();
-  $('.state-2').show();
-  $('.state-3').hide();
-});
+
+$('.download-wrapper .govuk-button').unbind( "click" );
 $(".download-wrapper :checkbox").bind('change', function(){
   //alert('selected');
   $('.download-wrapper .govuk-button').removeClass('disabled_btn');
+  //$('.download-wrapper .govuk-button').bind( "click" );
 
+  $('.state-2 .govuk-button').click(function(){
+    $('.state-2').hide();
+    $('.state-3').show();
+  });
 });
 //Get data attribute of prototype
 $('.context').each(function(){
@@ -310,34 +304,5 @@ $('#createaccount').submit(function () {
     $("#step-2").hide();
     $("#step-3").hide();
     });
-
-
-// Modal
-
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 })
