@@ -40,9 +40,16 @@ $govuk-global-styles: true;
     margin-left: 20px;
   }
 }
-.alert-test.alert-small {
+.alert-small {
     width: 85%;
     font-size: 13px;
+    background: #ffbf47;
+    border-left: solid #cd962f 19px;
+    padding: 3%;
+
+    .govuk-warning-text__icon {
+      margin-left: 20px;
+    }
 }
 .listings-with-history {
   section {
