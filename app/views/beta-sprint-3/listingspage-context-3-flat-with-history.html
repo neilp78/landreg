@@ -33,6 +33,13 @@
 
 <div class="grid-row">
   <div class="column-two-thirds listings2">
+<div class="govuk-warning-text alert-test">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>
+    There has been an ammendment to a licence that you have agreed to. <a href="">Dismiss</a>
+  </strong>
+</div>
     <h1 class="gem-c-heading  gem-c-heading--mobile-top-margin govuk-heading-xl">Download a data file</h1>
 
     <div class="govuk-tabs listings-with-history" data-module="tabs">
@@ -82,15 +89,21 @@
                       <div class="attachment-details">
                         <h2 class="title"><a href="https://land-reg.herokuapp.com/beta-sprint-3/detailspages-dataset-v4">Registered leases</a></h2>
                         <p class="metadata">
-                          <p class="float_left"><span class="type govuk-!-font-weight-bold govuk-tag app-task-list__task-completed">New data added to this file: 27 November 2018</span></p>
-                          <p class="float_left">Download data about overseas companies that own land in England and Wales.<br> You need to <a href="createaccount">create an account</a> or <a href="login">sign in</a> to download this data.<br><br><span class="govuk-!-font-weight-bold">This file may not be suitable for users of assistive technology.</span></p>
-
+                          <div class="govuk-warning-text alert-small">
+                            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                            <strong class="govuk-warning-text__text">
+                              <span class="govuk-warning-text__assistive">Warning</span>
+                              There has been a change to this licence agreement.
+                            </strong>
+                          </div>
+                          <p class="float_left">Download data about overseas companies that own land in England and Wales.<br>
+                          </p>
+                          <div class="govuk-inset-text">
+                            <p>You downloaded an older version of this data on <span class="govuk-!-font-weight-bold">5 December 2018. </span><br><a href="#">View the file you last downloaded here</a></p>
+                          </div>
                         </p>
-                        <div class="download-wrapper">
 
-                            <a href="" class="download" download><span>Download latest full file</span></a>
-                            <a href="" class="download" download><span>Download latest change only</span></a>
-                        </div>
+                        <p>There has been a change the licence agreement for this data since you last downloaded. To download this dataset again, <a href="">you must agree to the new licence</a>.
                       </div>
                     </section>
                     </div>

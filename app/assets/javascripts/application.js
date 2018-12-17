@@ -48,6 +48,10 @@ $('.state-2 a').click(function() {
   $('.state-3').fadeIn('fast');
   event.preventDefault();
 });
+$('.alert-test a').click(function(){
+  $('.alert-test').hide();
+  event.preventDefault();
+});
 
 $('.cancel-this').click(function(){
   $('.state-1').fadeIn('fast');
