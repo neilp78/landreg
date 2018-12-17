@@ -615,23 +615,15 @@ pre {
   padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 15px;
-
   h1, p, a, span {
     color: white;
   }
 }
 
-// #view-licence {
-//   border-bottom: 1px solid #4c2c92;
-//   #view-licence:hover {
-//     border-bottom: 1px solid red;
-//   }
-// }
 
 .highlight {
   width: 100%;
 }
-
 
 // Modal
 
@@ -651,9 +643,8 @@ pre {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: white;
   margin: 10% auto; /* 15% from the top and centered */
   padding: 50px;
-  border: 1px solid #888;
   width: 50%; /* Could be more or less, depending on screen size */
 }
