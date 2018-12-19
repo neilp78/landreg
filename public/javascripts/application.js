@@ -41,6 +41,7 @@ $('.modal-listings .govuk-button').click(function(){
   $('.state-2').hide();
   $('.state-3').fadeIn('fast');
   event.preventDefault();
+  $('#tab_past-week').fadeIn('fast');
 });
 $('.alert-test a').click(function(){
   $('.alert-test').hide();

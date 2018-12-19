@@ -92,6 +92,10 @@ $govuk-global-styles: true;
   border-bottom: 1px solid #bfc1c3;
   padding-top: 40px;
 }
+.download-wrapper #myBtn {
+  color: #4c2c92;
+  text-decoration: underline;
+}
 .attachment-details {
   width:75%;
   float:left;
