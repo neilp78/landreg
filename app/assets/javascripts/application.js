@@ -11,43 +11,33 @@
   }
 } */
 
-
+$(".download-wrapper :checkbox").prop('checked', false);
 
 $(document).ready(function () {
   window.GOVUKFrontend.initAll();
-/*
-  if ($(".product-page")[0]){
-    var currentDataSet = $('h1').text();
-    currentDataSet = currentDataSet.replace(/\s+/g, '-').toLowerCase();
-    sessionStorage.setItem("dataset", currentDataSet);
 
-  }
 
-  switch(sessionStorage.getItem("dataset")) {
-      case '-registered-leases-':
-        $(".registered-leases .historic").text('this is downloaded').css('font-weight','bold');;
-            //console.log('Rl');
-          break;
-      case '-overseas-companies-that-own-property-in-england-and-wales-':
-           $(".overseas .historic").text('this is downloaded').css('font-weight','bold');
-           //console.log('oS');
-          break;
-      //default:
-          //code block
-  }
-*/
 //Contexts
 $('.context2-3 #tab_past-week').hide();
 $('.state-2 a').click(function() {
-  $(this).event.preventDefault();
+  event.preventDefault();
 });
+
 $('.state-2, .state-3').hide();
 $('a.gotostate2').click(function() {
   $('.state-2').fadeIn('fast');
   $('.state-1').hide();
   event.preventDefault();
 });
+
 $('.state-2 a').click(function() {
+  $('.state-2').hide();
+  $('.state-3').fadeIn('fast');
+  event.preventDefault();
+});
+
+$('.modal-listings .govuk-button').click(function(){
+  $('.modal-listings').fadeOut('fast');
   $('.state-2').hide();
   $('.state-3').fadeIn('fast');
   event.preventDefault();
@@ -245,7 +235,7 @@ $('#createaccount').submit(function () {
 
 //console.log('fojnd htis');
       $(this).find(":checkbox").bind('change', function(){
-          alert($(this).attr("value"));
+        //  alert($(this).attr("value"));
       });
     });
 
