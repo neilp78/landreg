@@ -37,6 +37,10 @@ $(document).ready(function () {
   }
 */
 //Contexts
+$('.context2-3 #tab_past-week').hide();
+$('.state-2 a').click(function() {
+  $(this).event.preventDefault();
+});
 $('.state-2, .state-3').hide();
 $('a.gotostate2').click(function() {
   $('.state-2').fadeIn('fast');
@@ -53,12 +57,14 @@ $('.alert-test a').click(function(){
   event.preventDefault();
 });
 
+
 $('.cancel-this').click(function(){
   $('.state-1').fadeIn('fast');
   $('.state-3').hide();
   $('.state-2').hide();
   $(".download-wrapper :checkbox").prop('checked', false); // Unchecks it
   $('.download-wrapper .govuk-button').addClass('disabled_btn');
+  event.preventDefault();
 });
 
 $('.download-wrapper .govuk-button').unbind( "click" );
@@ -72,6 +78,11 @@ $(".download-wrapper :checkbox").bind('change', function(){
     $('.state-3').fadeIn('fast');
   });
 });
+
+$('.download-wrapper .govuk-button').click(function(){
+   $('#tab_past-week').show();
+});
+//
 //Get data attribute of prototype
 $('.context').each(function(){
   var contextState = $(this).attr("data-id");

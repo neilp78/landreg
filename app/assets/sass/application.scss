@@ -9,10 +9,15 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
-
+.state-2 .download-wrapper {
+  margin-top: 30px;
+}
 .gem-c-govspeak .attachment .attachment-details .accessibility-warning p, .metadata {
   font-size: 14px;
   line-height: 1.4285714286;
+}
+.context2-3 .cancel-this {
+  margin-top:20px;
 }
 .attachment-thumb {
   width:16%;
@@ -29,7 +34,7 @@ $govuk-global-styles: true;
   }
 }
 .context3-resize {
-  height: 400px;
+  //height: 400px;
 }
 .alert-test {
   background: #ffbf47;
@@ -53,7 +58,7 @@ $govuk-global-styles: true;
 }
 .listings-with-history {
   section {
-    min-height: 500px !important;
+    //min-height: 500px !important;
   }
   .govuk-tabs__panel {
       border-left: none;
@@ -83,7 +88,7 @@ $govuk-global-styles: true;
 //   }
 // }
 .listings2 section {
-  min-height: 345px;
+  min-height: 400px;
   border-bottom: 1px solid #bfc1c3;
   padding-top: 40px;
 }
