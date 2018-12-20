@@ -87,6 +87,15 @@ $govuk-global-styles: true;
 //     opacity: 1;
 //   }
 // }
+
+.listings-view {
+  width:75%;
+  float:right;
+}
+.listings-filter {
+  width:25%;
+  float:left;
+}
 .listings2 section {
   min-height: 400px;
   border-bottom: 1px solid #bfc1c3;
