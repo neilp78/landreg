@@ -71,7 +71,7 @@ $(".download-wrapper :checkbox").bind('change', function(){
 });
 
 $('.download-wrapper .govuk-button').click(function(){
-   $('#tab_past-week').show();
+   $('#tab_past-week').fadeIn('fast');
 });
 //
 //Get data attribute of prototype
