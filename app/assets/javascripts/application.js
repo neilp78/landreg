@@ -48,6 +48,10 @@ $('.alert-test a').click(function(){
   event.preventDefault();
 });
 
+$('.modal-content .govuk-button, .cancel-this').click(function(){
+  $('#myModal').fadeOut('fast');
+});
+
 
 $('.cancel-this').click(function(){
   $('.state-1').fadeIn('fast');
