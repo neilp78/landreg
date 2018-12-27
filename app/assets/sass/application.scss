@@ -87,7 +87,79 @@ $govuk-global-styles: true;
 //     opacity: 1;
 //   }
 // }
-
+.feedback-page {
+  .contact-form label {
+    color: #0b0c0c;
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+  .contact-form legend {
+    font-size: 24px;
+    line-height: 1.25;
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 700;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  fieldset {
+    border:0 !important;
+    display: block;
+  }
+  input[disabled="disabled"] {
+    opacity: 0.5;
+  }
+  #link {
+    margin-left: 1em;
+    display: inline-block;
+    margin: 17px 0 0 0;
+    width: 100%;
+    min-width: 2em;
+    width: 68%;
+    min-width: 2em;
+    float: right;
+  }
+  .contact-form textarea {
+    font-size: 19px;
+    line-height: 1.3157894737;
+    font-family: "nta", Arial, sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 1.25;
+    min-height: 10em;
+    height: auto;
+    width: 99%;
+    height: 15em;
+  }
+  label.selectable {
+      display: block;
+      float: none;
+      clear: left;
+      position: relative;
+      background: #dee0e2;
+      border: 1px solid #dee0e2;
+      padding: 18px 30px 15px 45px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+  }
+  label.selectable {
+      float: left;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+  .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="date"], .contact-form input[type="datetime"], .contact-form input[type="datetime-local"], .contact-form input[type="email"], .contact-form input[type="month"], .contact-form input[type="number"], .contact-form input[type="search"], .contact-form input[type="tel"] input[type="time"], .contact-form input[type="url"], .contact-form input[type="week"], .contact-form select[size], .contact-form textarea {
+      background-color: #f9f9f9;
+      border: 1px inset #bfc1c3;
+      font-size: 1em;
+      line-height: 1.2;
+      padding: 0.3em 0 0.1em 0.4em;
+  }
+}
 .listings-view {
   width:75%;
   float:right;

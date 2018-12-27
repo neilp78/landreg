@@ -11,6 +11,18 @@
   }
 } */
 
+//feedback
+$('#location-specific').click(function() {
+   if($('#location-specific').is(':checked')) {
+     $('#link').prop("disabled", false);
+  }
+});
+$('#location-all').click(function() {
+   if($('#location-all').is(':checked')) {
+     $('#link').prop("disabled", true);
+  }
+});
+
 $(".download-wrapper :checkbox").prop('checked', false);
 
 $(document).ready(function () {
