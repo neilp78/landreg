@@ -91,7 +91,9 @@ if (referrer == 'create-personal-account/5-confirmation') {
 if (referrer == 'listingspage-context-1-flat') {
   document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-context-2-and-3';
 }
-
+if (referrer == 'confirm-password-created') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'listingspage-context-2-and-3';
+}
 //
 </script>
 {% endblock %}
