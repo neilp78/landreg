@@ -9,6 +9,34 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+.filter-user-type {
+  input {
+    float: left;
+    margin-top: 12px;
+    margin-right: 20px;
+    padding: 9px;
+  }
+  label p {
+    margin-left: 20px;
+    margin-top: 7px;
+  }
+  .multiple-choice {
+    background: #fff;
+    border: #0b0c0c 1px solid;
+    display: block;
+    float: none;
+    clear: left;
+    position: relative;
+    padding: 17px 20px 7px 4px;
+    margin: 10px 10px 10px 0;
+    cursor: pointer;
+  }
+  .input_selected {
+    background: #dee0e2;
+    border: 1px solid #dee0e2;
+  }
+}
+
 .state-2 .download-wrapper {
   margin-top: 30px;
 }

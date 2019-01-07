@@ -29,6 +29,16 @@
     });
 //});
 
+$('.filter-user-type .multiple-choice').click(function() {
+   $('.filter-user-type .multiple-choice').removeClass('input_selected');
+   $(this).addClass('input_selected');
+   $('.filter-user-type .multiple-choice input').prop('checked', false).attr('checked', false);
+   $(this).find('input').prop('checked', true).attr('checked', true);
+
+   $('.filter-user-type .multiple-choice').removeClass('usertype_selected');
+   $(this).addClass('usertype_selected');
+});
+
 //feedback
 $('#location-specific').click(function() {
    if($('#location-specific').is(':checked')) {
@@ -195,23 +205,24 @@ $('#createaccount').submit(function () {
     var gotoOversea = 'create-overseas-account/3-1-createaccount-overseas';
 
     var thisradio = $(this).find('.govuk-radios__item input');
-    $('#user-select input').on('change', function() {
-       var target = ($(this).val());
+  //$('#user-select input').on('change', function() {
+    $('#user-select .multiple-choice').click(function() {
+       var target = $('#user-select .multiple-choice.usertype_selected input').val();
 
-       switch(target) {
-            case 'personal':
-                $('.govuk-form-group a').attr('href', gotoPersonal);
-                break;
-            case 'uk-organisation':
-                //alert(target);
-                $('.govuk-form-group a').attr('href', gotoUK);
-                break;
-            case 'overseas-organisation':
-                //alert(target);
-                $('.govuk-form-group a').attr('href', gotoOversea);
-                break;
-        }
-       //$(updatedLink).attr('href',target)
+         switch(target) {
+              case 'personal':
+                  $('.govuk-form-group a').attr('href', gotoPersonal);
+                  break;
+              case 'uk-organisation':
+                  //alert(target);
+                  $('.govuk-form-group a').attr('href', gotoUK);
+                  break;
+              case 'overseas-organisation':
+                  //alert(target);
+                  $('.govuk-form-group a').attr('href', gotoOversea);
+                  break;
+          }
+      //}
     });
   });
 
