@@ -10,6 +10,24 @@
       document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
   }
 } */
+//sign in validation
+//$('.sign-in-validate').each(function() {
+  //var email_signin = $(this).find('#email-signin');
+//  var password_signin = $(this).find('#email-signin');
+
+  //var submit_signin = $('.targetloginpage');
+
+    $('.targetloginpage').click(function() {
+      if($('#email-signin').val() == '') {
+        alert('email');
+        $('.targetloginpage').event.preventDefault();
+      }
+      if($('#email-signin').val() == '') {
+        alert('password');
+        $('.targetloginpage').event.preventDefault();
+      }
+    });
+//});
 
 //feedback
 $('#location-specific').click(function() {
@@ -19,7 +37,7 @@ $('#location-specific').click(function() {
 });
 $('#location-all').click(function() {
    if($('#location-all').is(':checked')) {
-     $('#link').prop("disabled", true);
+     $('#link').prop("disabled", true).attr('disabled');
   }
 });
 

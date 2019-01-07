@@ -108,6 +108,8 @@ $govuk-global-styles: true;
   fieldset {
     border:0 !important;
     display: block;
+    padding-left: 0px;
+    margin-top: 55px;
   }
   input[disabled="disabled"] {
     opacity: 0.5;
