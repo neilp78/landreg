@@ -9,6 +9,12 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+.design-system {
+  .govuk-tabs__panel {
+    border-left:none !important;
+    border-right:none !important;
+  }
+}
 .filter-user-type {
   input {
     float: left;
