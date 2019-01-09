@@ -9,6 +9,13 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+.breaker-line{
+  border-bottom: 5px solid rgba(11, 12, 12, 0.1);
+  padding-top: 0;
+  width: 100%;
+  margin-bottom: 57px;
+}
+
 .design-system {
   .govuk-tabs__panel {
     border-left:none !important;
