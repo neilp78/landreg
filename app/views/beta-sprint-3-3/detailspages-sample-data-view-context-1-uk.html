@@ -10,7 +10,10 @@
 <nav class="app-navigation-1 govuk-clearfix full-screen">
   <ul class="app-navigation__list">
     <li>
-      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign out</a>
+      <a class="govuk-link" href="createaccount" data-topnav="Community">Create account</a>
+    </li>
+    <li>
+      <a class="govuk-link" href="login-fromstart" data-topnav="Community">Sign in</a>
     </li>
   </ul>
 </nav>
@@ -38,10 +41,10 @@
       <span class="govuk-caption-xl">Example of data</span>
       <h1 class="govuk-heading-xl">
 
-Overseas companies that own property in England and Wales
+          UK companies that own property in England and Wales
       </h1>
 
-      <p>Download data about overseas companies that own land in England and Wales.</p>
+      <p>Download data about leasehold properties in England and Wales.</p>
 
       <br>
       <p>Last updated on the  18 October 2018 (updated monthly).
@@ -50,50 +53,115 @@ Overseas companies that own property in England and Wales
       <span class="govuk-body govuk-!-font-weight-bold">File size is 15.8KB.</span>
       </p>
       <br>
-      <div class="state-1">
-      <div class="download-wrapper">
-          <a href="" class="gotostate2 download"><span style="color: black;">Get this data</span></a>
-      </div>
-      </div>
-      <div class="state-2" style="display: block;background-color: white;padding: 10px;">
-      <p class="metadata">
 
-      </p>
-      <div class="download-wrapper">
-            <div class="govuk-checkboxes__item">
-               <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british" aria-describedby="nationality-1-item-hint">
-               <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
-              I have read and agree to <a href="#">the licence</a>
-               </label>
+    <div class="state-1" style="margin-bottom: 40px;">
+    <div class="download-wrapper">
+        <a id="myBtn" class="gotostate2 download"><span style="color: black;">Get this data</span></a>
+    </div>
+    </div>
 
-             </div>
-             <br>
+    <div id="myModal" class="modal" style="color: black;">
 
-             <a href="#" role="button" draggable="false" class="govuk-button disabled_btn">
-               Agree and continue
-             </a>
-             <br>
-             <a href="#" class="cancel-this">Cancel</a>
+      <!-- Modal content -->
+      <div class="modal-content">
 
+        <h1 class="govuk-heading-xl" style="color: black;">
+          Agree to the data licences
+        </h1>
+
+
+        <p style="color: black;">The file you are about to download includes data owned by:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>HM Land Registry</li>
+          <li>Ordnance Survey’s AddressBase Premium</li>
+          <li>Royal Mail’s PAF® database (address data) </li>
+       </ul>
+
+       <h2 class="govuk-heading-l">How you can use this data</h2>
+
+       <h3 class="govuk-heading-m">If you’re a business </h3>
+
+       <p style="color: black;">You can use this data to: </p>
+       <ul class="govuk-list govuk-list--bullet">
+         <li>prevent and detect crime, including for:</li>
+         <ul class="govuk-list govuk-list--bullet">
+           <li>the apprehension or prosecution of alleged offenders</li>
+           <li>proceedings in a court or tribunal</li>
+           <li>complying with an order, a court or a tribunal</li>
+       </ul>
+         <li>keep records about land and properties</li>
+      </ul>
+
+      <h3 class="govuk-heading-m">If you’re a public body</h3>
+
+      <p style="color: black;">You can use this data if you have a:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="">Public Sector Mapping Agreement Licence</a></li>
+        <li><a href="">One Scotland Mapping Agreement Member Licence</a></li>
+      </ul>
+
+      <p style="color: black;">These licences are issued by Ordnance survey and public bodies must use the data under the terms of these licences.</p>
+
+      <p><a href="">Apply for a licence from Ordnance Survey</a>.</p>
+
+      <h2 class="govuk-heading-l">Not sure if you can use this data?</h2>
+
+      <p style="color: black;">Contact Royal Mail before you use this data. Ask them to confirm that your intended use is permitted under the terms of their licence.</p>
+
+      <p style="color: black;"><a href="">Email Royal Mail</a>.</p>
+
+      <h3 class="govuk-heading-m">Read the full licences </h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="">HM Land Registry’s data</a></li>
+        <li><a href="">Ordnance Survey’s AddressBase Premium licence</a></li>
+        <li><a href="">Royal Mail’s PAF® database licence</a></li>
+      </ul>
+
+      <br>
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british">
+                <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+                I understand and agree to these licences
+              </label>
+              </div>
+            </div>
+          </fieldset>
         </div>
-      </div><!-- end of state 2 -->
-      <div class="state-3" style="display: block;background-color: white;padding: 10px;">
-        <p class="metadata">
 
-        </p>
-        <div class="download-wrapper">
-          <h3>Download your file</h3>
+        <a href="#" role="button" draggable="false" class="govuk-button disabled_btn">
+          Agree and continue
+        </a>
+        <br>
+        <a href="#" class="cancel-this">Cancel</a>
+
+      </div>
+
+    </div>
+      <!-- Start of Modal -->
+      <div class="state-2">
+
+    </div>
+
+      <!-- End of Modal -->
+
+      <div class="state-3">
+
+        <div class="
+        r">
+          <p style="color: white;">Download your file</p>
           <br>
             <a href="" class="download" download><span style="color: black;">Download full file</span></a>
             <a href="" class="download" download><span style="color: black;">Download change only</span></a>
         </div>
         <br><br>
         <a href="#" class="cancel-this">Cancel</a>
-      </div><!-- end of state 3 -->
+      </div><!--end of state 3 -->
 
-      <br>
-      <br>
-      <br>
       <p>This data set is <a href="" style="color: white;">free and licenced</a>.</p>
 
       </div>
