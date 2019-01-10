@@ -9,6 +9,9 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+.full-two-thirds {
+  width:66%;
+}
 .space {
   width:100px;
 }
