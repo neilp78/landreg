@@ -75,6 +75,23 @@ $('section.attachment').each(function(){
   var state2a = $(this).find('.state-2 a');
   var state3 = $(this).find('.state-3');
   var govbutton = $(this).find('.download-wrapper .govuk-button');
+  var statusText = $(this).find('.show-status');
+  var clickDownload = $(this).find('.download');
+
+  var fileSelected = '0';
+
+  clickDownload.click(function(){
+    //alert();
+    switch($(this).attr('data-slide')) {
+      case '1':
+        statusText.text('You downloaded the full dataset on 21 January 2019');
+        break;
+      case '2':
+        statusText.text('You downloaded change only file on 21 January 2019');
+        break;
+    }
+  });
+
 
   govbutton.unbind( "click" );
   $(this).find($(".download-wrapper :checkbox")).bind('change', function(){
