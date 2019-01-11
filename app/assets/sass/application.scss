@@ -9,6 +9,10 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+.listings2 .govuk-inset-text {
+  margin-bottom: 30px;
+  background-color: #f8f8f8;
+}
 .full-two-thirds {
   width:66%;
 }
@@ -773,16 +777,34 @@ pre {
 .pvw-title:after {
   content: 'whatever it is you want to add';
 }
-
+.align-fix {
+  width:100%;
+  clear: both;
+}
 .blue-box {
   background-color: #005ea5;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 15px;
+  overflow: auto;
+
+  .state-2 {
+    background: white;
+    padding: 2%;
+  }
   h1, p, span {
     color: white;
   }
+   .white-link-text {
+     color: #fff !important;
+     font-weight: bold;
+   }
+
+   .download span {
+     color:#0b0c0c !important;
+    text-decoration: none !important;
+   }
 }
 
 

@@ -68,11 +68,11 @@ $('section.attachment .govuk-button').each(function(){
   event.preventDefault();
 });
 
-$('section.attachment').each(function(){
+$('section.attachment, .product-page').each(function(){
   var gotostate2 = $(this).find('a.gotostate2');
   var state1 = $(this).find('.state-1');
   var state2 = $(this).find('.state-2');
-  var state2a = $(this).find('.state-2 a');
+  var state2a = $(this).find('.state-2 a.govuk-button');
   var state3 = $(this).find('.state-3');
   var govbutton = $(this).find('.download-wrapper .govuk-button');
   var statusText = $(this).find('.show-status');
@@ -137,7 +137,7 @@ $('.modal-content .govuk-button, .cancel-this').click(function(){
   $('#myModal').fadeOut('fast');
 });
 
-$('section.attachment').each(function(){
+$('section.attachment, .product-page').each(function(){
   $(this).find('.cancel-this').click(function(){
     $(this).find($('.state-1').fadeIn('fast'));
     $(this).find($('.state-3').hide());
