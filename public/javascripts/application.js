@@ -150,8 +150,13 @@ $('section.attachment, .product-page').each(function(){
 
 });
 
-
-
+$('.product-page .modal-content .govuk-button').click(function(){
+  $('.state-2').hide();
+  $('.state-3').show();
+  $('html, body').animate({
+        scrollTop: $(".blue-box").offset().top
+    }, 1000);
+});
 $('.download-wrapper .govuk-button').click(function(){
    $('#tab_past-week').fadeIn('fast');
 });
