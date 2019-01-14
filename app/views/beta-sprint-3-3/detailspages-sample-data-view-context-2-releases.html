@@ -41,7 +41,8 @@
         Registered leases
       </h1>
 
-      <p>Download data about leasehold properties in England and Wales.</p>
+      <p><p>Land and property in England and Wales with a leasehold tenure. A leasehold tenure is where the user owns the property for a fixed period of time.</p>
+</p>
 
       <br>
       <p>Last updated on the 18th October 2018 (updated monthly).
@@ -195,78 +196,216 @@
         <p>The data shown in this example is not real data. This example is to show what you will see if you download the file.<p>
 
         <br>
-        <table class="govuk-table table-hack">
-          <tbody>
-  <thead>
-  <td><strong>Data</strong></td>
-  <td><strong>What this means</strong></td>
-  <td><strong>Example data</strong></td>
-  </thead>
-  <tr>
-  <td>Property description</td>
-  <td>Description of the leased land, for example an address</td>
-  <td>1 Smith Street&nbsp;</td>
-  </tr>
-  <tr>
-  <td>Region and county</td>
-  <td>Location of the leasehold property</td>
-  <td>Region</td>
-  </tr>
-  <tr>
-  <td>Unique property reference number (UPRN)</td>
-  <td>
-  <p>Number used by HM Land Registry to identify the property location.</p>
-  <p>Similar to postcode, but more specific</p>
-  </td>
-  <td>abc00000003</td>
-  </tr>
-  <tr>
-  <td>Unique identifier</td>
-  <td>Reference&nbsp;used by HM Land Registry to identify the land without a title number</td>
-  <td>123456</td>
-  </tr>
-  <tr>
-  <td>Date of lease</td>
-  <td>When the lease started</td>
-  <td>Date</td>
-  </tr>
-  <tr>
-  <td>Term</td>
-  <td>How long the lease lasts for</td>
-  <td>999 years</td>
-  </tr>
-  <tr>
-  <td>Tenure</td>
-  <td>How the land is owned (type of lease)</td>
-  <td>Leasehold</td>
-  </tr>
-  <tr>
-  <td>Alienation cause indicator</td>
-  <td>
-  <p>Clause in the leasehold agreement between the landlord&nbsp;and their tenant.</p>
-  <p>This clause may stop the tenant from leaving the lease (selling) before the end of their term.</p>
-  </td>
-  <td>Clause details</td>
-  </tr>
-  <tr>
-  <td>Reg order</td>
-  <td>
-  <p>Some pieces of land have more than 1 lease on them.</p>
-  <p>The reg order shows the order of registration (which lease came first).</p>
-  </td>
-  <td>
-  <p>Lease 1 (DD/MM/YY)</p>
-  <p>Lease 2 (DD/MM/YY)</p>
-  </td>
-  </tr>
-  <tr>
-  <td>Price paid&nbsp;</td>
-  <td>Price paid for the land</td>
-  <td>1000000</td>
-  </tr>
-  </tbody>
-        </table>
 
+        <table border="0" width="600" cellspacing="0" cellpadding="0" class="govuk-table table-hack">
+        <tbody>
+        <tr>
+        <td width="150">
+        <p><strong>Data</strong></p>
+        </td>
+        <td nowrap="nowrap" width="194">
+        <p><strong>What this means</strong></p>
+        </td>
+        <td width="74">
+        <p><strong>Example Data 1</strong></p>
+        </td>
+        <td width="90">
+        <p><strong>Example Data 2</strong></p>
+        </td>
+        <td width="93">
+        <p><strong>Example Data 3</strong></p>
+        </td>
+        </tr>
+        <tr>
+        <td nowrap="nowrap" width="150">
+        <p>Title number</p>
+        </td>
+        <td width="194">
+        <p>Number used by HM Land Registry to identify the landowner and land</p>
+        </td>
+        <td width="74">
+        <p>2</p>
+        </td>
+        <td width="90">
+        <p>abc0000006</p>
+        </td>
+        <td width="93">
+        <p>TTN0000009</p>
+        </td>
+        </tr>
+        <tr>
+        <td nowrap="nowrap" width="150">
+        <p>Price paid</p>
+        </td>
+        <td width="194">
+        <p>Price paid for the land</p>
+        </td>
+        <td width="74">
+        <p>1000000</p>
+        </td>
+        <td width="90">
+        <p>1000000</p>
+        </td>
+        <td width="93">
+        <p>1000000</p>
+        </td>
+        </tr>
+        <tr>
+        <td nowrap="nowrap" width="150">
+        <p>Property description</p>
+        </td>
+        <td width="194">
+        <p>Description of the leased land, for example an address</p>
+        </td>
+        <td width="74">
+        <p>1 Smith Street</p>
+        </td>
+        <td width="90">
+        <p>2 Smith Street</p>
+        </td>
+        <td width="93">
+        <p>3 Smith Street</p>
+        </td>
+        </tr>
+        <tr>
+        <td nowrap="nowrap" width="150">
+        <p>Date of lease</p>
+        </td>
+        <td width="194">
+        <p>Date (lease started)</p>
+        </td>
+        <td width="74">
+        <p>Date</p>
+        </td>
+        <td width="90">
+        <p>Date</p>
+        </td>
+        <td width="93">
+        <p>Date</p>
+        </td>
+        </tr>
+        <tr>
+        <td nowrap="nowrap" width="150">
+        <p>Lease count</p>
+        </td>
+        <td width="194">
+        <p>Number of leases on the property</p>
+        </td>
+        <td width="74">
+        <p>Single</p>
+        </td>
+        <td width="90">
+        <p>Multiple</p>
+        </td>
+        <td width="93">
+        <p>Single</p>
+        </td>
+        </tr>
+        <tr>
+        <td nowrap="nowrap" width="150">
+        <p>Term</p>
+        </td>
+        <td width="194">
+        <p>How long the lease lasts for</p>
+        </td>
+        <td width="74">
+        <p>999 years</p>
+        </td>
+        <td width="90">
+        <p>1000 years</p>
+        </td>
+        <td width="93">
+        <p>1001 years</p>
+        </td>
+        </tr>
+        <tr>
+        <td nowrap="nowrap" width="150">
+        <p>Tenure</p>
+        </td>
+        <td width="194">
+        <p>How the land is owned in a leasehold capacity (Absolute, Good, Possessory or Qualified.)</p>
+        </td>
+        <td nowrap="nowrap" width="74">
+        <p>Leasehold</p>
+        </td>
+        <td nowrap="nowrap" width="90">
+        <p>Leasehold</p>
+        </td>
+        <td nowrap="nowrap" width="93">
+        <p>Leasehold</p>
+        </td>
+        </tr>
+        <tr>
+        <td nowrap="nowrap" width="150">
+        <p>Class of title</p>
+        </td>
+        <td nowrap="nowrap" width="194">
+        <p>Describes the type of lease</p>
+        </td>
+        <td nowrap="nowrap" width="74">
+        <p>Absolute</p>
+        </td>
+        <td nowrap="nowrap" width="90">
+        <p>Good</p>
+        </td>
+        <td nowrap="nowrap" width="93">
+        <p>Good</p>
+        </td>
+        </tr>
+        <tr>
+        <td nowrap="nowrap" width="150">
+        <p>Lease number</p>
+        </td>
+        <td width="194">
+        <p>Reference used by HM Land Registry to identify the lease</p>
+        </td>
+        <td width="74">
+        <p>Number</p>
+        </td>
+        <td width="90">
+        <p>Number</p>
+        </td>
+        <td width="93">
+        <p>Number</p>
+        </td>
+        </tr>
+        <tr>
+        <td nowrap="nowrap" width="150">
+        <p>Alienation cause flag</p>
+        </td>
+        <td width="194">
+        <p>Clause in the leasehold agreement between the landlord and their tenant. The clause may stop the tenant from leaving the lease (selling) before the end of their term.</p>
+        </td>
+        <td width="74">
+        <p>Clause details</p>
+        </td>
+        <td width="90">
+        <p>Clause details</p>
+        </td>
+        <td width="93">
+        <p>Clause details</p>
+        </td>
+        </tr>
+        <tr>
+        <td nowrap="nowrap" width="150">
+        <p>Variations</p>
+        </td>
+        <td width="194">
+        <p>A change to the terms of the lease</p>
+        </td>
+        <td nowrap="nowrap" width="74">
+        <p>None</p>
+        </td>
+        <td nowrap="nowrap" width="90">
+        <p>None</p>
+        </td>
+        <td nowrap="nowrap" width="93">
+        <p>None</p>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+<p>Read the technical <a href="" download>specification for Registered leases data</a>.</p>
         </div>
         <script>
         document.body.className += ' ' + 'product-page';
