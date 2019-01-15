@@ -22,17 +22,17 @@
 //this always first
 $('.hidden').hide();
 $('.govuk-button').click(function(){
-  alert('cliked');
+//  alert('cliked');
   //$('.hidden').show();
 });
 
     $('.targetloginpage').click(function() {
       if($('#email-signin').val() == '') {
-        alert('email');
+      //  alert('email');
         $('.targetloginpage').event.preventDefault();
       }
       if($('#email-signin').val() == '') {
-        alert('password');
+        //alert('password');
         $('.targetloginpage').event.preventDefault();
       }
     });
@@ -90,7 +90,7 @@ $('section.attachment, .product-page').each(function(){
   var fileSelected = '0';
 
   govbutton.click(function(){
-    alert('cliked');
+    //alert('cliked');
     $('.hidden').show();
   });
 
@@ -237,7 +237,7 @@ $('.listingspage-flat').each(function(){
 });
 
 $('#createaccount').submit(function () {
-  alert('fired');
+  //alert('fired');
 });
 
   $('.table-hack').each(function() {
