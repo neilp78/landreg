@@ -17,6 +17,15 @@
 
   //var submit_signin = $('.targetloginpage');
 
+
+
+//this always first
+$('.hidden').hide();
+$('.govuk-button').click(function(){
+  alert('cliked');
+  //$('.hidden').show();
+});
+
     $('.targetloginpage').click(function() {
       if($('#email-signin').val() == '') {
         alert('email');
@@ -80,6 +89,11 @@ $('section.attachment, .product-page').each(function(){
 
   var fileSelected = '0';
 
+  govbutton.click(function(){
+    alert('cliked');
+    $('.hidden').show();
+  });
+
   clickDownload.click(function(){
     //alert();
     switch($(this).attr('data-slide')) {
@@ -125,6 +139,7 @@ $('section.attachment, .product-page').each(function(){
     $(this).find('.state-3').fadeIn('fast');
     event.preventDefault();
     $(this).find('#tab_past-week').fadeIn('fast');
+    $('.hidden').show();
   });
 });
 
@@ -146,9 +161,8 @@ $('section.attachment, .product-page').each(function(){
     $(this).find($('.download-wrapper .govuk-button').addClass('disabled_btn'));
     event.preventDefault();
   });
-
-
 });
+
 
 $('.product-page .modal-content .govuk-button').click(function(){
   $('.state-2').hide();
@@ -156,6 +170,8 @@ $('.product-page .modal-content .govuk-button').click(function(){
   $('html, body').animate({
         scrollTop: $(".blue-box").offset().top
     }, 1000);
+  $('.hidden').show();
+  //alert('test');
 });
 $('.download-wrapper .govuk-button').click(function(){
    $('#tab_past-week').fadeIn('fast');
