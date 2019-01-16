@@ -9,6 +9,19 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+.fixed-bar {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background: #f8f8f8;
+  border-top: 6px solid #bfc1c3;
+  bottom: 0;
+  z-index: 99999999999;
+  left: 0;
+  text-align: center;
+  padding: 2% 0 0% 0%;
+  font-weight: 700;
+}
 .hidden {
   display: block;
   width: 100%;
@@ -16,9 +29,19 @@ $govuk-global-styles: true;
   clear: both;
 }
 
-.listings2 .govuk-inset-text {
-  margin-bottom: 30px;
-  background-color: #f8f8f8;
+.listings2 {
+
+  section {
+    li {
+      font-size: 19px;
+      font-size: 1.1875rem;
+      line-height: 1.31579;
+    }
+  }
+  .govuk-inset-text {
+    margin-bottom: 30px;
+    background-color: #f8f8f8;
+  }
 }
 .full-two-thirds {
   width:66%;
@@ -69,6 +92,10 @@ $govuk-global-styles: true;
 
 .state-2 .download-wrapper {
   margin-top: 30px;
+
+  ul {
+    background-color: #f8f8f8;
+  }
 }
 .gem-c-govspeak .attachment .attachment-details .accessibility-warning p, .metadata {
   font-size: 14px;
@@ -77,23 +104,24 @@ $govuk-global-styles: true;
 .context2-3 .cancel-this {
   margin-top:20px;
 }
+
 .attachment-thumb {
-  width:16%;
+  width:11%;
   float:left;
+
   img {
     display: block;
-    width: 99px;
-    height: 140px;
+    width: 68px;
+    height: 90px;
     background: #fff;
-    outline: 5px solid rgba(11,12,12,0.1);
-    -webkit-box-shadow: 0 2px 2px rgba(11,12,12,0.4);
-    -moz-box-shadow: 0 2px 2px rgba(11,12,12,0.4);
-    box-shadow: 0 2px 2px rgba(11,12,12,0.4)
+    outline: 5px solid rgba(11, 12, 12, 0.1);
+    -webkit-box-shadow: 0 2px 2px rgba(11, 12, 12, 0.4);
+    -moz-box-shadow: 0 2px 2px rgba(11, 12, 12, 0.4);
+    box-shadow: 0 2px 2px rgba(11, 12, 12, 0.4);
+    margin-top: 9px;
   }
 }
-.context3-resize {
-  //height: 400px;
-}
+
 .alert-test {
   background: #ffbf47;
   border-left: solid #cd962f 19px;
@@ -261,13 +289,12 @@ $govuk-global-styles: true;
 .attachment-details {
   h2 {
     font-family: "nta", Arial, sans-serif;
-    font-weight: 400;
     text-transform: none;
-    font-size: 20px;
-    line-height: 1.1111111111;
     margin: 0;
-    font-size: 27px;
     line-height: 1.1111111111;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 37px;
   }
 }
 .govuk-tag {

@@ -17,6 +17,16 @@
 
   //var submit_signin = $('.targetloginpage');
 
+$(document).scroll(function () {
+
+  var y = $(this).scrollTop();
+  if (y > 100) {
+    $('.fixed-bar').fadeIn();
+  } else {
+    $('.fixed-bar').fadeOut();
+  }
+});
+
 
 
 //this always first
@@ -180,7 +190,7 @@ $('.download-wrapper .govuk-button').click(function(){
 //Get data attribute of prototype
 $('.context').each(function(){
   var contextState = $(this).attr("data-id");
-  console.log(contextState);
+  //console.log(contextState);
 
   switch(contextState) {
     case 'id-1':
