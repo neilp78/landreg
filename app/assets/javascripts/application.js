@@ -16,6 +16,8 @@
 //  var password_signin = $(this).find('#email-signin');
 
   //var submit_signin = $('.targetloginpage');
+$(document).ready(function () {
+    window.GOVUKFrontend.initAll();
 
 $(document).scroll(function () {
 
@@ -72,8 +74,6 @@ $('#location-all').click(function() {
 
 $(".download-wrapper :checkbox").prop('checked', false);
 
-$(document).ready(function () {
-  window.GOVUKFrontend.initAll();
 
 
 //Contexts
@@ -87,6 +87,8 @@ $('section.attachment .govuk-button').each(function(){
   event.preventDefault();
 });
 
+
+
 $('section.attachment, .product-page').each(function(){
   var gotostate2 = $(this).find('a.gotostate2');
   var state1 = $(this).find('.state-1');
@@ -96,6 +98,19 @@ $('section.attachment, .product-page').each(function(){
   var govbutton = $(this).find('.download-wrapper .govuk-button');
   var statusText = $(this).find('.show-status');
   var clickDownload = $(this).find('.download');
+  var thisModal = $(this).find('.modal-listings');
+  var openModal = $(this).find('.agree-to-licence');
+  var closeModal = $(this).find('.modal-content .govuk-button');
+
+  openModal.click(function(){
+    thisModal.show();
+  });
+
+  closeModal.click(function(){
+    thisModal.hide();
+    state2.hide();
+    state3.show();
+  });
 
   var fileSelected = '0';
 
@@ -135,6 +150,7 @@ $('section.attachment, .product-page').each(function(){
     state2.fadeIn('fast');
     state1.hide();
     event.preventDefault();
+
   });
 
   state2a.click(function() {
@@ -151,6 +167,13 @@ $('section.attachment, .product-page').each(function(){
     $(this).find('#tab_past-week').fadeIn('fast');
     $('.hidden').show();
   });
+});
+
+
+$('.modal-listings .govuk-button').click(function() {
+  $('.section-selected').hide();
+  $('.next-section-selected').show();
+
 });
 
 $('.alert-test a').click(function(){
