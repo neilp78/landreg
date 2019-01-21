@@ -19,6 +19,26 @@
 $(document).ready(function () {
     window.GOVUKFrontend.initAll();
 
+
+//add hash to dataset download urls
+//ukcomphash
+//overseashash
+//leaseshash
+$('.ukcomphash').click(function(){
+  window.location.hash = 'ukcompany';
+  console.log('uk');
+});
+$('.overseashash').click(function(){
+  window.location.hash = 'overseascompany';
+  console.log('overseas');
+});
+
+$('.leaseshash').click(function(){
+  window.location.hash = 'registeredleases';
+  console.log('registered leases');
+});
+
+
 $(document).scroll(function () {
 
   var y = $(this).scrollTop();
