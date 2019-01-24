@@ -9,6 +9,43 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+
+//concept
+.listings-grid {
+  .statement-bar {
+    background: #F8F8F8;
+    padding: 1px 15px;
+    border-top: #DEE0E2 7px solid;
+    overflow: auto;
+    height: 70px;
+
+    h2 {
+      width: 33%;
+      float: left;
+    }
+    a {
+      float: right;
+      clear: none;
+      margin-top: 13px;
+    }
+  }
+  .dps-grid {
+    overflow: auto;
+    .info {
+      width:80%;
+      font-size: 16px;
+      margin-left: 12px;
+    }
+    .dps-grid-tile {
+      width: 30%;
+      display: inline;
+      float: left;
+      padding: 1%;
+      min-height: 185px;
+    }
+  }
+}
+
 .fixed-bar {
   position: fixed;
   width: 100%;
