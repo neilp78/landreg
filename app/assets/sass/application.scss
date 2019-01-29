@@ -10,6 +10,36 @@ $govuk-global-styles: true;
 @import "patterns/related-items";
 
 
+.email-template {
+  
+}
+
+/* Using SCSS variables to store breakpoints */
+//$breakpoint-tablet: 768px;
+@media (max-width: 620px) {
+  input, label {
+    width:100% !important;
+    max-width:100% !important;
+    clear:both;
+  }
+}
+
+//design system
+.new-ds {
+  margin-left: -1px;
+  background-color: #85994b;
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin: 12px;
+  display: inline-table;
+  font-weight: bold;
+}
+
 //concept
 .listings-grid {
   .statement-bar {
