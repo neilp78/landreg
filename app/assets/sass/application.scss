@@ -60,9 +60,20 @@ $govuk-global-styles: true;
       text-align: center;
       height: 30px;
   }
-
 }
 
+.in-red {
+  border-left: #DF3034 solid 10px;
+  background-color: rgba(223, 48, 52, 0.1) !important;
+  border-left-width: 10px;
+  padding: 1em;
+  width: 80%;
+  margin: 2em 0;
+}
+li {
+  font-size: 19px;
+  line-height: 25px;
+}
 //concept
 .listings-grid {
   .statement-bar {
@@ -73,7 +84,7 @@ $govuk-global-styles: true;
     height: 70px;
 
     h2 {
-      width: 33%;
+      width: 60%;
       float: left;
     }
     a {
