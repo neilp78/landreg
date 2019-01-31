@@ -74,6 +74,10 @@ li {
   font-size: 19px;
   line-height: 25px;
 }
+
+.why-sign-up .column-two-thirds {
+  width:66%;
+}
 //concept
 .listings-grid {
   .statement-bar {
@@ -95,6 +99,8 @@ li {
   }
   .dps-grid {
     overflow: auto;
+    //border: solid 1px #bfc1c3;
+
     .info {
       width:80%;
       font-size: 16px;
