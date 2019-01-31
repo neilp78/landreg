@@ -14,6 +14,13 @@ $govuk-global-styles: true;
 
 }
 
+
+.full-width {
+  width: 100%;
+  clear: both;
+  padding-left: 0.5em;
+  font-size: 16px;
+}
 /* Using SCSS variables to store breakpoints */
 //$breakpoint-tablet: 768px;
 @media (max-width: 620px) {
