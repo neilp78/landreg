@@ -31,21 +31,24 @@ $govuk-global-styles: true;
     clear:both;
   }
 }
+//
 
 //design system
 .new-ds {
   margin-left: -1px;
-  background-color: #85994b;
-  color: white;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  padding-left: 7px;
-  padding-right: 7px;
-  border-radius: 5px;
-  font-size: 12px;
-  margin: 12px;
-  display: inline-table;
-  font-weight: bold;
+      background-color: #85994b;
+      color: white;
+      padding-left: 7px;
+      padding-right: 7px;
+      border-radius: 5px;
+      font-size: 8px;
+      /* margin: 12px; */
+      /* display: inline-table; */
+      font-weight: bold;
+      margin: -12px 0px 9px 0px;
+      width: 31%;
+      padding: 4px;
+      font-family: "nta",Arial,sans-serif;
 
   .govuk-warning-text__icon {
       font-family: "nta", Arial, sans-serif;
@@ -88,6 +91,7 @@ li {
 }
 //concept
 .listings-grid {
+
   .statement-bar {
     background: #F8F8F8;
     padding: 1px 15px;
@@ -107,7 +111,7 @@ li {
   }
   .dps-grid {
     overflow: auto;
-    //border: solid 1px #bfc1c3;
+    padding-bottom: 50px;
 
     .info {
       width:80%;
@@ -124,6 +128,13 @@ li {
       margin: 13px;
       min-height: 212px;
       border-bottom: #DEE0E2 2px solid;
+    }
+    @media (max-width: 754px) {
+      .dps-grid-tile {
+        width:80%;
+        clear:both;
+        min-height: 137px;
+      }
     }
     .dps-grid-tile:hover {
       background: #f4f2f2;
