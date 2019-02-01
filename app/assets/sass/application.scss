@@ -20,6 +20,7 @@ $govuk-global-styles: true;
   clear: both;
   padding-left: 0.5em;
   font-size: 16px;
+  padding-left: 0.9em;
 }
 /* Using SCSS variables to store breakpoints */
 //$breakpoint-tablet: 768px;
@@ -114,11 +115,18 @@ li {
       margin-left: 12px;
     }
     .dps-grid-tile {
-      width: 30%;
+      width: 26%;
       display: inline;
       float: left;
-      padding: 1%;
+      padding: 2%;
       min-height: 185px;
+      background: #F8F8F8;
+      margin: 13px;
+      min-height: 212px;
+      border-bottom: #DEE0E2 2px solid;
+    }
+    .dps-grid-tile:hover {
+      background: #f4f2f2;
     }
   }
 }
