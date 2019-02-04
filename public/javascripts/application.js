@@ -107,7 +107,9 @@ $('section.attachment .govuk-button').each(function(){
   event.preventDefault();
 });
 
-
+$('.download-from-listings').click(function(){
+  $('.modal').show();
+});
 
 $('section.attachment, .product-page').each(function(){
   var gotostate2 = $(this).find('a.gotostate2');
@@ -128,6 +130,7 @@ $('section.attachment, .product-page').each(function(){
 
   closeModal.click(function(){
     thisModal.hide();
+    state1.hide();
     state2.hide();
     state3.show();
   });
@@ -167,10 +170,15 @@ $('section.attachment, .product-page').each(function(){
 
   gotostate2.click(function() {
     //$('.state-2, .state-3').hide();
-    state2.fadeIn('fast');
-    state1.hide();
+    //state2.fadeIn('fast');
+  //  state1.hide();
     event.preventDefault();
+    ///////here//
 
+  //  state1.hide();
+    state2.hide();
+    //state3.show();
+    $('.modal').fadeIn();
   });
 
   state2a.click(function() {
@@ -216,7 +224,7 @@ $('section.attachment, .product-page').each(function(){
   });
 });
 
-
+//this is when they agree to licence that appears in the modal
 $('.product-page .modal-content .govuk-button').click(function(){
   $('.state-2').hide();
   $('.state-3').show();
