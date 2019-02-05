@@ -111,6 +111,10 @@ $('.download-from-listings').click(function(){
   $('.modal').show();
 });
 
+$('.listings-page-logged-in .modal-content .govuk-button').click(function(){
+  $('.listings-page-logged-in');
+});
+
 $('section.attachment, .product-page').each(function(){
   var gotostate2 = $(this).find('a.gotostate2');
   var state1 = $(this).find('.state-1');
