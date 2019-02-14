@@ -83,11 +83,11 @@ $govuk-global-styles: true;
   width: 80%;
   margin: 2em 0;
 }
+
 li {
   font-size: 19px;
   line-height: 25px;
 }
-
 .why-sign-up .column-two-thirds {
   width:66%;
 }
@@ -854,7 +854,21 @@ pre {
 }
 
 .govuk-breadcrumbs {
-  display: none !important;
+
+    line-height: 1.25;
+    font-family: "nta", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    color: #0b0c0c;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    li {
+      font-size: 16px !important;
+    }
 }
 .govuk-breadcrumbs.show-breads{
   display: inline !important;
