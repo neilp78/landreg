@@ -10,8 +10,21 @@ $govuk-global-styles: true;
 @import "patterns/related-items";
 
 
-.email-template {
-
+.ccod {
+  h1{
+    margin-bottom: 10px;
+  }
+  .blue-box {
+    height: 430px;
+  }
+  .download-wrapper {
+    margin-top: -55px;
+    margin-left: 27px;
+  }
+  .getbtn {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
 }
 
 .download-links {
@@ -20,9 +33,9 @@ $govuk-global-styles: true;
 .full-width {
   width: 100%;
   clear: both;
-  padding-left: 0.5em;
+  //padding-left: 0.5em;
   font-size: 16px;
-  padding-left: 0.9em;
+  //padding-left: 0.9em;
 }
 /* Using SCSS variables to store breakpoints */
 //$breakpoint-tablet: 768px;
@@ -34,7 +47,9 @@ $govuk-global-styles: true;
   }
 }
 //
-
+.govuk-grid-column-full {
+    padding: 0px;
+}
 //design system
 .new-ds {
   margin-left: -1px;
@@ -91,6 +106,7 @@ li {
 .why-sign-up .column-two-thirds {
   width:66%;
 }
+
 //concept
 .listings-grid {
 
@@ -863,12 +879,17 @@ pre {
     font-size: 14px;
     line-height: 1.1428571429;
     color: #0b0c0c;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: -20px;
+    margin-bottom: 35px;
 
     li {
       font-size: 16px !important;
     }
+}
+.product-page {
+  .govuk-breadcrumbs {
+    margin-top: 0px;
+  }
 }
 .govuk-breadcrumbs.show-breads{
   display: inline !important;

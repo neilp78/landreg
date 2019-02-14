@@ -52,7 +52,7 @@ $(document).scroll(function () {
 
 
 //this always first
-$('.hidden').hide();
+//$('.hidden').hide();
 $('.govuk-button').click(function(){
 //  alert('cliked');
   //$('.hidden').show();
