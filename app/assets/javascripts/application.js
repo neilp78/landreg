@@ -49,8 +49,15 @@ $(document).scroll(function () {
   }
 });
 
-
-
+$('.overlay').hide();
+$('.download-wrapper a.open-dialogue').click(function() {
+  //event.preventDefault();
+  $('.overlay').fadeIn('fast');
+});
+$('.close-dialoge').click(function() {
+  event.preventDefault();
+  $('.overlay').fadeOut('fast');
+});
 //this always first
 //$('.hidden').hide();
 $('.govuk-button').click(function(){
