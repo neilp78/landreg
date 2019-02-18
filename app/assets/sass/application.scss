@@ -9,7 +9,18 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
-
+.ccod-licence-agreed {
+  .float_left {
+      float: left;
+      clear: right;
+      margin-right: 50%;
+      margin: -15px 50% 12px 0px;
+  }
+  #small-text {
+    font-size: 12px !important;
+    font-weight: bold;
+  }
+}
 .ccod {
   h1{
     margin-bottom: 10px;
@@ -26,6 +37,19 @@ $govuk-global-styles: true;
     margin-left: 0px;
   }
 }
+.app-c-print-link {
+  height: 46px;
+  border-bottom: solid 	#bfc1c3 2px;
+   margin-bottom: 38px;
+
+  .app-c-print-link__link {
+    background: url('/public/images/print.png') no-repeat 0 50%;
+    padding: 0.5em 0 0.5em 28px;
+    background-size: 12%;
+
+  }
+}
+//modal
 .overlay {
   position: fixed;
     top: 0;

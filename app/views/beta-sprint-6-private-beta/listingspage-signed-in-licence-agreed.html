@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="context listings-page-logged-in" data-id="id-1"></div>
+<div class="context listings-page-logged-in ccod-licence-agreed" data-id="id-1">
 
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
@@ -26,27 +26,23 @@
 
 <div class="grid-row">
   <div class="column-two-thirds listings-grid">
-
+    <span class="govuk-caption-xl">HM Land Registry</span>
     <h1 class="gem-c-heading  gem-c-heading--mobile-top-margin govuk-heading-xl">Use land or property data</h1>
 
     <div class="dps-grid">
       <div class="statement-bar">
-        <h2>Free and licenced datasets</h2>
+        <h2>You need an account to download this data</h2>
         <a class="govuk-button" href="sign-in">Sign out</a>
       </div>
       <br />
-      <p class="info">These datasets are <span class="govuk-!-font-weight-bold">free to use</span> but <span class="govuk-!-font-weight-bold">restrictions apply</span>. You need to <a href="">create an account</a> to download them. <a href="">Find out why</a>.</p>
-
-
 
       <div class="dps-grid-tile">
         <h3><a href="detailspages-ccod">Commercial and Corporate Ownership Data</a></h3>
+        <p class="float_left"><span class="new">Licence agreed</span></p>
         <p>Download data about registered land and property in England and Wales owned by UK companies.</p>
-        <div class="state-1">
-          <a href="#" class="download-links" download>Get full file</a>
-          <a href="#" class="download-links" download>Get change only file</a>
-        </div>
+        <p id="small-text"></div>
       </div>
+
 
 
     </div>
@@ -72,10 +68,33 @@
 </div>
 
 </div>
-
+</div>
 </div>
 
 
 </div>
+<script>
+  var smallText = document.getElementById('small-text');
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1; //January is 0!
+  var yyyy = today.getFullYear();
 
+  if (mm = 02) {
+    var mm = 'February';
+  }
+  if (mm = 03) {
+    var mm = 'March';
+  }
+  if(dd<10) {
+      dd = '0'+dd
+  }
+
+  if(mm<10) {
+      mm = '0'+mm
+  }
+
+  today = mm + '/' + dd + '/' + yyyy;
+  smallText.innerHTML += 'You last downloaded this on ' + dd + ' ' + mm + ' ' + yyyy;
+</script>
 {% endblock %}
