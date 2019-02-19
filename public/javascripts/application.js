@@ -19,7 +19,7 @@
 $(document).ready(function () {
     window.GOVUKFrontend.initAll();
 
-
+    //$('.what-choose-type').parent().find('.govuk-breadcrumbs').hide();
 //add hash to dataset download urls
 //ukcomphash
 //overseashash
