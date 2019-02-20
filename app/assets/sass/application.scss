@@ -10,6 +10,16 @@ $govuk-global-styles: true;
 @import "patterns/related-items";
 
 .ccod-licence-agreed {
+  .blue-box {
+    height: 530px !important;
+
+    .float_left {
+        float: left;
+        clear: right;
+        margin-right: 50%;
+        margin: 5px 50% 12px 0px;
+    }
+  }
   .float_left {
       float: left;
       clear: right;
@@ -35,6 +45,11 @@ $govuk-global-styles: true;
   .getbtn {
     margin-top: 0px;
     margin-left: 0px;
+  }
+}
+.ccod-licence-agreed {
+  .blue-box {
+    height: 478px !important;
   }
 }
 .app-c-print-link {
