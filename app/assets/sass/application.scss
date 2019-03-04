@@ -1,3 +1,4 @@
+
 // global styles for <a> and <p> tags
 $govuk-global-styles: true;
 
@@ -31,12 +32,19 @@ $govuk-global-styles: true;
     font-weight: bold;
   }
 }
+.height-fix {
+  margin-top: 41px;
+  float: left;
+  width: 100%;
+  clear: both;
+  margin-bottom: 35px;
+}
 .ccod {
   h1{
     margin-bottom: 10px;
   }
   .blue-box {
-    height: 430px;
+    //height: 430px;
   }
   .download-wrapper {
     margin-top: -55px;
@@ -49,7 +57,7 @@ $govuk-global-styles: true;
 }
 .ccod-licence-agreed {
   .blue-box {
-    height: 478px !important;
+    //height: 478px !important;
   }
 }
 .app-c-print-link {
@@ -601,7 +609,7 @@ li {
     text-align: center;
   }
 }
-.ccod-details-page {
+.ccod-details-page, .ccod-licence-agreed {
   h1 {
     margin-bottom:10px;
   }
