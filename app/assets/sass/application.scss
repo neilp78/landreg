@@ -10,7 +10,11 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
-
+.update-info {
+  span {
+    color:#fff;
+  }
+}
 .darker-blue {
   background: #08477e;
   padding: 4%;
@@ -18,7 +22,6 @@ $govuk-global-styles: true;
 }
 .ccod-licence-agreed {
   .blue-box {
-    height: 530px !important;
 
     .float_left {
         float: left;
@@ -52,10 +55,6 @@ $govuk-global-styles: true;
   .blue-box {
     //height: 430px;
   }
-  .download-wrapper {
-    margin-top: -55px;
-    margin-left: 27px;
-  }
   .getbtn {
     margin-top: 0px;
     margin-left: 0px;
@@ -63,7 +62,17 @@ $govuk-global-styles: true;
 }
 .ccod-licence-agreed {
   .blue-box {
-    //height: 478px !important;
+    padding-bottom:40px;
+    .inset-text {
+      margin-top: 50px !important;
+    }
+  }
+  .float_left {
+    float: left;
+    clear: right;
+    margin-right: 50%;
+    margin: 5px 50% 12px 0px;
+    width: 100%;
   }
 }
 .app-c-print-link {
