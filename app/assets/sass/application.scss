@@ -10,6 +10,11 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+
+.govuk-accordion__section-content > :last-child {
+    margin-bottom: 0;
+    margin: 2% 0;
+}
 .update-info {
   span {
     color:#fff;
