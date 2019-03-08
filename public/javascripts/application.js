@@ -33,6 +33,12 @@ $('.overseashash').click(function(){
   console.log('overseas');
 });
 
+
+//last downloaded datetime
+var d = new Date();
+var strDate = d.getFullYear() + (d.getMonth()+1) + "/" + d.getDate();
+
+//$('.last-downloaded-date').text(strDate);
 $('.leaseshash').click(function(){
   window.location.hash = 'registeredleases';
   console.log('registered leases');
