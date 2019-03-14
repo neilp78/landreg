@@ -211,10 +211,9 @@ li {
 
   .statement-bar {
     background: #F8F8F8;
-    padding: 1px 15px;
-    border-top: #DEE0E2 7px solid;
-    overflow: auto;
-    height: 70px;
+        padding: 1px 21px;
+        border-bottom: #DEE0E2 4px solid;
+        overflow: auto;
 
     h2 {
       width: 60%;
@@ -241,10 +240,10 @@ li {
       float: left;
       padding: 2%;
       min-height: 185px;
-      background: #F8F8F8;
+      //background: #F8F8F8;
       margin: 13px;
       min-height: 238px;
-      border-bottom: #DEE0E2 2px solid;
+      //border-bottom: #DEE0E2 2px solid;
     }
     @media (max-width: 754px) {
       .dps-grid-tile {
