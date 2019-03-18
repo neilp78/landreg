@@ -7,49 +7,28 @@
 
 {% block content %}
 
-<nav class="app-navigation-1 govuk-clearfix full-screen product-page">
-  <ul class="app-navigation__list">
-    <li>
-      <a class="govuk-link" href="sign-in" data-topnav="Community">Sign out</a>
-    </li>
-  </ul>
-</nav>
-
-<br>
-<br>
-
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
     </li>
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Search</li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page"><a class="govuk-breadcrumbs__link" href="listingspage">Use land and property data</a></li>
   </ol>
 </div>
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full">
-      <a href="listingspage-v3" class="govuk-back-link">Back</a>
-      <br>
-      <br>
+    <div class="govuk-grid-column-full ccod-details-page ">
 
       <div class="blue-box">
         <span class="govuk-caption-xl">Dataset</span>
         <h1 class="govuk-heading-xl">Overseas companies that own property in England and Wales</h1>
-        <p class="float_left hidden"><span class="new">Licence agreed</span></p>
-        <p>Download data about overseas companies that own land in England and Wales.</p>
-
-        <p class="govuk-!-font-weight-bold">You need to <a class="white-link-text" href="createaccount">create an account</a> or <a class="white-link-text" href="login-fromstart">sign in</a> to download this dataset.</p>
-
-        <br>
-        <p>Last updated on the  18 October 2018 (updated monthly).
-          <br>
-        <!-- <span class="govuk-body govuk-!-font-weight-bold"><a href="">Download CSV 15.8KB</a></span> -->
-        <span class="govuk-body govuk-!-font-weight-bold">File size is 15.8KB.</span>
+        <p class="float_left new-left"><span class="new-free">FREE</span></p>
+        <p>Download data about UK companies that own UK property. This includes the company name, type of company, registration number, address, the price paid and more. This dataset was originally named Commercial and Corporate Data (CCOD).</p>
+        <p>Last updated on the <span class="govuk-body govuk-!-font-weight-bold">2 April 2019</span> (updated monthly), <span class="govuk-body govuk-!-font-weight-bold">CSV</span>, <span class="govuk-body govuk-!-font-weight-bold">1.25Gb</span>
         </p>
-
+        <p class="govuk-!-font-weight-bold darker-blue">You need to <a class="white-link-text" href="createaccount">create an account</a> or <a class="white-link-text" href="login-fromstart">sign in</a> to download this dataset.</p>
         <br>
-        <p>This dataset is <a href="" style="color: white;">free and licenced</a>.</p>
+
 
       </div>
 
@@ -60,12 +39,12 @@
           <li><a href="#olderfiles">Older files</a></li>
           <li><a href="#dataquality">Data quality</a></li>
           <li><a href="#licence">Licence</a></li>
-          <li><a href="#include">Included</a></li>
+          <li><a href="#included">Included</a></li>
           <li><a href="#notincluded">Not included</a></li>
           <li><a href="#how">How to get this data by phone or in person</a></li>
         </ul>
       </div>
-      <div class="product-info"></div>
+      <div class="product-info">
         <h2 id="sampledata">Sample data</h2>
         <p>This sample is an example of the data you will see in the file: UK companies that own property in England and Wales.</p>
         <p>You can also <a href="/public/files/sample_data.xlsx" download>download a sample of this data</a> if you need to share it with someone else.</p>
@@ -128,7 +107,7 @@
         <p>This data shows every (completed) record HM Land Registry has about property-owning companies registered in the UK.</p>
 
         <h2 id="notincluded">Not included</h2>
-        <h3>What is not included?<./h3>
+        <h3>What is not included?</h3>
         <p>HM Land Registry data does not show:</p>
         <ul>
           <li>pending applications (we can’t show you a record while it is being written)</li>
@@ -149,15 +128,17 @@
 
 
 
-
+      </div>
       </div>
       <div class="base-bar">
-        <a class="app-c-back-to-top dont-print" href="#contents">
-            <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
-              <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
-            </svg>
-            Contents
-        </a>
+        <div class="base-bar-inset">
+          <a class="app-c-back-to-top dont-print" href="#contents">
+              <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17">
+                <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+              </svg>
+              Contents
+          </a>
+        </div>
       </div>
         <script>
         document.body.className += ' ' + 'product-page';

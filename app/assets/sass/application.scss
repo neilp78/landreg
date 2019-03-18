@@ -172,6 +172,9 @@ $govuk-global-styles: true;
   }
 }
 .product-info {
+  h2 {
+    margin-top: 30px;
+  }
 }
 .base-bar {
   position: fixed;
@@ -181,8 +184,12 @@ $govuk-global-styles: true;
     background: #dee0e2;
     padding: 2%;
 
-    a {
-      margin-left: 4%;
+    .base-bar-inset {
+      width:1008px;
+      margin: 0 auto;
+      a {
+      //  margin-left: 4%;
+      }
     }
 }
 //
