@@ -36,6 +36,15 @@ $('.overseashash').click(function(){
   console.log('overseas');
 });
 
+$('.base-bar').hide();
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 1000) {
+    $('.base-bar').fadeIn('fast');
+  } else {
+    $('.base-bar').fadeOut('fast');
+  }
+});
 
 //last downloaded datetime
 var d = new Date();
