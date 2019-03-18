@@ -24,6 +24,9 @@ $(document).ready(function () {
 //ukcomphash
 //overseashash
 //leaseshash
+
+$('.dashboard-width').parent().parent().parent().addClass('new-dash-width');
+
 $('.ukcomphash').click(function(){
   window.location.hash = 'ukcompany';
   console.log('uk');

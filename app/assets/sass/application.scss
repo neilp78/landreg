@@ -145,9 +145,31 @@ $govuk-global-styles: true;
     clear:both;
   }
 }
+
+.toc {
+  ul li {
+    list-style: none;
+  }
+}
+.product-info {
+}
 //
 .govuk-grid-column-full {
     padding: 0px;
+}
+.dashboard-width {
+  width:80% !important;
+  margin: 0 auto;
+}
+.new-dash-width {
+  .govuk-phase-banner {
+    display: none;
+  }
+  .govuk-width-container {
+    width:100% !important;
+    max-width:100%;
+    margin: 0 auto;
+  }
 }
 //design system
 .new-ds {
