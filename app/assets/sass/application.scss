@@ -150,6 +150,7 @@ $govuk-global-styles: true;
   font-size: 17px !important;
   margin-top: 30px;
   margin-bottom: 30px;
+  border-bottom: 	#bfc1c3 solid 1px;
   p {
     margin-bottom: 0px;
   }
@@ -173,7 +174,8 @@ $govuk-global-styles: true;
 }
 .product-info {
   h2 {
-    margin-top: 30px;
+    margin-top: 55px;
+    font-size: 30px;
   }
 }
 .base-bar {
