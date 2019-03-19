@@ -711,6 +711,19 @@ li {
     }
   }
 }
+.new-free {
+    margin-left: -1px;
+    background-color: #fff;
+    color: #005ea5 !important;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    clear:both;
+}
 // Components that aren't in Frontend
 @import "components/cookie-banner";
 
