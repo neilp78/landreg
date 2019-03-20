@@ -11,6 +11,7 @@ $govuk-global-styles: true;
 @import "patterns/related-items";
 
 .listings-v7 {
+
   p.dataset-meta {
   .govuk-body, p, spa {
       font-size: 12px !important;
@@ -101,9 +102,11 @@ $govuk-global-styles: true;
   .dps-grid-tile {
     padding:2%;
     overflow: auto;
+    margin-bottom: 29px !important;
     p {
       font-size: 16px !important;
-      margin: 0px
+      margin: 0px;
+      max-width: 70%;
     }
   }
 }
