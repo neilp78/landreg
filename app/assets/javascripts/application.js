@@ -19,6 +19,9 @@
 $(document).ready(function () {
     window.GOVUKFrontend.initAll();
 
+//hjere
+$('.listings-v7 .dps-grid-tile:odd').addClass('odd');
+$('.listings-v7 .dps-grid-tile:even').addClass('even');
     //$('.what-choose-type').parent().find('.govuk-breadcrumbs').hide();
 //add hash to dataset download urls
 //ukcomphash
