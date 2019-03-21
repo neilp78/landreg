@@ -11,11 +11,14 @@ $govuk-global-styles: true;
 @import "patterns/related-items";
 
 
-
+.govuk-phase-banner, .govuk-header__link--service-name {
+  display: none;
+}
 .listings-v7 {
   .miggins {
-    margin-top:50px;
+    margin-top: 50px;
     border-top: 1px solid #dee0e2;
+    padding-top: 50px;
   }
   .first-tile {
     border-top: 1px solid #dee0e2;
@@ -28,7 +31,8 @@ $govuk-global-styles: true;
     display: inline;
     margin-right: 4px !important;
     margin-bottom: 2px !important;
-  .govuk-body, p, spa {
+
+    .govuk-body, p, spa {
       font-size: 12px !important;
       padding-top:5px;
     }
