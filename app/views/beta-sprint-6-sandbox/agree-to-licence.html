@@ -65,17 +65,34 @@
               </label>
               </div>
             </div>
+            <form action="download" method="get">
+              <input type="hidden" name="fname" id="dataset"><br>
+              <input type="submit" value="Agree and continue" class="govuk-button disabled_btn">
+            </form>
           </fieldset>
         </div>
 
-        <a href="listingspage-signed-in-licence-agreed" role="button" draggable="false" class="govuk-button disabled_btn">
-          Agree and continue
-        </a>
-      </div>
+
 
     </div>
   </main>
 </div>
+<script>
+  var url = document.referrer;
+
+  if (url.indexOf("overseas") > -1) {
+    url = "overseas";
+  }
+
+  if (url.indexOf("leases") > -1) {
+    url = "overseas";
+  }
+  if (url.indexOf("uk") > -1) {
+    url = "uk";
+  }
+  document.getElementById('dataset').value = url;
+
+</script>
 
 
 

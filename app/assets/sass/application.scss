@@ -294,6 +294,9 @@ $govuk-global-styles: true;
     font-size: 14px;
   }
 }
+.govuk-button .govuk-\!-font-weight-bold {
+  color: #fff !important;
+}
 .product-info {
   h2 {
     margin-top: 55px;

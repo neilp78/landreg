@@ -6,29 +6,53 @@
 {% endblock %}
 
 {% block content %}
+<div class="ccod-licence-agreed">
+<nav class="app-navigation-1 govuk-clearfix full-screen product-page">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="detailspages-overseas" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
 
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="start-v2">Home</a>
     </li>
-    <li class="govuk-breadcrumbs__list-item" aria-current="page"><a class="govuk-breadcrumbs__link" href="listingspage">Use land and property data</a></li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      <a href="https://www.gov.uk/government/organisations/land-registry">HM Land Registry</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      <a href="listingspage-signed-in">Use land and property data</a>
+    </li>
   </ol>
 </div>
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full ccod-details-page productpage">
+
+
+
+  <div class="govuk-grid-row ccod">
+    <div class="govuk-grid-column-full">
+      <br>
+      <br>
 
       <div class="blue-box">
         <span class="govuk-caption-xl">Dataset</span>
         <h1 class="govuk-heading-xl">Overseas companies that own property in England and Wales</h1>
-        <p class="float_left new-left"><span class="new-free">FREE</span></p>
+        <p class="float_left"><span class="new-free">FREE</span></p>
         <p>Download data about UK companies that own UK property. This includes the company name, type of company, registration number, address, the price paid and more. This dataset was originally named Commercial and Corporate Data (CCOD).</p>
         <p>Last updated on the <span class="govuk-body govuk-!-font-weight-bold">2 April 2019</span> (updated monthly), <span class="govuk-body govuk-!-font-weight-bold">CSV</span>, <span class="govuk-body govuk-!-font-weight-bold">1.25Gb</span>
         </p>
-        <p class="govuk-!-font-weight-bold darker-blue">You need to <a class="white-link-text" href="createaccount">create an account</a> or <a class="white-link-text" href="sign-in">sign in</a> to download this dataset.</p>
-        <br>
+
+        <div class="state-1">
+          <div class="download-wrapper getbtn">
+              <a href="agree-to-licence" class=" download"><span>Agree to licence and get this data</span></a>
+          </div>
+        </div>
+
       </div>
+
 
       <div class="toc" id="contents">
         <p>Contents</p>
@@ -293,8 +317,10 @@
           </a>
         </div>
       </div>
+
+        </div>
         <script>
         document.body.className += ' ' + 'product-page';
         </script>
-
+</div>
 {% endblock %}

@@ -1,0 +1,87 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="listingspage-v3" class="govuk-back-link">Back</a>
+      <br>
+      <br>
+    </div>
+<h1 class="govuk-heading-xl" id="datatitle"></h1>
+<p class="govuk-body govuk-!-font-weight-bold">Download data about overseas companies that own land in England and Wales.</p>
+<p class="meta">Last updated on the <span class="govuk-body govuk-!-font-weight-bold">2 April 2019</span> (updated monthly)</p>
+
+<a href="#" role="button" draggable="false" class="govuk-button" download>
+  <span class="govuk-body govuk-!-font-weight-bold">Download the entire dataset</span> - 1.23Gb, CSV
+</a>
+<a href="#" role="button" draggable="false" class="govuk-button" download>
+  <span class="govuk-body govuk-!-font-weight-bold">Download changes since last month</span> - 25Mb, CSV
+</a>
+<br>
+<br>
+<br>
+<br>
+<h2 class="govuk-heading-m" id="datatitle">Older versions</h2>
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Date</th>
+      <th class="govuk-table__header" scope="col">All data</th>
+      <th class="govuk-table__header" scope="col">Change only</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">March 2019</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">February 2019</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.22Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">January 2019</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">March 2019</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">December 2018</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.22Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">November 2018</th>
+      <td class="govuk-table__cell"><a href="#" download>Download 1.23Gb</a></td>
+      <td class="govuk-table__cell"><a href="#" download>Download 25Mb</a></td>
+    </tr>
+  </tbody>
+</table>
+<p>If you need data from a older version that's not listed below, <a href="mailto:someone@email.com">you can contact us</a> and request it.</p>
+
+<script>
+  document.body.className += ' ' + 'product-page';
+  function $_GET(q,s) {
+    s = (s) ? s : window.location.search;
+    var re = new RegExp('&amp;'+q+'=([^&amp;]*)','i');
+    return (s=s.replace(/^\?/,'&amp;').match(re)) ?s=s[1] :s='';
+  }
+
+  var value = $_GET('fname');
+  if (value == "overse")
+  document.getElementById('datatitle').innerHTML = 'Overseas companies that own property in England and Wales';
+</script>
+
+{% endblock %}
