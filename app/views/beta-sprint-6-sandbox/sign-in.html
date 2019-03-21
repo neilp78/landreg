@@ -6,15 +6,6 @@
 
 {% block content %}
 
-
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="index2">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">Sign in to your account</li>
-    </ol>
-  </div>
 <a href="detailspages-dataset-v4-logged-in" class="govuk-back-link">Back</a>
   <div class="govuk-width-container">
   <main class="govuk-main-wrapper">
@@ -79,6 +70,12 @@ if (referrer == 'detailspages-leases') {
 }
 if (referrer == 'detailspages-overseas-toc') {
   document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-overseas-toc-signed-in';
+}
+if (referrer == 'detailspages-uk-companies-toc') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-uk-companies-toc-signed-in';
+}
+if (referrer == 'detailspages-registered-leases-toc') {
+  document.getElementsByClassName("targetloginpage")[0].href = 'detailspages-registered-leases-toc-signed-in';
 }
 //
 //https://land-reg.herokuapp.com/beta-sprint-4-sandbox/listingspage

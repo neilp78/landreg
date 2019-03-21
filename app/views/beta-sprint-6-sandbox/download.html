@@ -10,11 +10,9 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-full">
       <a href="listingspage-v3" class="govuk-back-link">Back</a>
-      <br>
-      <br>
     </div>
 <h1 class="govuk-heading-xl" id="datatitle"></h1>
-<p class="govuk-body govuk-!-font-weight-bold">Download data about overseas companies that own land in England and Wales.</p>
+<p class="govuk-body govuk-!-font-weight-bold" id="serps"></p>
 <p class="meta">Last updated on the <span class="govuk-body govuk-!-font-weight-bold">2 April 2019</span> (updated monthly)</p>
 
 <a href="#" role="button" draggable="false" class="govuk-button" download>
@@ -80,8 +78,18 @@
   }
 
   var value = $_GET('fname');
-  if (value == "overse")
-  document.getElementById('datatitle').innerHTML = 'Overseas companies that own property in England and Wales';
+  if (value == "overse") {
+    document.getElementById('datatitle').innerHTML = 'Overseas companies that own property in England and Wales';
+        document.getElementById('serps').innerHTML = 'Download data about overseas companies that own land in England and Wales.';
+  }
+  if (value == "uk") {
+    document.getElementById('datatitle').innerHTML = 'UK companies that own property in England and Wales';
+    document.getElementById('serps').innerHTML = 'Download data about UK companies that own UK property.';
+  }
+  if (value == "regist") {
+    document.getElementById('datatitle').innerHTML = 'Registered leases';
+    document.getElementById('serps').innerHTML = 'Download data about leasehold properties in England and Wales.';
+  }
 </script>
 
 {% endblock %}
