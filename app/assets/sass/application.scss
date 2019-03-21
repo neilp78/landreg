@@ -10,6 +10,9 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+.download-page .govuk-button{
+  margin-right: 20px;
+}
 
 .govuk-phase-banner, .govuk-header__link--service-name {
   display: none;
