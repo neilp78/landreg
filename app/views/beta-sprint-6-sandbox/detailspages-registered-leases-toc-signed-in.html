@@ -6,9 +6,16 @@
 {% endblock %}
 
 {% block content %}
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-full ccod-details-page productpage">
+<div class="ccod-licence-agreed">
+<nav class="app-navigation-1 govuk-clearfix full-screen product-page">
+  <ul class="app-navigation__list">
+    <li>
+      <a class="govuk-link" href="detailspages-overseas" data-topnav="Community">Sign out</a>
+    </li>
+  </ul>
+</nav>
+  <div class="govuk-grid-row ccod">
+    <div class="govuk-grid-column-full">
       <div class="govuk-breadcrumbs">
         <ol class="govuk-breadcrumbs__list">
           <li class="govuk-breadcrumbs__list-item">
@@ -25,14 +32,20 @@
 
       <div class="blue-box">
         <span class="govuk-caption-xl">Dataset</span>
-        <h1 class="govuk-heading-xl">UK companies that own property in England and Wales</h1>
-        <p class="float_left new-left"><span class="new-free">FREE</span></p>
-        <p>Download data about UK companies that own UK property. This includes the company name, type of company, registration number, address, the price paid and more.  </p>
+        <h1 class="govuk-heading-xl">Registered leases</h1>
+        <p class="float_left"><span class="new-free">FREE</span></p>
+        <p>Download data about leasehold properties in England and Wales. This includes the title number, price paid, address, length and type of lease, legal clauses that affect the lease and more.</p>
         <p>Last updated on the <span class="govuk-body govuk-!-font-weight-bold">2 April 2019</span> (updated monthly), <span class="govuk-body govuk-!-font-weight-bold">CSV</span>, <span class="govuk-body govuk-!-font-weight-bold">1.25Gb</span>
         </p>
-        <p class="govuk-!-font-weight-bold darker-blue">You need to <a class="white-link-text" href="createaccount">create an account</a> or <a class="white-link-text" href="sign-in">sign in</a> to download this dataset.</p>
-        <br>
+
+        <div class="state-1">
+          <div class="download-wrapper getbtn">
+              <a href="agree-to-licence" class=" download"><span>Agree to licence and get this data</span></a>
+          </div>
+        </div>
+
       </div>
+
 
       <div class="toc" id="contents">
         <p>Contents</p>
@@ -164,7 +177,7 @@
         </tbody></table>
 
         <h2 id="techspecs">Technical specifications</h2>
-        <p>Read the <a href="https://www.gov.uk/guidance/hm-land-registry-overseas-companies-ownership-data">dataset technical specifications for UK companies that own property in England and Wales</a></p>
+        <p>Read the <a href="https://www.gov.uk/guidance/hm-land-registry-overseas-companies-ownership-data">dataset technical specifications for the Registered leases dataset</a></p>
         <h2 id="olderfiles">Older versions</h2>
         <p>You need to <a href="createaccount">create an account</a> or <a href="sign-in">sign in</a> to download older files.</p>
 
@@ -265,8 +278,10 @@
           </a>
         </div>
       </div>
+
+        </div>
         <script>
         document.body.className += ' ' + 'product-page';
         </script>
-
+</div>
 {% endblock %}
