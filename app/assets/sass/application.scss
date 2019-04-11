@@ -13,7 +13,16 @@ $govuk-global-styles: true;
 .download-page .govuk-button{
   margin-right: 20px;
 }
-
+.option-slide {
+  background: #fff;
+  border: 1px solid #eae8;
+  width:80%;
+  min-height: 250px;
+  display: none;
+}
+.step-1 {
+  display: inline;
+}
 .govuk-phase-banner, .govuk-header__link--service-name {
   display: none;
 }
