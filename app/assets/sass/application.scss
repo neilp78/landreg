@@ -13,6 +13,11 @@ $govuk-global-styles: true;
 .download-page .govuk-button{
   margin-right: 20px;
 }
+.go-right {
+  .dataset-info {
+    float: none !important;
+  }
+}
 .option-slide {
   background: #fff;
   border: 1px solid #eae8;
