@@ -64,6 +64,17 @@ $govuk-global-styles: true;
     margin-bottom: 10px;
     margin-left: 2px;
   }
+
+  @media (max-width: 620px) {
+    .dataset-info {
+      width:100%;
+    //  float:right;
+    }
+    .attachment-thumb img {
+      display: none;
+    }
+  }
+
   .filter-results-summary {
     border-bottom: solid 1px #BFC1C3;
     .count {
@@ -161,7 +172,11 @@ $govuk-global-styles: true;
   background: #08477e;
   padding: 2%;
   width: 64%;
+  @media (max-width: 620px) {
+    width: 95%;
+  }
 }
+
 .ccod-licence-agreed {
   .blue-box {
 
@@ -1371,6 +1386,10 @@ pre {
   padding-right: 30px;
   padding-top: 30px;
   overflow: auto;
+
+  @media (max-width: 620px) {
+    padding:4%;
+  }
 
   .state-2 {
     background: white;
