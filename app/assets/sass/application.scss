@@ -9,13 +9,12 @@ $govuk-global-styles: true;
 @import "patterns/check-your-answers";
 @import "patterns/task-list";
 @import "patterns/related-items";
-.licence-page {
-  .app-c-download-link {
-    margin-bottom: 10px;
 
-    svg {
-      margin-right: 7px;
-    }
+.app-c-download-link {
+  margin-bottom: 10px;
+
+  svg {
+    margin-right: 7px;
   }
 }
 .download-page .govuk-button{
