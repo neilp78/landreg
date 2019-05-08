@@ -16,6 +16,37 @@ $govuk-global-styles: true;
     margin-right: 7px;
   }
 }
+.history-item {
+  border-bottom:1px solid #dee0e2;
+  padding-bottom: 58px;
+  padding: 3%;
+
+  h3 {
+    font-size: 27px;
+    margin-top: 0;
+  }
+}
+.download-page-v2 {
+  .grey-wrap {
+    background: #ffbf47;
+    padding: 2%;
+    margin: 4% 0;
+    border-left: 14px solid #f47738;
+    padding-bottom: 1%;
+  }
+}
+.history-item:nth-child(even) {
+    background: #f8f8f8;
+}
+.listings-with-tabs {
+  .first-tile {
+    border-top: none !important;
+    padding-top: 20px !important;
+  }
+  .app-check-your-answers {
+    font-size: 17px;
+  }
+}
 .download-page .govuk-button{
   margin-right: 20px;
 }
