@@ -10,6 +10,9 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+.pill-green {
+  background: #006435 !important;
+}
 .app-c-download-link {
   margin-bottom: 10px;
   svg {
@@ -20,6 +23,7 @@ $govuk-global-styles: true;
   border-bottom:1px solid #dee0e2;
   padding-bottom: 58px;
   padding: 3%;
+  margin-left: -25px;
 
   h3 {
     font-size: 27px;
@@ -53,6 +57,9 @@ $govuk-global-styles: true;
 .go-right {
   .dataset-info {
     float: none !important;
+    h2 {
+      margin-bottom: 30px;
+    }
   }
 }
 .option-slide {
@@ -150,11 +157,11 @@ $govuk-global-styles: true;
     margin-bottom: 0;
     font-size: 14px;
     line-height: 1.42857;
-    margin-top: 10px !important;
+    margin-top: 20px !important;
   }
   h2 {
     margin-top:0;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
     a {
       font-size: 27px;
     }
