@@ -10,6 +10,15 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+.grey-wrap {
+  background: #f8f8f8;
+  border-top: 1px solid #dee0e2;
+  margin-bottom: 40px;
+  padding: 1% 2%;
+}
+.history-item {
+    border-bottom: 1px solid #dee0e2;
+}
 .pill-green {
   background: #006435 !important;
 }
