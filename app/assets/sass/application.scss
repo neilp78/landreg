@@ -10,6 +10,31 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+.latest-data-table {
+  .govuk-table__cell {
+    border-bottom: none !important;
+  }
+  .add-row {
+    //border-bottom: 1px solid #bfc1c3;
+  }
+}
+.latest-data-table tbody {
+  background: #f8f8f8;
+}
+.download-page-new {
+  table {
+    margin: 2% 0 3% 0;
+  }
+}
+.file-size-text {
+  font-size: 14px;
+}
+.cell-spacer {
+  width: 121px;
+}
+.cta-download {
+  margin-bottom: 10px !important;
+}
 .grey-wrap {
   background: #f8f8f8;
   border-top: 1px solid #dee0e2;
