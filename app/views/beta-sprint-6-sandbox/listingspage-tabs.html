@@ -50,7 +50,11 @@
             Your download history
           </a>
         </li>
-
+        <li class="govuk-tabs__list-item">
+          <a class="govuk-tabs__tab" href="#api-access">
+            Your API access
+          </a>
+        </li>
       </ul>
 
       <section class="govuk-tabs__panel" id="available">
@@ -72,9 +76,15 @@
               <p class="dataset-meta free pill-green">
                 <span class="govuk-body govuk-!-font-weight-bold">Licence agreed</span>
               </p>
+              <p class="dataset-meta">
+                <span class="govuk-body govuk-!-font-weight-bold">API available</span>
+              </p>
               <p class="meta">Updated on the 2 May 2019</p>
               <p class="flag"></p>
               <p class="govuk-body govuk-!-font-weight-bold">Download data about non-UK companies that own UK property. This includes the company name, type of company, registration number, address, the price paid and more. </p>
+              <div class="api-link">
+                <a href="api">API access to the this dataset is available</a>
+              </div>
               <p class="download-docs"><a class="download" href="/public/files/ocod-sample-data.csv" download>Download example data - <span class="file-size">CSV,15Kb</span></a> | <a class="download" href="/public/files/licence_agreement.html" download>Download licence agreement - <span class="file-size">HTML, 16Kb</span></a></a></p>
             </div>
           </div>
@@ -189,42 +199,59 @@
         <br>
         <div class="form-group">
 
-</div>
-<div class="history-item">
-  <h3><a href="detailspages-overseas-toc">Overseas companies that own property in England and Wales</a></h3>
+        </div>
+        <div class="history-item">
+          <h3><a href="detailspages-overseas-toc">Overseas companies that own property in England and Wales</a></h3>
 
-  <div class="history-item-meta">
-    <p class="history-item-date">You last downloaded this file on <span class="govuk-!-font-weight-bold">10 February 2019</span>. There is a newer version available.</p>
-    <p class="history-item-licence">You agreed to the licence to use this data on <span class="govuk-!-font-weight-bold">23 January</span>. You can see the <a href="agree-to-licence">licence you agreed to here</a>.</p>
-  </div>
-  <div class="history-item-ctas">
-    <a href="#" role="button" draggable="false" class="govuk-button" download="">
-      <span class="govuk-body govuk-!-font-weight-bold">Download all of the data</span> - 1.23Gb, CSV
-    </a>
-    <a href="#" role="button" draggable="false" class="govuk-button" download>
-      <span class="govuk-body govuk-!-font-weight-bold">Download changes from last month</span> - 25Mb, CSV
-    </a>
-  </div>
-  <a href="download-v2?fname=overseas">See older versions of this file</a>
-</div>
+          <div class="history-item-meta">
+            <p class="history-item-date">You last downloaded this file on <span class="govuk-!-font-weight-bold">10 February 2019</span>. There is a newer version available.</p>
+            <p class="history-item-licence">You agreed to the licence to use this data on <span class="govuk-!-font-weight-bold">23 January</span>. You can see the <a href="agree-to-licence">licence you agreed to here</a>.</p>
+          </div>
+          <div class="history-item-ctas">
+            <a href="#" role="button" draggable="false" class="govuk-button" download="">
+              <span class="govuk-body govuk-!-font-weight-bold">Download all of the data</span> - 1.23Gb, CSV
+            </a>
+            <a href="#" role="button" draggable="false" class="govuk-button" download>
+              <span class="govuk-body govuk-!-font-weight-bold">Download changes from last month</span> - 25Mb, CSV
+            </a>
+          </div>
+          <a href="download-v2?fname=overseas">See older versions of this file</a>
+        </div>
 
-<div class="history-item">
-  <h3><a href="detailspages-uk-companies-toc">UK companies that own property in England and Wales</a></h3>
+        <div class="history-item">
+          <h3><a href="detailspages-uk-companies-toc">UK companies that own property in England and Wales</a></h3>
 
-  <div class="history-item-meta">
-    <p class="history-item-date">You downloaded this file on <span class="govuk-!-font-weight-bold">25 January 2019</span>. There is a newer version available.</p>
-    <p class="history-item-licence">You agreed to the licence to use this data on <span class="govuk-!-font-weight-bold">25 January</span>. You can see the <a href="agree-to-licence">licence you agreed to here</a>.</p>
-  </div>
-  <div class="history-item-ctas">
-    <a href="#" role="button" draggable="false" class="govuk-button" download="">
-      <span class="govuk-body govuk-!-font-weight-bold">Download all of the data</span> - 1.23Gb, CSV
-    </a>
-    <a href="#" role="button" draggable="false" class="govuk-button" download>
-      <span class="govuk-body govuk-!-font-weight-bold">Download changes from last month</span> - 25Mb, CSV
-    </a>
-  </div>
-  <a href="download-v2?fname=overseas">See older versions of this file</a>
-</div>
+          <div class="history-item-meta">
+            <p class="history-item-date">You downloaded this file on <span class="govuk-!-font-weight-bold">25 January 2019</span>. There is a newer version available.</p>
+            <p class="history-item-licence">You agreed to the licence to use this data on <span class="govuk-!-font-weight-bold">25 January</span>. You can see the <a href="agree-to-licence">licence you agreed to here</a>.</p>
+          </div>
+          <div class="history-item-ctas">
+            <a href="#" role="button" draggable="false" class="govuk-button" download="">
+              <span class="govuk-body govuk-!-font-weight-bold">Download all of the data</span> - 1.23Gb, CSV
+            </a>
+            <a href="#" role="button" draggable="false" class="govuk-button" download>
+              <span class="govuk-body govuk-!-font-weight-bold">Download changes from last month</span> - 25Mb, CSV
+            </a>
+          </div>
+          <a href="download-v2?fname=overseas">See older versions of this file</a>
+        </div>
+        </section>
+        <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="api-access">
+          <h2 class="govuk-heading-m">Your API Key</h2>
+          <div class="highlight">
+            <pre class="highlight plaintext"><code>KEY 1d6909c5-5e5e-4edc-889c-575a59569ea2-575a59569ea2-5e5e-4edc</code></pre>
+          </div>
+
+
+          <p><a class="govuk-link" href="">My Key didn’t work</a></p>
+          <p><a class="govuk-link" href="">View licence agreement</a></p>
+          <br />
+          <h2>Reset your API key</h2>
+          <button type="submit" class="govuk-button govuk-button--warning">
+            Reset key
+          </button>
+        </section>
+
 
 
 </div>
