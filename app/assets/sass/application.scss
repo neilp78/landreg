@@ -18,6 +18,36 @@ $govuk-global-styles: true;
     //border-bottom: 1px solid #bfc1c3;
   }
 }
+code {
+  text-align: left;
+  overflow: hidden;
+}
+code, pre {
+  white-space:normal;
+}
+.app-copy-button {
+  font-family: "nta",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: .875rem;
+  line-height: 1.14286;
+  z-index: 1;
+  top: 20px;
+  right: 20px;
+  min-width: 110px;
+  padding: 4px 10px 2px 10px;
+  border: 1px solid #00823b;
+  color: #00823b;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 0 0 #006435;
+  box-shadow: 0 2px 0 0 #006435;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left:67%;
+}
 .govuk-button--warning {
   background-color: #b10e1e;
 }
@@ -1082,21 +1112,25 @@ span.licence-type {
 
 //formatting tabs to show example snippets of Datasets
 pre {
-   background-color: #f8f8f8;
-   border: 1px solid silver;
-   padding: 10px 20px;
-   margin: 20px;
-   font-family: monospace;
-   position: relative;
-    margin: 0;
-    padding: 15px;
-    overflow: auto;
-    border: 1px solid #bfc1c3;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    max-width: 38em;
-    margin-bottom: 15px;
-   }
+  background-color: #f8f8f8;
+  border: 1px solid silver;
+  /* padding: 10px 20px; */
+  margin: 20px;
+  font-family: monospace;
+  /* position: relative; */
+  margin: 0;
+  /* padding: 15px; */
+  /* overflow: auto; */
+  border: 1px solid #bfc1c3;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  /* max-width: 38em; */
+  margin-bottom: 15px;
+  width: 80%;
+  text-align: center;
+  padding: 28px 4px;
+  font-size: 18px;
+}
 .json-key {
    color: brown;
    }
@@ -1495,12 +1529,6 @@ pre {
     text-decoration: none !important;
    }
 }
-
-
-.highlight {
-  width: 100%;
-}
-//accordion
 
 
 .govuk-accordion {
