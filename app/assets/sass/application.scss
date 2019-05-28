@@ -25,6 +25,21 @@ code {
 code, pre {
   white-space:normal;
 }
+.api-toc {
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      font-size: 17px !important;
+    }
+  }
+  li::before {
+    content: "— ";
+    margin-left: -25px;
+    padding-right: 5px;
+    font-size: 14px;
+  }
+}
 .app-copy-button {
   font-family: "nta",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;

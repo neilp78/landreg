@@ -105,6 +105,24 @@
 
   </main>
 </div>
+<script>
+//get currebnt URL
+var pathname = window.location.pathname; // Returns path only
+var url      = window.location.href;     // Returns full URL
+var origin   = window.location.origin;   // Returns base URL
+//alert(origin);
 
+
+var referrer =  document.referrer;
+var referrer = referrer.replace(""+origin+"/beta-sprint-6-sandbox/", "");
+//copy and paste below and change tagert to logged in version
+
+
+if (referrer == 'api') {
+  document.getElementsByClassName("govuk-button")[0].href = 'api-key';
+}
+//
+//https://land-reg.herokuapp.com/beta-sprint-4-sandbox/listingspage
+</script>
 
 {% endblock %}
