@@ -10,6 +10,13 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+.nps-tabs {
+  .govuk-tabs__panel {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+}
 .latest-data-table {
   .govuk-table__cell {
     border-bottom: none !important;
