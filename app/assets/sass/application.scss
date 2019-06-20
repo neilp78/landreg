@@ -10,6 +10,15 @@ $govuk-global-styles: true;
 @import "patterns/task-list";
 @import "patterns/related-items";
 
+
+.blue-box.nps-product {
+  .darker-blue {
+    width: 42%;
+    float: left;
+    margin-right: 4%;
+  }
+}
+
 .nps-tabs {
   .govuk-tabs__panel {
     border-left: none;
